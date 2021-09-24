@@ -2,14 +2,11 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        {{-- <title>NB Law Firm - Best Matrimonail Lawywer in Delhi NCR, Family....</title> --}}
 
         @section('title', 'Best Matrimonail Lawywer in Delhi NCR, Family....')
         <title>NB Law Firm - @yield('title')</title>
 
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Law Firm Website" name="keywords">
-        <meta content="Law Firm Website" name="description">
+        {{-- <meta content="width=device-width, initial-scale=1.0" name="viewport"> --}}
 
         <!-- Favicon -->
         <link href="img/favicon.ico" rel="icon">
@@ -25,6 +22,7 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+
     </head>
 
     <style>
@@ -36,13 +34,17 @@
             font-weight: 800;
         }
 
+        /* #search-field {
+             display: none;
+        }
+
+        #btn:hover + #search-field {
+            display: inline-block;
+        } */
+
     </style>
 
     <body>
-        {{-- @section('title','NB Law Firm - Best Matrimonail Lawywer in Delhi NCR, Family....') --}}
-
-        {{-- @endsection --}}
-
         <div class="wrapper">
             <!-- Top Bar Start -->
             <div class="top-bar">
@@ -62,6 +64,7 @@
                                     <p>Opening Hour Mon - Fri</p>
                                 </div>
                                 <div class="text">
+                                    {{-- <i class="fa fa-phone" aria-hidden="true"></i> --}}
                                     <h2>011-4587-4391</h2>
                                     {{-- <p>Call Us For Free Consultation</p> --}}
                                 </div>
@@ -96,7 +99,7 @@
                                 <a href="/" class="nav-item nav-link active">Home</a>
                                 <a href="about-us" class="nav-item nav-link">About</a>
                                 <div class="nav-item dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Our Services</a>
+                                    <a href="/our-services" class="nav-link dropdown-toggle" data-toggle="dropdown">Our Services</a>
                                     <div class="dropdown-menu">
                                         {{-- <div class="col-md-3"> --}}
                                         <div class="row">
@@ -209,7 +212,8 @@
                             <div class="feature-item">
                                 <i class="far fa-thumbs-up"></i>
                                 <h3>Success</h3>
-                                <p>99.99% Case Won</p>
+                                {{-- <p>99.99% Case Won</p> --}}
+                                <p class="counter">99.99% Case Won</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -247,7 +251,7 @@
                                 <p>
                                     With our professional lawyers in Delhi, the clients will find a complete range of law services related to the cases of Consent divorce, annulment of marriage, contested divorce, domestic violence and much more. We are trusted by a large number of clients because of our expertise and ability to handle every case with professionalism.
                                 </p>
-                                <a class="btn" href="">Learn More</a>
+                                <a class="btn" href="about-us">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -319,7 +323,7 @@
                                 </div>
                                 <h3>Mutual Consent and Contested Divorce</h3>
                                 <p>
-                                    Mutual Consent Divorce is the basic way of coming out of the marriage and dissolving it legally. Important requirement…..
+                                    Mutual Consent Divorce is the basic way of coming out of the marriage and dissolving it legally.
                                 </p>
                                 <a class="btn" href="">Learn More</a>
                             </div>
@@ -331,7 +335,7 @@
                                 </div>
                                 <h3>498a and Allied Criminal Proceedings</h3>
                                 <p>
-                                    The section was enacted to combat the menace of dowry deaths. It was introduced in the code by the Criminal Law …..
+                                    The section was enacted to combat the menace of dowry deaths. It was introduced in the code …..
                                 </p>
                                 <a class="btn" href="">Learn More</a>
                             </div>
@@ -1058,13 +1062,13 @@
                         <h2>Send Query For Free Legal Advice:</h2>
                     </div>
                     <div class="form">
-                        <input class="form-control" placeholder="Please Enter Your Name"><br>
-                        <input class="form-control" placeholder="Please Entery Your Email"><br>
-                        <input class="form-control" placeholder="Please Enter Your Contact No."><br>
+                        <input type="text" class="form-control" placeholder="Please Enter Your Name"><br>
+                        <input type="email" class="form-control" placeholder="Please Entery Your Email"><br>
+                        <input type="number" class="form-control" placeholder="Please Enter Your Contact No."><br>
 
                         <div class="col-md-12">
                             <div style="height: 200px; position: relative;">
-                                <button type="button" style="margin:0; position:absolute; top:50%; -ms-transform: translateY(-50%); transform: translateY(-50%);" class="btn btn-info">Submit</button>
+                                <button type="submit" style="margin:0; position:absolute; top:50%; -ms-transform: translateY(-50%); transform: translateY(-50%);" class="btn btn-info">Submit</button>
                             </div>
                         </div>
                     </div>
@@ -1166,4 +1170,20 @@
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
     </body>
+
+    {{-- <script type="text/javascript">
+        $(document).ready(function(){
+            ('.counter').each(function(){
+                $(this).prop('Counter',0).animate({
+                    Counter:$(this).text()
+                },{
+                    duration:4000,
+                    easing:'swing',
+                    step:function(now){
+                        $(this).text(Math.ceil(now));
+                    }
+                });
+            });
+        });
+    </script> --}}
 </html>

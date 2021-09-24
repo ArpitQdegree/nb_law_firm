@@ -46,7 +46,7 @@
                     <div class="row">
                         <div class="col-lg-3">
                             <div class="logo">
-                                <a href="index.html">
+                                <a href=''>
                                     <h1>NB Law Firm</h1>
                                 </a>
                             </div>
@@ -91,7 +91,7 @@
                             <div class="navbar-nav mr-auto">
                                 <a href="/" class="nav-item nav-link">HOME</a>
                                 <a href="about-us" class="nav-item nav-link">ABOUT</a>
-                                <a href="service.html" class="nav-item nav-link">OUR SERVICES</a>
+                                <a href="our-services" class="nav-item nav-link">OUR SERVICES</a>
                                 <a href="team.html" class="nav-item nav-link">MEDIA</a>
                                 <a href="portfolio.html" class="nav-item nav-link">DISCLAMIER</a>
                                 <div class="nav-item dropdown">
