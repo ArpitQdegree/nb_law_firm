@@ -2,7 +2,11 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>NB Law Firm - Best Matrimonail Lawywer in Delhi NCR, Family....</title>
+        {{-- <title>NB Law Firm - Best Matrimonail Lawywer in Delhi NCR, Family....</title> --}}
+
+        @section('title', 'Best Matrimonail Lawywer in Delhi NCR, Family....')
+        <title>NB Law Firm - @yield('title')</title>
+
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Law Firm Website" name="keywords">
         <meta content="Law Firm Website" name="description">
@@ -35,6 +39,10 @@
     </style>
 
     <body>
+        {{-- @section('title','NB Law Firm - Best Matrimonail Lawywer in Delhi NCR, Family....') --}}
+
+        {{-- @endsection --}}
+
         <div class="wrapper">
             <!-- Top Bar Start -->
             <div class="top-bar">
@@ -232,7 +240,9 @@
                             </div>
                             <div class="about-text" style="text-align: justify;">
                                 <p>
+
                                     NB Law Firm is known as one of the trusted and best firms in Delhi NCR where you will find well experienced and professionals advocate who are able to handle divorce cases in a professional way. If you are searching for the services of a professional lawyer who can handle your cases, we are available 24/7 to offer these expert solutions. Our matrimonial cases lawyer and family case advocate able to handle all kinds of family and matrimonial cases for our clients. Whether you need expert advice related to the divorce case or family case, we are available online to give an answer to all your queries instantly.
+
                                 </p>
                                 <p>
                                     With our professional lawyers in Delhi, the clients will find a complete range of law services related to the cases of Consent divorce, annulment of marriage, contested divorce, domestic violence and much more. We are trusted by a large number of clients because of our expertise and ability to handle every case with professionalism.
