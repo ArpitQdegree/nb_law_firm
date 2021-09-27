@@ -112,7 +112,7 @@
                                     </div>
                                 </div>
                                 {{-- <a href="service.html" class="nav-item nav-link">Our Services</a> --}}
-                                <a href="team.html" class="nav-item nav-link">Media</a>
+                                <a href="/media" class="nav-item nav-link">Media</a>
                                 <a href="/disclamier" class="nav-item nav-link">Disclamier</a>
                                 <div class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>

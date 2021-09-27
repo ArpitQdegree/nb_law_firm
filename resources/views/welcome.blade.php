@@ -120,7 +120,7 @@
                                     </div>
                                 </div>
                                 {{-- <a href="service.html" class="nav-item nav-link">Our Services</a> --}}
-                                <a href="team.html" class="nav-item nav-link">Media</a>
+                                <a href="/media" class="nav-item nav-link">Media</a>
                                 <a href="/disclamier" class="nav-item nav-link">Disclamier</a>
                                 <div class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
@@ -1063,9 +1063,9 @@
                         <h2>Send Query For Free Legal Advice:</h2>
                     </div>
                     <div class="form">
-                        <input type="text" class="form-control" placeholder="Please Enter Your Name"><br>
-                        <input type="email" class="form-control" placeholder="Please Entery Your Email"><br>
-                        <input type="number" class="form-control" placeholder="Please Enter Your Contact No."><br>
+                        <input type="text" class="form-control" placeholder="Please Enter Your Name" required><br>
+                        <input type="email" class="form-control" placeholder="Please Entery Your Email" required><br>
+                        <input type="number" class="form-control" placeholder="Please Enter Your Contact No." required><br>
 
                         <div class="col-md-12">
                             <div style="height: 200px; position: relative;">
