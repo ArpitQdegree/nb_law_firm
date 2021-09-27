@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
 
-        @section('title', 'Best Matrimonail Lawywer in Delhi NCR, Family....')
+        @section('title', 'Disclamier')
         <title>NB Law Firm - @yield('title')</title>
 
         {{-- <meta content="width=device-width, initial-scale=1.0" name="viewport"> --}}
@@ -34,6 +34,9 @@
             font-weight: 800;
         }
 
+        .text{
+            text-align: justify;
+        }
         /* #search-field {
              display: none;
         }
@@ -168,15 +171,15 @@
                         </p>
 
                         <h4>DISCLAMIER</h4>
-                        <p>
+                        <p class="text">
                             This knowledgesite (www.nblawfirm.in) is a resource for informational purposes only and is intended, but not promised or guaranteed, to be correct, complete, and up-to-date. Nidhi Banga Associates (NDA) does not warrant that the information contained on this knowledgesite is accurate or complete, and hereby disclaims any and all liability to any person for any loss or damage caused by errors or omissions, whether such errors or omissions result from negligence, accident or any other cause.
                         </p>
 
-                        <p>NDA further assumes no liability for the interpretation and/or use of the information contained on this knowledgesite, nor does it offer a warranty of any kind, either expressed or implied. The owner of this knowledgesite does not intend links from this site to other internet knowledgesites to be referrals to, endorsements of, or affiliations with the linked entities. NDA is not responsible for, and makes no representations or warranties about, the contents of Web sites to which links may be provided from this Web site.</p>
+                        <p class="text">NDA further assumes no liability for the interpretation and/or use of the information contained on this knowledgesite, nor does it offer a warranty of any kind, either expressed or implied. The owner of this knowledgesite does not intend links from this site to other internet knowledgesites to be referrals to, endorsements of, or affiliations with the linked entities. NDA is not responsible for, and makes no representations or warranties about, the contents of Web sites to which links may be provided from this Web site.</p>
 
-                        <p>This knowledgesite is not intended to be a source of advertising or solicitation and the contents of the knowledgesite should not be construed as legal advice. The reader should not consider this information to be an invitation for a lawyer-client relationship and should not rely on information provided herein and should always seek the advice of competent counsel licensed to practice in the relevant country/state. Transmission, receipt or use of this knowledgesite does not constitute or create a lawyer-client relationship. No recipients of content from this knowledgesite should act, or refrain from acting, based upon any or all of the contents of this site.</p>
+                        <p class="text">This knowledgesite is not intended to be a source of advertising or solicitation and the contents of the knowledgesite should not be construed as legal advice. The reader should not consider this information to be an invitation for a lawyer-client relationship and should not rely on information provided herein and should always seek the advice of competent counsel licensed to practice in the relevant country/state. Transmission, receipt or use of this knowledgesite does not constitute or create a lawyer-client relationship. No recipients of content from this knowledgesite should act, or refrain from acting, based upon any or all of the contents of this site.</p>
 
-                        <p>Furthermore, the owner of this knowledgesite does not wish to represent anyone desiring representation based solely upon viewing this knowledgesite or in a country/state where this knowledgesite fails to comply with all laws and ethical rules of that state. Finally, the reader is warned that the use of Internet e-mail for confidential or sensitive information is susceptible to risks of lack of confidentiality associated with sending email over the Internet.</p>
+                        <p class="text">Furthermore, the owner of this knowledgesite does not wish to represent anyone desiring representation based solely upon viewing this knowledgesite or in a country/state where this knowledgesite fails to comply with all laws and ethical rules of that state. Finally, the reader is warned that the use of Internet e-mail for confidential or sensitive information is susceptible to risks of lack of confidentiality associated with sending email over the Internet.</p>
                     </div>
                 </div>
             </div>
@@ -209,7 +212,6 @@
 
                                         ‎011-4587-4391 <br>
                                         9999221769<br>
-                                        {{-- Monday - Friday, 10am - 7pm --}}
                                     </p>
                                 </div>
                         </div>

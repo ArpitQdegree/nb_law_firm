@@ -52,7 +52,7 @@
                     <div class="row">
                         <div class="col-lg-3">
                             <div class="logo">
-                                <a href="index.html">
+                                <a href="">
                                     <h1>NB Law Firm</h1>
                                 </a>
                             </div>
@@ -121,7 +121,7 @@
                                 </div>
                                 {{-- <a href="service.html" class="nav-item nav-link">Our Services</a> --}}
                                 <a href="team.html" class="nav-item nav-link">Media</a>
-                                <a href="portfolio.html" class="nav-item nav-link">Disclamier</a>
+                                <a href="/disclamier" class="nav-item nav-link">Disclamier</a>
                                 <div class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
                                     <div class="dropdown-menu">
@@ -129,11 +129,12 @@
                                         <a href="single.html" class="dropdown-item">Single Page</a>
                                     </div>
                                 </div>
-                                <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                                <a href="contact-us" class="nav-item nav-link">Contact Us</a>
                             </div>
                             <div class="ml-auto">
                                 <i class="fa fa-search" aria-hidden="true"></i>
-                                <a class="btn" href="https://htmlcodex.com/law-firm-website-template">Got a Query</a>
+                                <a class="btn" href="contact-us">Got a Query</a>
+                                {{-- <a class="btn" href="https://htmlcodex.com/law-firm-website-template">Got a Query</a> --}}
                             </div>
                         </div>
                     </nav>
@@ -277,7 +278,7 @@
                                 <p>
                                     When a married couple gets a divorce, the court may award “alimony” or spousal support to one of the former spouses
                                 </p>
-                                <a class="btn" href="">Learn More</a>
+                                <a class="btn" href="services/maintenance-alimony">Learn More</a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
@@ -289,7 +290,7 @@
                                 <p>
                                     Domestic violence is any kind of behavior that a person uses, or threatens to use, to control an intimate partner….
                                 </p>
-                                <a class="btn" href="">Learn More</a>
+                                <a class="btn" href="services/domestic-violence-cases">Learn More</a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
@@ -301,7 +302,7 @@
                                 <p>
                                     Under Indian law, maximum importance is given to the best interests of the child …….
                                 </p>
-                                <a class="btn" href="">Learn More</a>
+                                <a class="btn" href="services/child-custody">Learn More</a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
@@ -313,7 +314,7 @@
                                 <p>
                                     The subject of foreign divorce in India sounds quite complicated and people are hardly usually, these cases ….. ….
                                 </p>
-                                <a class="btn" href="">Learn More</a>
+                                <a class="btn" href="services/nri-legal-services/">Learn More</a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
@@ -325,7 +326,7 @@
                                 <p>
                                     Mutual Consent Divorce is the basic way of coming out of the marriage and dissolving it legally.
                                 </p>
-                                <a class="btn" href="">Learn More</a>
+                                <a class="btn" href="services/mutual-consent-divorce-procedure">Learn More</a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
@@ -337,7 +338,7 @@
                                 <p>
                                     The section was enacted to combat the menace of dowry deaths. It was introduced in the code …..
                                 </p>
-                                <a class="btn" href="">Learn More</a>
+                                <a class="btn" href="services/498a-allied-criminal-proceedings">Learn More</a>
                             </div>
                         </div>
 
@@ -350,7 +351,7 @@
                                 <p>
                                     One significant category of small claims disputes involves property damage cases.…..
                                 </p>
-                                <a class="btn" href="">Learn More</a>
+                                <a class="btn" href="services/civil-suits-in-property">Learn More</a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
@@ -362,7 +363,7 @@
                                 <p>
                                     Probation in criminal law is a period of supervision over an offender, ordered by the court as an alternative …..
                                 </p>
-                                <a class="btn" href="">Learn More</a>
+                                <a class="btn" href="services/will-probation-cases">Learn More</a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
@@ -374,7 +375,7 @@
                                 <p>
                                     Annulment is a legal procedure for declaring a marriage null and void. With the exception of bigamy…..
                                 </p>
-                                <a class="btn" href="">Learn More</a>
+                                <a class="btn" href="services/annulment-of-marriage">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -1097,11 +1098,11 @@
                         <div class="col-md-6 col-lg-4">
                             <div class="footer-link">
                                 <h2>Services Areas</h2>
-                                <a href="">Civil Suits in Property</a>
-                                <a href="">Annulment Of Marriage</a>
-                                <a href="">Maintenance & Alimony</a>
-                                <a href="">Child Custody & Visitors</a>
-                                <a href="">Domestic Violence Cases</a>
+                                <a href="/our-services/">Civil Suits in Property</a>
+                                <a href="/our-services/">Annulment Of Marriage</a>
+                                <a href="/our-services/">Maintenance & Alimony</a>
+                                <a href="/our-services/">Child Custody & Visitors</a>
+                                <a href="/our-services/">Domestic Violence Cases</a>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4">
@@ -1112,7 +1113,7 @@
                                 <a href="">Media</a>
                                 <a href="">Disclaimer</a>
                                 <a href="">Blog</a>
-                                <a href="">Contact Us</a>
+                                <a href="contact-us">Contact Us</a>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4">
