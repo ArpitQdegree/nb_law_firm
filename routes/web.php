@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\AdminHomeController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -104,3 +106,11 @@ Route::get('contact-us', function(){
 Route::get('header', function(){
     return view('header');
 });
+
+
+#admin panel routes starts from here
+
+// Route::get('admin/', "AdminHomeController@dashboard");
+Route::get('admin/', [AdminHomeController::class,'dashboard']);
+
+Route::get('/add-post',[PostController::class,'addpost'])->name('addpost');

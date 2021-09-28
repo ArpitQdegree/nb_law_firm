@@ -34,6 +34,21 @@
             font-weight: 800;
         }
 
+        #message{
+            overflow: auto;
+            resize: vertical;
+            border-color: black;
+            border-width: 2px;
+        }
+
+        .newsletter input {
+            height: 50px;
+            border: 2px solid #121518;
+            border-radius: 0;
+            width: 498px;
+        }
+
+
         /* #search-field {
              display: none;
         }
@@ -134,6 +149,7 @@
                             <div class="ml-auto">
                                 <i class="fa fa-search" aria-hidden="true"></i>
                                 <a class="btn" href="contact-us">Got a Query</a>
+
                                 {{-- <a class="btn" href="https://htmlcodex.com/law-firm-website-template">Got a Query</a> --}}
                             </div>
                         </div>
@@ -518,7 +534,7 @@
                                         <i class="fa fa-globe"></i>
                                     </div>
                                     <h3>Anti — Trust / Competition</h3>
-                                    <p>
+                                    <p style="height:224px;">
                                         Engaged as the ‘trusted counsel’ by the Regulatory Authorities and Corporations, the team handles matters related to cartels, abuse of dominant positions, merger control, leniency applications and anti-competitive and concession
                                     </p>
                                 </div>
@@ -569,8 +585,8 @@
                                         <i class="fa fa-globe"></i>
                                     </div>
                                     <h3>SARFAESI Act, 2002</h3>
-                                    <p>
-                                       The lawyers at the Firm are committed to protecting the client-facing debt collection lawsuits before Debt Recovery Tribunals, Appellate Authorities, High Courts and Supreme Court. The Firm goes to length to find the right fit to recover the Non-Performing Asset either through Securitization (acquiring financial assets), Asset Reconstruction (management of the business) or Enforcement of  Asset Reconstruti.....
+                                    <p style="height:357px;">
+                                       The lawyers at the Firm are committed to protecting the client-facing debt collection lawsuits before Debt Recovery Tribunals, Appellate Authorities, High Courts and Supreme Court. The Firm goes to length to find the right fit to recover the Non-Performing Asset either through Securitization (acquiring financial assets), Asset Reconstruction (management of the business).....
                                     </p>
                                 </div>
                         </div>
@@ -1066,7 +1082,7 @@
                         <input type="text" class="form-control" placeholder="Please Enter Your Name" required><br>
                         <input type="email" class="form-control" placeholder="Please Entery Your Email" required><br>
                         <input type="number" class="form-control" placeholder="Please Enter Your Contact No." required><br>
-
+                        <textarea name="message" id="message" cols="60" rows="10" placeholder="Enter Your Message Here"></textarea>
                         <div class="col-md-12">
                             <div style="height: 200px; position: relative;">
                                 <button type="submit" style="margin:0; position:absolute; top:50%; -ms-transform: translateY(-50%); transform: translateY(-50%);" class="btn btn-info">Submit</button>

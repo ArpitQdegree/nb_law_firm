@@ -125,7 +125,7 @@
                             </div>
                             <div class="ml-auto">
                                 <i class="fa fa-search" aria-hidden="true"></i>
-                                <a class="btn" href="https://htmlcodex.com/law-firm-website-template">Got a Query</a>
+                                <a class="btn" href="contact-us">Got a Query</a>
                             </div>
                         </div>
                     </nav>

@@ -122,7 +122,7 @@
                             </div>
                             <div class="ml-auto">
                                 <i class="fa fa-search" aria-hidden="true"></i>
-                                <a class="btn" href="https://htmlcodex.com/law-firm-website-template">Got a Query</a>
+                                <a class="btn" href="contact-us">Got a Query</a>
                             </div>
                         </div>
                     </nav>
@@ -146,6 +146,7 @@
             </div>
             <!-- Page Header End -->
 
+            {{-- @include('layouts.header') --}}
             <!-- Service Start -->
             <div class="service">
                 <div class="container">
@@ -197,7 +198,7 @@
                                 </div>
                                 <h3>NRI Divorce Legal Support</h3>
                                 <p>
-                                    The subject of foreign divorce in India sounds quite complicated and people are hardly usually, these cases ….. ….
+                                    The subject of foreign divorce in India sounds quite complicated and people are hardly aware about the legalities involved with it ….. ….
                                 </p>
                                 <a class="btn" href="">Learn More</a>
                             </div>
@@ -277,7 +278,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
-                            <div class="service-item">
+                            <div class="service-item" style="height:518px;">
                                 <div class="service-icon">
                                     <i class="fa fa-gavel"></i>
                                 </div>
@@ -289,7 +290,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
-                            <div class="service-item">
+                            <div class="service-item" style="height:518px;">
                                 <div class="service-icon">
                                     <i class="fa fa-globe"></i>
                                 </div>
@@ -338,7 +339,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
-                            <div class="service-item">
+                            <div class="service-item" style="height:518px;">
                                 <div class="service-icon">
                                     <i class="fa fa-gavel"></i>
                                 </div>
@@ -351,11 +352,11 @@
                         </div>
                         <div class="col-lg-4 col-md-6">
                             <div class="service-item">
-                                <div class="service-icon">
+                                <div class="service-icon" >
                                     <i class="fa fa-gavel"></i>
                                 </div>
                                 <h3>Cyber Stalking</h3>
-                                <p>
+                                <p style="height:165px;">
                                     Online stalking is a form of harassment that, which may seem innocent enough, can establish fear in the victim …..
                                 </p>
                                 <a class="btn" href="">Learn More</a>

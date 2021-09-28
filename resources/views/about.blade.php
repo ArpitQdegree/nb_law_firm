@@ -104,7 +104,9 @@
                                 <a href="contact.html" class="nav-item nav-link">CONTACT US</a>
                             </div>
                             <div class="ml-auto">
-                                <a class="btn" href="">Get Appointment</a>
+                                
+                                {{-- <a class="btn" href="contact-us">Got a Query</a> --}}
+                                <a class="btn" href="contact-us">Got a Query</a>
                             </div>
                         </div>
                     </nav>
