@@ -61,8 +61,9 @@
 
     <body>
         <div class="wrapper">
+            @include('header')
             <!-- Top Bar Start -->
-            <div class="top-bar">
+            {{-- <div class="top-bar">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-3">
@@ -80,27 +81,20 @@
                                 </div>
                                 <div class="text">
                                     <h2>011-4587-4391</h2>
-                                    {{-- <p>Call Us For Free Consultation</p> --}}
                                 </div>
 
                                 <div class="text">
                                     <p>nblawfirm@yahoo.com</p>
                                 </div>
-                                {{-- <div class="social">
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                    <a href=""><i class="fab fa-instagram"></i></a>
-                                </div> --}}
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <!-- Top Bar End -->
 
             <!-- Nav Bar Start -->
-            <div class="nav-bar">
+            {{-- <div class="nav-bar">
                 <div class="container-fluid">
                     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
                         <a href="#" class="navbar-brand">MENU</a>
@@ -130,7 +124,7 @@
                         </div>
                     </nav>
                 </div>
-            </div>
+            </div> --}}
             <!-- Nav Bar End -->
 
 
@@ -157,12 +151,6 @@
                         <h2>Get In Touch</h2>
                         <p style="color: black; font-family: 'EB Garamond', serif;">We’d Love to Hear From You, Get In Touch With Us!</p>
                     </div>
-                    {{-- <div class="form">
-                        <input class="form-control" placeholder="Name"><br>
-                        <input class="form-control" placeholder="Email"><br>
-                        <input class="form-control" placeholder="Subject"><br>
-                        <textarea class="form-control" placeholder="Message"></textarea><br>
-                    </div> --}}
 
                     <div class="row">
                         <div class="col-md-6">
@@ -214,61 +202,15 @@
                         </div>
                     </div>
 
-                    {{-- <button type="submit">Send</button> --}}
+
                 </div>
-                {{-- <button class="btn">Submit</button> --}}
+
             </div>
-            <!-- Newsletter End -->
-
-            {{-- <div class="service">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6">
-                                <div class="service-item">
-                                    <div class="service-icon">
-                                        <i class="fa fa-envelope"></i>
-                                    </div>
-                                    <h3>Our Email</h3>
-                                    <p>
-                                        Drop us a line anytime at nblawfirm@yahoo.com, and we’ll get back soon.
-                                    </p>
-                                </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                                <div class="service-item">
-                                    <div class="service-icon">
-                                        <i class="fa fa-globe"></i>
-                                    </div>
-                                    <h3>Contact Us</h3>
-                                    <p>
-                                       Feel free to call us on <br>
-
-                                        ‎011-4587-4391 <br>
-                                        9999221769<br>
-                                    </p>
-                                </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                                <div class="service-item">
-                                    <div class="service-icon">
-                                        <i class="fa fa-map-marker" style="font-size:48px;color:golden"></i>
-                                    </div>
-                                    <h3>Our Address</h3>
-                                    <p>
-                                       Come visit us at <br>
-                                        M-132, First Floor, <br>
-                                        GK-2, Delhi – 110048.
-                                    </p>
-                                </div>
-                        </div>
-                    </div>
-                </div>
-            </div> --}}
 
             <!-- Footer Start -->
-            <div class="footer">
+             @include('layouts.footer')
+
+            {{-- <div class="footer">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 col-lg-4">
@@ -305,8 +247,7 @@
                             <div class="footer-contact">
                                 <h2>Get In Touch</h2>
                                 <p><i class="fa fa-map-marker-alt"></i>M-132, First Floor, GK-2, Delhi – 110048.</p>
-                                {{-- <p><i class="fa fa-phone-alt"></i>+012 345 67890</p>
-                                <p><i class="fa fa-envelope"></i>info@example.com</p> --}}
+
                                 <div class="footer-social">
                                     <a href=""><i class="fab fa-twitter"></i></a>
                                     <a href=""><i class="fab fa-facebook-f"></i></a>
@@ -331,15 +272,13 @@
                 </div>
                 <div class="container copyright">
                     <div class="row">
-                        {{-- <div class="col-md-6">
-                            <p>&copy; <a href="https://htmlcodex.com/law-firm-website-template">HTML Codex</a>, All Right Reserved.</p>
-                        </div> --}}
+
                         <div class="col-md-12">
                             <p>&copy; NB Law 2021<a href="https://htmlcodex.com">All Right Reserved</a></p>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <!-- Footer End -->
 
             <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>

@@ -91,22 +91,22 @@
                                 <a href="/" class="nav-item nav-link active">Home</a>
                                 <a href="about-us" class="nav-item nav-link">About</a>
                                 <div class="nav-item dropdown">
-                                    <a href="/our-services" class="nav-link dropdown-toggle" data-toggle="dropdown">Our Services</a>
+                                    <a href="our-services" class="nav-link dropdown-toggle" data-toggle="dropdown">Our Services</a>
+
                                     <div class="dropdown-menu">
-                                        {{-- <div class="col-md-3"> --}}
                                         <div class="row">
-                                            <div class="col"><a href="#" class="dropdown-item">Civil Suits In Property</a></div>
-                                            <div class="col"><a href="#" class="dropdown-item">Annulment of Marriage</a></div>
-                                            <div class="col"><a href="#" class="dropdown-item">Maintenance & Alimony</a></div>
-                                            <div class="col"><a href="#" class="dropdown-item">NRI Divorce Legal Support</a></div>
-                                            <div class="col"><a href="#" class="dropdown-item">Civil Suits For Partition</a></div>
-                                            <div class="col"><a href="#" class="dropdown-item">Transfer Petition</a></div>
-                                            <div class="col"><a href="#" class="dropdown-item">Will Probation Cases</a></div>
-                                            <div class="col"><a href="#" class="dropdown-item">498A & Allied Criminal</a></div>
-                                            <div class="col"><a href="#" class="dropdown-item">Child Custody and Visitors</a></div>
-                                            <div class="col"><a href="#" class="dropdown-item">Mutual Consent and Contested Divorce</a></div>
-                                            <div class="col"><a href="#" class="dropdown-item">Domestic Violence Cases</a></div>
-                                            <div class="col"><a href="#" class="dropdown-item">Restitution of Conjugal Rights</a></div>
+                                            <div class="col"><a href="services/civil-suits-in-property/" class="dropdown-item">Civil Suits In Property</a></div>
+                                            <div class="col"><a href="services/annulment-of-marriage/" class="dropdown-item">Annulment of Marriage</a></div>
+                                            <div class="col"><a href="services/maintenance-alimony/" class="dropdown-item">Maintenance & Alimony</a></div>
+                                            <div class="col"><a href="services/nri-legal-services/" class="dropdown-item">NRI Divorce Legal Support</a></div>
+                                            <div class="col"><a href="services/civil-suits-for-partition/" class="dropdown-item">Civil Suits For Partition</a></div>
+                                            <div class="col"><a href="services/transfer-petition/" class="dropdown-item">Transfer Petition</a></div>
+                                            <div class="col"><a href="services/will-probation-cases/" class="dropdown-item">Will Probation Cases</a></div>
+                                            <div class="col"><a href="services/498a-allied-criminal-proceedings/" class="dropdown-item">498A & Allied Criminal</a></div>
+                                            <div class="col"><a href="services/child-custody/" class="dropdown-item">Child Custody and Visitors</a></div>
+                                            <div class="col"><a href="services/mutual-consent-divorce-procedure/" class="dropdown-item">Mutual Consent and Contested Divorce</a></div>
+                                            <div class="col"><a href="services/domestic-violence-cases/" class="dropdown-item">Domestic Violence Cases</a></div>
+                                            <div class="col"><a href="services/restitution-of-conjugal-rights/" class="dropdown-item">Restitution of Conjugal Rights</a></div>
                                             {{-- <a href="single.html" class="dropdown-item">Maintenance & Alimony</a> --}}
                                         </div>
                                     </div>

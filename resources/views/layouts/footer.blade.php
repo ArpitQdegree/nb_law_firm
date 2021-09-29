@@ -17,20 +17,20 @@
                         <div class="col-md-6 col-lg-4">
                             <div class="footer-link">
                                 <h2>Services Areas</h2>
-                                <a href="/our-services/">Civil Suits in Property</a>
-                                <a href="/our-services/">Annulment Of Marriage</a>
-                                <a href="/our-services/">Maintenance & Alimony</a>
-                                <a href="/our-services/">Child Custody & Visitors</a>
-                                <a href="/our-services/">Domestic Violence Cases</a>
+                                <a href="services/civil-suits-in-property/">Civil Suits in Property</a>
+                                <a href="services/annulment-of-marriage/">Annulment Of Marriage</a>
+                                <a href="services/maintenance-alimony/">Maintenance & Alimony</a>
+                                <a href="services/child-custody/">Child Custody & Visitors</a>
+                                <a href="services/domestic-violence-cases/">Domestic Violence Cases</a>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4">
                             <div class="footer-link">
                                 <h2>Useful Pages</h2>
                                 <a href="about-us">About Us</a>
-                                <a href="">Our Services</a>
-                                <a href="">Media</a>
-                                <a href="">Disclaimer</a>
+                                <a href="our-services">Our Services</a>
+                                <a href="media">Media</a>
+                                <a href="disclamier">Disclaimer</a>
                                 <a href="">Blog</a>
                                 <a href="contact-us">Contact Us</a>
                             </div>

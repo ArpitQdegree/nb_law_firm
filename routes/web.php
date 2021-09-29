@@ -114,3 +114,7 @@ Route::get('header', function(){
 Route::get('admin/', [AdminHomeController::class,'dashboard']);
 
 Route::get('/add-post',[PostController::class,'addpost'])->name('addpost');
+
+Route::get('/all-post', [PostController::class,'allpost'])->name('allpost');
+
+Route::get('/admin-header', [PostController::class,'adminheader'])->name('adminheader');

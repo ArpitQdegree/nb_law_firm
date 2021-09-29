@@ -36,99 +36,8 @@
 
     <body>
         <div class="wrapper">
-            <!-- Top Bar Start -->
-            <div class="top-bar">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <div class="logo">
-                                <a href="index.html">
-                                    <h1>NB Law Firm</h1>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-9">
-                            <div class="top-bar-right">
-                                <div class="text">
-                                    <h2>8:00 - 9:00</h2>
-                                    <p>Opening Hour Mon - Fri</p>
-                                </div>
-                                <div class="text">
-                                    <h2>011-4587-4391</h2>
-                                    {{-- <p>Call Us For Free Consultation</p> --}}
-                                </div>
-                                <div class="text">
-                                    <p>nblawfirm@yahoo.com</p>
-                                </div>
 
-                                {{-- <div class="social">
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                    <a href=""><i class="fab fa-instagram"></i></a>
-                                </div> --}}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Top Bar End -->
-
-            <!-- Nav Bar Start -->
-            <div class="nav-bar">
-                <div class="container-fluid">
-                    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-                        <a href="#" class="navbar-brand">MENU</a>
-                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-
-                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                            <div class="navbar-nav mr-auto">
-                                <a href="/" class="nav-item nav-link active">Home</a>
-                                <a href="about-us" class="nav-item nav-link">About</a>
-                                <div class="nav-item dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Our Services</a>
-                                    <div class="dropdown-menu">
-                                        {{-- <div class="col-md-3"> --}}
-                                        <div class="row">
-                                            <div class="col"><a href="#" class="dropdown-item">Civil Suits In Property</a></div>
-                                            <div class="col"><a href="#" class="dropdown-item">Annulment of Marriage</a></div>
-                                            <div class="col"><a href="#" class="dropdown-item">Maintenance & Alimony</a></div>
-                                            <div class="col"><a href="#" class="dropdown-item">NRI Divorce Legal Support</a></div>
-                                            <div class="col"><a href="#" class="dropdown-item">Civil Suits For Partition</a></div>
-                                            <div class="col"><a href="#" class="dropdown-item">Transfer Petition</a></div>
-                                            <div class="col"><a href="#" class="dropdown-item">Will Probation Cases</a></div>
-                                            <div class="col"><a href="#" class="dropdown-item">498A & Allied Criminal</a></div>
-                                            <div class="col"><a href="#" class="dropdown-item">Child Custody and Visitors</a></div>
-                                            <div class="col"><a href="#" class="dropdown-item">Mutual Consent and Contested Divorce</a></div>
-                                            <div class="col"><a href="#" class="dropdown-item">Domestic Violence Cases</a></div>
-                                            <div class="col"><a href="#" class="dropdown-item">Restitution of Conjugal Rights</a></div>
-                                            {{-- <a href="single.html" class="dropdown-item">Maintenance & Alimony</a> --}}
-                                        </div>
-                                    </div>
-                                </div>
-                                {{-- <a href="service.html" class="nav-item nav-link">Our Services</a> --}}
-                                <a href="team.html" class="nav-item nav-link">Media</a>
-                                <a href="portfolio.html" class="nav-item nav-link">Disclamier</a>
-                                <div class="nav-item dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
-                                    <div class="dropdown-menu">
-                                        <a href="blog.html" class="dropdown-item">Blog Page</a>
-                                        <a href="single.html" class="dropdown-item">Single Page</a>
-                                    </div>
-                                </div>
-                                <a href="contact.html" class="nav-item nav-link">Contact Us</a>
-                            </div>
-                            <div class="ml-auto">
-                                <i class="fa fa-search" aria-hidden="true"></i>
-                                <a class="btn" href="contact-us">Got a Query</a>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-            <!-- Nav Bar End -->
+            @include('header')
 
             <!-- Page Header Start -->
             <div class="page-header">
@@ -146,7 +55,7 @@
             </div>
             <!-- Page Header End -->
 
-            {{-- @include('layouts.header') --}}
+            {{-- @include('header') --}}
             <!-- Service Start -->
             <div class="service">
                 <div class="container">
@@ -164,7 +73,7 @@
                                 <p>
                                     When a married couple gets a divorce, the court may award “alimony” or spousal support to one of the former spouses
                                 </p>
-                                <a class="btn" href="">Learn More</a>
+                                <a class="btn" href="services/maintenance-alimony/">Learn More</a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
@@ -176,7 +85,7 @@
                                 <p>
                                     Domestic violence is any kind of behavior that a person uses, or threatens to use, to control an intimate partner….
                                 </p>
-                                <a class="btn" href="">Learn More</a>
+                                <a class="btn" href="services/domestic-violence-cases/">Learn More</a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
@@ -188,7 +97,7 @@
                                 <p>
                                     Under Indian law, maximum importance is given to the best interests of the child …….
                                 </p>
-                                <a class="btn" href="">Learn More</a>
+                                <a class="btn" href="services/child-custody/">Learn More</a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
@@ -200,7 +109,7 @@
                                 <p>
                                     The subject of foreign divorce in India sounds quite complicated and people are hardly aware about the legalities involved with it ….. ….
                                 </p>
-                                <a class="btn" href="">Learn More</a>
+                                <a class="btn" href="services/nri-legal-services/">Learn More</a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
@@ -212,7 +121,7 @@
                                 <p>
                                     Mutual Consent Divorce is the basic way of coming out of the marriage and dissolving it legally. Important requirement…..
                                 </p>
-                                <a class="btn" href="">Learn More</a>
+                                <a class="btn" href="services/mutual-consent-divorce-procedure/">Learn More</a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
@@ -224,7 +133,7 @@
                                 <p>
                                     The section was enacted to combat the menace of dowry deaths. It was introduced in the code by the Criminal Law …..
                                 </p>
-                                <a class="btn" href="">Learn More</a>
+                                <a class="btn" href="services/498a-allied-criminal-proceedings/">Learn More</a>
                             </div>
                         </div>
 
@@ -237,7 +146,7 @@
                                 <p>
                                     One significant category of small claims disputes involves property damage cases.…..
                                 </p>
-                                <a class="btn" href="">Learn More</a>
+                                <a class="btn" href="services/civil-suits-in-property/">Learn More</a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
@@ -249,7 +158,7 @@
                                 <p>
                                     Probation in criminal law is a period of supervision over an offender, ordered by the court as an alternative …..
                                 </p>
-                                <a class="btn" href="">Learn More</a>
+                                <a class="btn" href="services/will-probation-cases/">Learn More</a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
@@ -261,7 +170,7 @@
                                 <p>
                                     Annulment is a legal procedure for declaring a marriage null and void. With the exception of bigamy…..
                                 </p>
-                                <a class="btn" href="">Learn More</a>
+                                <a class="btn" href="services/annulment-of-marriage/">Learn More</a>
                             </div>
                         </div>
 
@@ -274,7 +183,7 @@
                                 <p>
                                     All families at some time experience difficulties and stress. Family disputes can be about almost anything…..
                                 </p>
-                                <a class="btn" href="">Learn More</a>
+                                <a class="btn" href="services/counseling-mediation/">Learn More</a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
@@ -286,7 +195,7 @@
                                 <p>
                                     In the majority of cases, this provision is invoked in married matters and frequently at the instance….
                                 </p>
-                                <a class="btn" href="">Learn More</a>
+                                <a class="btn" href="services/transfer-petition/">Learn More</a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
@@ -298,34 +207,10 @@
                                 <p>
                                     Partition means division of property between two or more co-owners. Partition of property in India takes….
                                 </p>
-                                <a class="btn" href="">Learn More</a>
+                                <a class="btn" href="services/civil-suits-for-partition/">Learn More</a>
                             </div>
                         </div>
 
-                        {{-- <div class="col-lg-4 col-md-6">
-                            <div class="service-item">
-                                <div class="service-icon">
-                                    <i class="fa fa-graduation-cap"></i>
-                                </div>
-                                <h3>Will probation cases</h3>
-                                <p>
-                                    Probation in criminal law is a period of supervision over an offender, ordered by the court as an alternative …..
-                                </p>
-                                <a class="btn" href="">Learn More</a>
-                            </div>
-                        </div> --}}
-                        {{-- <div class="col-lg-4 col-md-6">
-                            <div class="service-item">
-                                <div class="service-icon">
-                                    <i class="fa fa-globe"></i>
-                                </div>
-                                <h3>Annulment of marriages</h3>
-                                <p>
-                                    Annulment is a legal procedure for declaring a marriage null and void. With the exception of bigamy…..
-                                </p>
-                                <a class="btn" href="">Learn More</a>
-                            </div>
-                        </div> --}}
                         <div class="col-lg-4 col-md-6">
                             <div class="service-item">
                                 <div class="service-icon">
@@ -335,7 +220,7 @@
                                 <p>
                                     Marriage is administered by Personal laws which administer the terms like divorce, maintenance, custody and restitution …..
                                 </p>
-                                <a class="btn" href="">Learn More</a>
+                                <a class="btn" href="services/restitution-of-conjugal-rights/">Learn More</a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
@@ -429,7 +314,8 @@
 
 
             <!-- Footer Start -->
-            <div class="footer">
+            @include('layouts.footer')
+            {{-- <div class="footer">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 col-lg-4">
@@ -447,8 +333,8 @@
                         <div class="col-md-6 col-lg-4">
                             <div class="footer-link">
                                 <h2>Services Areas</h2>
-                                <a href="">Civil Suits in Property</a>
-                                <a href="">Annulment Of Marriage</a>
+                                <a href="services/civil-suits-in-property/">Civil Suits in Property</a>
+                                <a href="services/annulment-of-marriage/">Annulment Of Marriage</a>
                                 <a href="">Maintenance & Alimony</a>
                                 <a href="">Child Custody & Visitors</a>
                                 <a href="">Domestic Violence Cases</a>
@@ -458,9 +344,9 @@
                             <div class="footer-link">
                                 <h2>Useful Pages</h2>
                                 <a href="about-us">About Us</a>
-                                <a href="">Our Services</a>
+                                <a href="our-services">Our Services</a>
                                 <a href="">Media</a>
-                                <a href="">Disclaimer</a>
+                                <a href="disclamier">Disclaimer</a>
                                 <a href="">Blog</a>
                                 <a href="">Contact Us</a>
                             </div>
@@ -499,12 +385,9 @@
                         <div class="col-md-12">
                             <p>&copy; <a href="https://htmlcodex.com/law-firm-website-template">NBLaw</a>, All Right Reserved.</p>
                         </div>
-                        {{-- <div class="col-md-6">
-                            <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
-                        </div> --}}
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <!-- Footer End -->
 
             <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>

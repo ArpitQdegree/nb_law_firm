@@ -60,105 +60,9 @@
     </style>
 
     <body>
+        @include('header')
+
         <div class="wrapper">
-            <!-- Top Bar Start -->
-            <div class="top-bar">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <div class="logo">
-                                <a href="">
-                                    <h1>NB Law Firm</h1>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-9">
-                            <div class="top-bar-right">
-                                <div class="text">
-                                    <h2>8:00 - 9:00</h2>
-                                    <p>Opening Hour Mon - Fri</p>
-                                </div>
-                                <div class="text">
-                                    {{-- <i class="fa fa-phone" aria-hidden="true"></i> --}}
-                                    <h2>011-4587-4391</h2>
-                                    {{-- <p>Call Us For Free Consultation</p> --}}
-                                </div>
-                                <div class="text">
-                                    <p>nblawfirm@yahoo.com</p>
-                                </div>
-
-                                {{-- <div class="social">
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                    <a href=""><i class="fab fa-instagram"></i></a>
-                                </div> --}}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Top Bar End -->
-
-            <!-- Nav Bar Start -->
-            <div class="nav-bar">
-                <div class="container-fluid">
-                    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-                        <a href="#" class="navbar-brand">MENU</a>
-                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-
-                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                            <div class="navbar-nav mr-auto">
-                                <a href="/" class="nav-item nav-link active">Home</a>
-                                <a href="about-us" class="nav-item nav-link">About</a>
-                                <div class="nav-item dropdown">
-                                    <a href="/our-services" class="nav-link dropdown-toggle" data-toggle="dropdown">Our Services</a>
-                                    <div class="dropdown-menu">
-                                        {{-- <div class="col-md-3"> --}}
-                                        <div class="row">
-                                            <div class="col"><a href="#" class="dropdown-item">Civil Suits In Property</a></div>
-                                            <div class="col"><a href="#" class="dropdown-item">Annulment of Marriage</a></div>
-                                            <div class="col"><a href="#" class="dropdown-item">Maintenance & Alimony</a></div>
-                                            <div class="col"><a href="#" class="dropdown-item">NRI Divorce Legal Support</a></div>
-                                            <div class="col"><a href="#" class="dropdown-item">Civil Suits For Partition</a></div>
-                                            <div class="col"><a href="#" class="dropdown-item">Transfer Petition</a></div>
-                                            <div class="col"><a href="#" class="dropdown-item">Will Probation Cases</a></div>
-                                            <div class="col"><a href="#" class="dropdown-item">498A & Allied Criminal</a></div>
-                                            <div class="col"><a href="#" class="dropdown-item">Child Custody and Visitors</a></div>
-                                            <div class="col"><a href="#" class="dropdown-item">Mutual Consent and Contested Divorce</a></div>
-                                            <div class="col"><a href="#" class="dropdown-item">Domestic Violence Cases</a></div>
-                                            <div class="col"><a href="#" class="dropdown-item">Restitution of Conjugal Rights</a></div>
-                                            {{-- <a href="single.html" class="dropdown-item">Maintenance & Alimony</a> --}}
-                                        </div>
-                                    </div>
-                                </div>
-                                {{-- <a href="service.html" class="nav-item nav-link">Our Services</a> --}}
-                                <a href="/media" class="nav-item nav-link">Media</a>
-                                <a href="/disclamier" class="nav-item nav-link">Disclamier</a>
-                                <div class="nav-item dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
-                                    <div class="dropdown-menu">
-                                        <a href="blog.html" class="dropdown-item">Blog Page</a>
-                                        <a href="single.html" class="dropdown-item">Single Page</a>
-                                    </div>
-                                </div>
-                                <a href="contact-us" class="nav-item nav-link">Contact Us</a>
-                            </div>
-                            <div class="ml-auto">
-                                <i class="fa fa-search" aria-hidden="true"></i>
-                                <a class="btn" href="contact-us">Got a Query</a>
-
-                                {{-- <a class="btn" href="https://htmlcodex.com/law-firm-website-template">Got a Query</a> --}}
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-            <!-- Nav Bar End -->
-
-
             <!-- Carousel Start -->
             <div id="carousel" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -171,8 +75,6 @@
                         <img src="image/carousel-1.jpg" alt="Carousel Image">
                         <div class="carousel-caption">
                             <h1 class="animated fadeInLeft">We fight for your justice</h1>
-                            {{-- <p class="animated fadeInRight">Lorem ipsum dolor sit amet elit. Mauris odio mauris...</p> --}}
-                            {{-- <a class="btn animated fadeInUp" href="#">Get free consultation</a> --}}
                         </div>
                     </div>
 
@@ -180,8 +82,6 @@
                         <img src="image/carousel-2.jpg" alt="Carousel Image">
                         <div class="carousel-caption">
                             <h1 class="animated fadeInLeft">We prepared to oppose for you</h1>
-                            {{-- <p class="animated fadeInRight">Lorem ipsum dolor sit amet elit. Mauris odio mauris...</p> --}}
-                            {{-- <a class="btn animated fadeInUp" href="#">Get free consultation</a> --}}
                         </div>
                     </div>
 
@@ -189,8 +89,6 @@
                         <img src="image/carousel-3.jpg" alt="Carousel Image">
                         <div class="carousel-caption">
                             <h1 class="animated fadeInLeft">We fight for your privilege</h1>
-                            {{-- <p class="animated fadeInRight">Lorem ipsum dolor sit amet elit. Mauris odio mauris...</p> --}}
-                            {{-- <a class="btn animated fadeInUp" href="#">Get free consultation</a> --}}
                         </div>
                     </div>
                 </div>
@@ -399,126 +297,6 @@
             </div>
             <!-- Service End -->
 
-            {{-- service explanations starts here --}}
-            {{-- <div class="service">
-                <div class="container">
-                    <div class="section-header">
-                        <h2>Our Services</h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6">
-                            <div class="service-item">
-                                <div class="service-icon">
-                                    <i class="fa fa-landmark"></i>
-                                </div>
-                                <h3>Maintenance & alimony</h3>
-                                <p>
-                                    When a married couple gets a divorce, the court may award “alimony” or spousal support to one of the former spouses
-                                </p>
-                                <a class="btn" href="">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="service-item">
-                                <div class="service-icon">
-                                    <i class="fa fa-users"></i>
-                                </div>
-                                <h3>Domestic Violence Cases</h3>
-                                <p>
-                                    Domestic violence is any kind of behavior that a person uses, or threatens to use, to control an intimate partner….
-                                </p>
-                                <a class="btn" href="">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="service-item">
-                                <div class="service-icon">
-                                    <i class="fa fa-hand-holding-usd"></i>
-                                </div>
-                                <h3>Child Custody and Visitation</h3>
-                                <p>
-                                    Under Indian law, maximum importance is given to the best interests of the child …….
-                                </p>
-                                <a class="btn" href="">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="service-item">
-                                <div class="service-icon">
-                                    <i class="fa fa-graduation-cap"></i>
-                                </div>
-                                <h3>NRI Divorce Legal Support</h3>
-                                <p>
-                                    The subject of foreign divorce in India sounds quite complicated and people are hardly usually, these cases ….. ….
-                                </p>
-                                <a class="btn" href="">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="service-item">
-                                <div class="service-icon">
-                                    <i class="fa fa-gavel"></i>
-                                </div>
-                                <h3>Mutual Consent and Contested Divorce</h3>
-                                <p>
-                                    Mutual Consent Divorce is the basic way of coming out of the marriage and dissolving it legally. Important requirement…..
-                                </p>
-                                <a class="btn" href="">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="service-item">
-                                <div class="service-icon">
-                                    <i class="fa fa-globe"></i>
-                                </div>
-                                <h3>498a and Allied Criminal Proceedings</h3>
-                                <p>
-                                    The section was enacted to combat the menace of dowry deaths. It was introduced in the code by the Criminal Law …..
-                                </p>
-                                <a class="btn" href="">Learn More</a>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="service-item">
-                                <div class="service-icon">
-                                    <i class="fa fa-graduation-cap"></i>
-                                </div>
-                                <h3>Civil Suits in Property</h3>
-                                <p>
-                                    One significant category of small claims disputes involves property damage cases.…..
-                                </p>
-                                <a class="btn" href="">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="service-item">
-                                <div class="service-icon">
-                                    <i class="fa fa-gavel"></i>
-                                </div>
-                                <h3>Will probation cases</h3>
-                                <p>
-                                    Probation in criminal law is a period of supervision over an offender, ordered by the court as an alternative …..
-                                </p>
-                                <a class="btn" href="">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="service-item">
-                                <div class="service-icon">
-                                    <i class="fa fa-globe"></i>
-                                </div>
-                                <h3>Annulment of marriages</h3>
-                                <p>
-                                    Annulment is a legal procedure for declaring a marriage null and void. With the exception of bigamy…..
-                                </p>
-                                <a class="btn" href="">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> --}}
-            {{-- services explanations end here --}}
 
 
             <div class="service">
@@ -663,87 +441,6 @@
                 </div>
             </div>
             <!-- Feature End -->
-
-
-            <!-- Team Start -->
-            {{-- <div class="team">
-                <div class="container">
-                    <div class="section-header">
-                        <h2>Meet Our Expert Attorneys</h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6">
-                            <div class="team-item">
-                                <div class="team-img">
-                                    <img src="img/team-1.jpg" alt="Team Image">
-                                </div>
-                                <div class="team-text">
-                                    <h2>Adam Phillips</h2>
-                                    <p>Business Consultant</p>
-                                    <div class="team-social">
-                                        <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
-                                        <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
-                                        <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
-                                        <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="team-item">
-                                <div class="team-img">
-                                    <img src="img/team-2.jpg" alt="Team Image">
-                                </div>
-                                <div class="team-text">
-                                    <h2>Dylan Adams</h2>
-                                    <p>Criminal Consultant</p>
-                                    <div class="team-social">
-                                        <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
-                                        <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
-                                        <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
-                                        <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="team-item">
-                                <div class="team-img">
-                                    <img src="img/team-3.jpg" alt="Team Image">
-                                </div>
-                                <div class="team-text">
-                                    <h2>Gloria Edwards</h2>
-                                    <p>Divorce Consultant</p>
-                                    <div class="team-social">
-                                        <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
-                                        <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
-                                        <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
-                                        <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="team-item">
-                                <div class="team-img">
-                                    <img src="img/team-4.jpg" alt="Team Image">
-                                </div>
-                                <div class="team-text">
-                                    <h2>Josh Dunn</h2>
-                                    <p>Immigration Consultant</p>
-                                    <div class="team-social">
-                                        <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
-                                        <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
-                                        <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
-                                        <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> --}}
-            <!-- Team End -->
 
 
             <!-- FAQs Start -->
@@ -1096,7 +793,9 @@
 
 
             <!-- Footer Start -->
-            <div class="footer">
+            @include('layouts.footer')
+
+            {{-- <div class="footer">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 col-lg-4">
@@ -1166,12 +865,9 @@
                         <div class="col-md-12">
                             <p>&copy; <a href="https://htmlcodex.com/law-firm-website-template">NBLaw</a>, All Right Reserved.</p>
                         </div>
-                        {{-- <div class="col-md-6">
-                            <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
-                        </div> --}}
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <!-- Footer End -->
 
             <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>

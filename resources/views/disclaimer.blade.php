@@ -50,7 +50,8 @@
     <body>
         <div class="wrapper">
             <!-- Top Bar Start -->
-            <div class="top-bar">
+            @include('header')
+            {{-- <div class="top-bar">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-3">
@@ -67,29 +68,21 @@
                                     <p>Opening Hour Mon - Fri</p>
                                 </div>
                                 <div class="text">
-                                    {{-- <i class="fa fa-phone" aria-hidden="true"></i> --}}
                                     <h2>011-4587-4391</h2>
-                                    {{-- <p>Call Us For Free Consultation</p> --}}
+
                                 </div>
                                 <div class="text">
                                     <p>nblawfirm@yahoo.com</p>
                                 </div>
-
-                                {{-- <div class="social">
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                    <a href=""><i class="fab fa-instagram"></i></a>
-                                </div> --}}
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <!-- Top Bar End -->
 
             <!-- Nav Bar Start -->
-            <div class="nav-bar">
+            {{-- <div class="nav-bar">
                 <div class="container-fluid">
                     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
                         <a href="#" class="navbar-brand">MENU</a>
@@ -104,7 +97,6 @@
                                 <div class="nav-item dropdown">
                                     <a href="/our-services" class="nav-link dropdown-toggle" data-toggle="dropdown">Our Services</a>
                                     <div class="dropdown-menu">
-                                        {{-- <div class="col-md-3"> --}}
                                         <div class="row">
                                             <div class="col"><a href="#" class="dropdown-item">Civil Suits In Property</a></div>
                                             <div class="col"><a href="#" class="dropdown-item">Annulment of Marriage</a></div>
@@ -118,11 +110,10 @@
                                             <div class="col"><a href="#" class="dropdown-item">Mutual Consent and Contested Divorce</a></div>
                                             <div class="col"><a href="#" class="dropdown-item">Domestic Violence Cases</a></div>
                                             <div class="col"><a href="#" class="dropdown-item">Restitution of Conjugal Rights</a></div>
-                                            {{-- <a href="single.html" class="dropdown-item">Maintenance & Alimony</a> --}}
                                         </div>
                                     </div>
                                 </div>
-                                {{-- <a href="service.html" class="nav-item nav-link">Our Services</a> --}}
+
                                 <a href="team.html" class="nav-item nav-link">Media</a>
                                 <a href="portfolio.html" class="nav-item nav-link">Disclamier</a>
                                 <div class="nav-item dropdown">
@@ -141,7 +132,7 @@
                         </div>
                     </nav>
                 </div>
-            </div>
+            </div> --}}
             <!-- Nav Bar End -->
 
              <!-- Page Header Start -->
@@ -234,8 +225,11 @@
             </div>
             {{-- service page ends here --}}
 
-              <!-- Footer Start -->
-            <div class="footer">
+            <!-- Footer Start -->
+            @include('layouts.footer')
+
+            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+            {{-- <div class="footer">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 col-lg-4">
@@ -305,10 +299,7 @@
                         <div class="col-md-12">
                             <p>&copy; <a href="https://htmlcodex.com/law-firm-website-template">NBLaw</a>, All Right Reserved.</p>
                         </div>
-                        {{-- <div class="col-md-6">
-                            <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
-                        </div> --}}
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <!-- Footer End -->
