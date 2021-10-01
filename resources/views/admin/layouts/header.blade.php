@@ -6,16 +6,16 @@
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="{{ asset('plugins/fontawesome-free/css/all.min.css')}}">
   <!-- Theme style -->
-  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="{{ asset('dist/css/adminlte.min.css')}}">
   <!-- summernote -->
-  <link rel="stylesheet" href="../../plugins/summernote/summernote-bs4.min.css">
+  <link rel="stylesheet" href="{{ asset('plugins/summernote/summernote-bs4.min.css')}}">
   <!-- CodeMirror -->
-  <link rel="stylesheet" href="../../plugins/codemirror/codemirror.css">
-  <link rel="stylesheet" href="../../plugins/codemirror/theme/monokai.css">
+  <link rel="stylesheet" href="{{ asset('plugins/codemirror/codemirror.css')}}">
+  <link rel="stylesheet" href="{{ asset('lugins/codemirror/theme/monokai.css')}}">
   <!-- SimpleMDE -->
-  <link rel="stylesheet" href="../../plugins/simplemde/simplemde.min.css">
+  <link rel="stylesheet" href="{{ asset('plugins/simplemde/simplemde.min.css')}}">
 </head>
 <!-- Navbar -->
   <nav class="main-header navbar navbar-expand navbar-white navbar-light">

@@ -80,7 +80,7 @@
                                 <p>
                                     The firm offers legal aid and advice in cases relating to personal injury, family disputes, divorce, violence, child custody, dowry harassment and much more for our clients.
                                 </p>
-                                <a class="btn" href="">Learn More</a>
+                                {{-- <a class="btn" href="">Learn More</a> --}}
                             </div>
                         </div>
                     </div>
@@ -88,6 +88,25 @@
             </div>
             <!-- About End -->
 
+              <div class="team">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Why Choose Us</h2>
+
+                        <p class="text">
+                            The firm provides an elite team of experts having specialization in personal laws and experience of dealing with cases of utmost sensitivity. The firm ensures in dealing every case with dedication, commitment and great emphasis is laid upon being responsive and responsible to the client while delivering with the highest standards of accuracy.
+                        </p>
+                    </div>
+
+                    <div class="section-header">
+                        <h2>Why Work With Us</h2>
+
+                        <p class="text">
+                            We understand the needs and requirements of every client and we are able to satisfy the clients by offering the expert solutions at NB Law Firm. If you need reliable and trusted services with top professionals, you can work with us without thinking twice.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
             <!-- Timeline Start -->
             <div class="timeline">
@@ -147,6 +166,8 @@
             <!-- Timeline End -->
 
 
+
+            {{-- mission content starts from here --}}
             <div class="team">
                 <div class="container">
                     <div class="section-header">
@@ -184,6 +205,7 @@
                     </div>
                 </div>
             </div>
+            {{-- mission content ends here --}}
 
 
             <div class="service">

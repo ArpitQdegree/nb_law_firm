@@ -304,7 +304,7 @@
                     <div class="section-header">
                         <h2>NB Law Corporate Services</h2>
                     </div>
-                    <p>For any organization managing business affairs in the complex legal environment is a task seamlessly handled by the experts at the NBLaw Firm. The Firm houses a team having a cumulative experience of over twenty years in resolving intricate issues and challenges with a bespoke strategy and holistic approach. The Firm advises, guides and represents various domestic and international organizations across various sectors like healthcare, automobiles, technology, energy, real estate, consumer goods, pharmaceuticals etc, in the following matters</p>
+                    <p style="text-align: justify;">For any organization managing business affairs in the complex legal environment is a task seamlessly handled by the experts at the NBLaw Firm. The Firm houses a team having a cumulative experience of over twenty years in resolving intricate issues and challenges with a bespoke strategy and holistic approach. The Firm advises, guides and represents various domestic and international organizations across various sectors like healthcare, automobiles, technology, energy, real estate, consumer goods, pharmaceuticals etc, in the following matters</p>
                     <div class="row">
                         <div class="col-lg-4 col-md-6">
                                 <div class="service-item">

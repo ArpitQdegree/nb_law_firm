@@ -117,4 +117,13 @@ Route::get('/add-post',[PostController::class,'addpost'])->name('addpost');
 
 Route::get('/all-post', [PostController::class,'allpost'])->name('allpost');
 
+#below route added by me to save data in DB
+Route::get('/save', [PostController::class, 'save']);
+
+
+
+
 Route::get('/admin-header', [PostController::class,'adminheader'])->name('adminheader');
+
+//slug route added from here
+// Route::get('pages/check_slug', [PostController::class,'check_slug'])->name('pages.check_slug');

@@ -34,6 +34,27 @@
             font-weight: 800;
         }
 
+
+    /* .search-hover {
+        content: "\f095";
+        border: 1px solid #ccc;
+        outline: none;
+        background-size: 22px;
+        background-position: 13px;
+        border-radius: 10px;
+        width: 50px;
+        height: 50px;
+        padding: 25px;
+        transition: all 0.5s;
+    }
+
+    .search-hover:hover {
+        content: "\f095";
+    width: 300px;
+    padding-left: 50px;
+    } */
+
+
     </style>
 
     <body>
@@ -134,7 +155,6 @@
             </div>
             <!-- Nav Bar End -->
         </div>
-
          <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>

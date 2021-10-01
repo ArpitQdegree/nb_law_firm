@@ -195,7 +195,7 @@
                                         <textarea class="form-control" placeholder="Message*" required="required" ></textarea>
                                     </div>
                                     <div>
-                                        <button class="btn" type="submit" href="">Send Message</button>
+                                        <button class="btn" type="submit" href="" style="margin-top:290px;">Send Message</button>
                                     </div>
                                 </form>
                             </div>
