@@ -26,7 +26,9 @@
 
     @include('admin.layouts.header')
 
-
+    <div class="preloader flex-column justify-content-center align-items-center">
+        <img class="animation__shake" src="dist/img/Logo1.png" alt="NBLawFirm" height="60" width="60">
+    </div>
 
     <div class="content-wrapper">
         <section class="content-header">

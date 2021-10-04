@@ -6,8 +6,14 @@
 @section("title"," NB Law Firm | Admin Dashboard")
 
 @section("content")
+
+
+{{-- @include('admin.layouts.left_sidebar') --}}
     <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
+    <div class="preloader flex-column justify-content-center align-items-center">
+        <img class="animation__shake" src="dist/img/Logo1.png" alt="NBLawFirm" height="60" width="60">
+    </div>
     <!-- Content Header (Page header) -->
     <div class="content-header">
       <div class="container-fluid">
@@ -17,7 +23,7 @@
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="/admin">Home</a></li>
               <li class="breadcrumb-item active">Dashboard</li>
             </ol>
           </div><!-- /.col -->

@@ -21,51 +21,16 @@
 }
 </style>
 
+
+
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
-  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="../../index3.html" class="nav-link">Home</a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Contact</a>
-      </li>
-    </ul>
 
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
-          <i class="fas fa-search"></i>
-        </a>
-        <div class="navbar-search-block">
-          <form class="form-inline">
-            <div class="input-group input-group-sm">
-              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
-              <div class="input-group-append">
-                <button class="btn btn-navbar" type="submit">
-                  <i class="fas fa-search"></i>
-                </button>
-                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
-                  <i class="fas fa-times"></i>
-                </button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </li>
+    @include('admin.layouts.header')
 
-      <li class="nav-item">
-        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
-          <i class="fas fa-expand-arrows-alt"></i>
-        </a>
-      </li>
-    </ul>
-  </nav>
-  <!-- /.navbar -->
+    <div class="preloader flex-column justify-content-center align-items-center">
+        <img class="animation__shake" src="dist/img/Logo1.png" alt="NBLawFirm" height="60" width="60">
+    </div>
 
   @include('admin.layouts.left_sidebar')
 
@@ -78,7 +43,7 @@
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="">Home</a></li>
               <li class="breadcrumb-item active">Text Editors</li>
             </ol>
           </div>
@@ -98,11 +63,6 @@
             </div>
 
 
-            {{-- @if($errors->any())
-                @foreach ($errors->all() as $err)
-                    <li style="color: red;">{{$title}}</li>
-                @endforeach
-            @endif --}}
 
             @if(session()->has("message"))
                 <div class="alert alert-success">
@@ -110,6 +70,7 @@
                 </div>
             @endif
 
+            {{-- uncomment this one --}}
             @if(count($errors) > 0)
                 <div class="alert alert-danger">
                     @foreach($errors->all() as $error)
@@ -117,7 +78,9 @@
                     @endforeach
                 </div>
             @endif
-
+            <form method="post" id="camp" action="{{ url('add-post-data') }}" autocomplete="off">
+            @csrf
+            @method('post')
             <div class="mb-3" style="margin-left:10px; margin-top:10px; margin-right:7px;">
                 <label for="title" class="form-label">Title</label>
                 {{-- <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Place Title Here"> --}}
@@ -126,7 +89,7 @@
 
             <div class="mb-3" style="margin-left:10px; margin-top:10px; margin-right:7px;">
                 <label for="exampleFormControlInput1" class="form-label">Slug/Url</label>
-                <input type="text" class="form-control" id="slug" name="slug" disabled>
+                <input type="text" class="form-control" id="slug" name="slug" placeholder="slug" disabled>
                 {{-- <input type="text" class="form-control" id="slug" name="slug" disabled> --}}
             </div>
 
@@ -136,7 +99,6 @@
             </div>
 
             <div class="card-body">
-
               <textarea id="summernote">
                 Place <u>text</u> <strong>here</strong>
               </textarea>
@@ -160,6 +122,8 @@
                 </div>
 
             </div>
+
+            </form>
 
             {{-- <div>
                 <div class="ml-2 mb-2 mr-4">

@@ -114,14 +114,12 @@ Route::get('header', function(){
 Route::get('admin/', [AdminHomeController::class,'dashboard']);
 
 Route::get('/add-post',[PostController::class,'addpost'])->name('addpost');
+Route::post('/add-post-data',[PostController::class,'addpostData'])->name('addpostData');
 
 Route::get('/all-post', [PostController::class,'allpost'])->name('allpost');
 
 #below route added by me to save data in DB
 Route::get('/save', [PostController::class, 'save']);
-
-
-
 
 Route::get('/admin-header', [PostController::class,'adminheader'])->name('adminheader');
 
