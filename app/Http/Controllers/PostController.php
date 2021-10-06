@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Models\Post;
 use Illuminate\Support\Facades\Validator;
+use DB;
 
 // use Illuminate\Support\Str;
 
@@ -16,7 +17,16 @@ class PostController extends Controller
     // }
 
     public function allpost(){
-        return view('admin.views.allpost');
+
+        $posts = DB::table('posts')
+                    ->select('id','title','body', 'status')
+                    ->get();
+
+        // print_r($posts);
+        // die();
+
+        // return view('admin.views.allpost');
+        return view('admin.views.allpost',['posts' => $posts]);
     }
 
 
@@ -42,17 +52,10 @@ class PostController extends Controller
         return redirect('all-post')->withStatus(__('new post added successfully!'));
     }
 
-
     #below functionality added by me
     public function addpost(Request $request){
 
          return view('admin.views.addpost');
-
-
-        // echo "hello";
-        // die(); #comming under this
-
-
     }
 
 

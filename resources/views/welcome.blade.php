@@ -72,21 +72,24 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="image/carousel-1.jpg" alt="Carousel Image">
+                        {{-- <img src="image/carousel-1.jpg" alt="Carousel Image"> --}}
+                        <img src="image/full.jpg" alt="Carousel Image">
                         <div class="carousel-caption">
                             <h1 class="animated fadeInLeft">We fight for your justice</h1>
                         </div>
                     </div>
 
                     <div class="carousel-item">
-                        <img src="image/carousel-2.jpg" alt="Carousel Image">
+                        {{-- <img src="image/carousel-2.jpg" alt="Carousel Image"> --}}
+                        <img src="image/gavel.jpg" alt="Carousel Image">
                         <div class="carousel-caption">
                             <h1 class="animated fadeInLeft">We prepared to oppose for you</h1>
                         </div>
                     </div>
 
                     <div class="carousel-item">
-                        <img src="image/carousel-3.jpg" alt="Carousel Image">
+                        {{-- <img src="image/carousel-3.jpg" alt="Carousel Image"> --}}
+                        <img src="image/lady-Justice-Statue.jpg" alt="Carousel Image">
                         <div class="carousel-caption">
                             <h1 class="animated fadeInLeft">We fight for your privilege</h1>
                         </div>
@@ -518,7 +521,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <a class="btn" href="">Ask more</a>
+                            <a class="btn" href="/contact-us">Ask more</a>
                         </div>
                     </div>
                 </div>

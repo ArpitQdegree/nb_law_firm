@@ -51,7 +51,8 @@ a:focus {
     position: relative;
     margin: 0 auto;
     background: #ffffff;
-    max-width: 1455px;
+    max-width: 1425px;
+    overflow: hidden;
 }
 
 .dropdown-menu .row .col a:hover {
@@ -95,7 +96,7 @@ a:focus {
 
 .top-bar {
     position: relative;
-    height: 90px;
+    height: 78px;
     background: #000000;
 }
 

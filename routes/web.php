@@ -103,6 +103,10 @@ Route::get('contact-us', function(){
     return view('contact');
 });
 
+Route::get('blog/', function(){
+    return view('blog');
+});
+
 Route::get('header', function(){
     return view('header');
 });
