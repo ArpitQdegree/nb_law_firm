@@ -10,8 +10,6 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="{{ asset('plugins/fontawesome-free/css/all.min.css') }}">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="{{ asset('dist/css/adminlte.min.css') }}">
 
   <!-- DataTables -->
   <link rel="stylesheet" href="{{ asset('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css')}}">
@@ -19,7 +17,10 @@
   <link rel="stylesheet" href="{{ asset('plugins/datatables-buttons/css/buttons.bootstrap4.min.css')}}">
   <!-- Till here DataTables -->
 
+  <!-- Theme style -->
+  <link rel="stylesheet" href="{{ asset('dist/css/adminlte.min.css') }}">
 </head>
+
 <body class="hold-transition sidebar-mini">
     <!-- Site wrapper -->
     <div class="wrapper">
@@ -58,9 +59,6 @@
                         <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
                         <i class="fas fa-minus"></i>
                         </button>
-                        {{-- <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
-                        <i class="fas fa-times"></i>
-                        </button> --}}
                     </div>
                 </div>
 
@@ -71,7 +69,6 @@
                             <tr>
                                 <th style="width: 1%">
                                     Sr.No.
-                                    {{-- id --}}
                                 </th>
                                 <th style="width: 20%">
                                     Title
@@ -84,12 +81,9 @@
                                 <th style="width: 8%" class="text-center">
                                     Status
                                 </th>
-                                {{-- <th style="width: 20%">
-                                </th> --}}
                             </tr>
                         </thead>
                         <tbody>
-
                             <tr>
                                 <td>
                                     @foreach ($posts as $posts => $data)
@@ -105,13 +99,12 @@
                                                     </i>
                                                     View
                                                 </a>
-                                                <br>
-                                                <a class="btn btn-info btn-sm" href="#">
+                                                {{-- <a class="btn btn-info btn-sm" href="/post-edit"> --}}
+                                                <a class="btn btn-info btn-sm" href="/post-edit/">
                                                     <i class="fas fa-pencil-alt">
                                                     </i>
                                                     Edit
                                                 </a>
-                                                <br>
                                                 <a class="btn btn-danger btn-sm" href="#">
                                                     <i class="fas fa-trash">
                                                     </i>
@@ -121,24 +114,6 @@
                                         </tr>
                                     @endforeach
                                 </td>
-
-                                {{-- <td class="project-actions text-right">
-                                    <a class="btn btn-primary btn-sm" href="#">
-                                        <i class="fas fa-folder">
-                                        </i>
-                                        View
-                                    </a>
-                                    <a class="btn btn-info btn-sm" href="#">
-                                        <i class="fas fa-pencil-alt">
-                                        </i>
-                                        Edit
-                                    </a>
-                                    <a class="btn btn-danger btn-sm" href="#">
-                                        <i class="fas fa-trash">
-                                        </i>
-                                        Delete
-                                    </a>
-                                </td> --}}
                             </tr>
                         </tbody>
                     </table>
@@ -186,15 +161,14 @@
 
     <script>
         $(function () {
-            $("#example1").DataTable({
-            "responsive": true, "lengthChange": false, "autoWidth": false,
-            // "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
-            "buttons": ["copy", "csv", "excel", "pdf", "print"]
-            }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
-            $('#example2').DataTable({
+            // $("#example1").DataTable({
+            // "responsive": true, "lengthChange": false, "autoWidth": true,
+            // "buttons": ["copy", "csv", "excel", "pdf", "print"]
+            // }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+            $('#example1').DataTable({
             "paging": true,
             "lengthChange": false,
-            "searching": false,
+            "searching": true,
             "ordering": true,
             "info": true,
             "autoWidth": false,

@@ -58,8 +58,32 @@ class PostController extends Controller
          return view('admin.views.addpost');
     }
 
+    // public function blog(Request $request){
+    //     $posts = DB::table('posts')
+    //                 ->select('title','body', 'image')
+    //                 ->get();
 
+    //     print_r($posts);
+    //     die();
+    // }
 
+    #not completed in progress
+    public function postedit(Request $request, $id=null){
+        // $request = "Arpit";
+        return response()->json($request);
+        // echo $request;
+        // print_r($request);
+        // die();
+    // public function postedit(){
+        // $post_section = Post::find($id);
+        $post_section = Post::findorFail($id);
+
+        // echo $post_section;
+        // die();
+
+        return view('admin.views.edit', compact(['post']));
+        // return view('admin.views.postview');
+    }
 
 
 

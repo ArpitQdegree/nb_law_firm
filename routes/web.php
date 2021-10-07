@@ -129,3 +129,9 @@ Route::get('/admin-header', [PostController::class,'adminheader'])->name('adminh
 
 //slug route added from here
 // Route::get('pages/check_slug', [PostController::class,'check_slug'])->name('pages.check_slug');
+
+// Route::get('/post-edit')
+
+#below route not completed in progress
+// Route::get('/post-edit/{id}',[PostController::class,'postedit'])->name('postedit');
+Route::get('/post-edit/',[PostController::class,'postedit'])->name('postedit');
