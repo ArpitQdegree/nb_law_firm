@@ -10,7 +10,8 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="{{ asset('plugins/fontawesome-free/css/all.min.css') }}">
-
+  <!-- summernote -->
+  <link rel="stylesheet" href="{{ asset('plugins/summernote/summernote-bs4.min.css') }}">
   <!-- DataTables -->
   <link rel="stylesheet" href="{{ asset('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css')}}">
   <link rel="stylesheet" href="{{ asset('plugins/datatables-responsive/css/responsive.bootstrap4.min.css')}}">
@@ -19,6 +20,16 @@
 
   <!-- Theme style -->
   <link rel="stylesheet" href="{{ asset('dist/css/adminlte.min.css') }}">
+
+   {{-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script> --}}
+
+
+
+    {{-- <script src="//code.jquery.com/jquery-1.12.3.js"></script> --}}
+    {{-- <script src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script> --}}
+    {{-- <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script> --}}
+    {{-- <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css"> --}}
+
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -105,7 +116,7 @@
                                                     </i>
                                                     Edit
                                                 </a>
-                                                <a class="btn btn-danger btn-sm" href="#">
+                                                <a class="btn btn-danger btn-sm" href="/post-delete/{id}">
                                                     <i class="fas fa-trash">
                                                     </i>
                                                     Delete
@@ -136,11 +147,12 @@
     <!-- ./wrapper -->
 
     <!-- jQuery -->
-    {{-- <script src="../../plugins/jquery/jquery.min.js"></script> --}}
     <script src="{{ asset('plugins/jquery/jquery.min.js') }}"></script>
     <!-- Bootstrap 4 -->
-    {{-- <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script> --}}
     <script src="{{ asset('plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+
+    <!-- Summernote -->
+    <script src="{{ asset('plugins/summernote/summernote-bs4.min.js') }}"></script>
 
     {{-- datatables scripts starts--}}
     <script src="{{ asset('plugins/datatables/jquery.dataTables.min.js') }}"></script>
@@ -158,27 +170,52 @@
     {{-- datatables scripts ends --}}
 
 
-
-    <script>
+    <script type="text/javascript">
         $(function () {
-            // $("#example1").DataTable({
-            // "responsive": true, "lengthChange": false, "autoWidth": true,
-            // "buttons": ["copy", "csv", "excel", "pdf", "print"]
-            // }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
-            $('#example1').DataTable({
-            "paging": true,
-            "lengthChange": false,
-            "searching": true,
-            "ordering": true,
-            "info": true,
-            "autoWidth": false,
-            "responsive": true,
+                $('#example1').DataTable({
+                    "dom": 'Bfrtip',
+                    "serverSide": true,
+                    "lengthChange": false,
+                    "searching": true,
+                    "info": true,
+                    "pagination":true,
+                    "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+                });
+        });
+
+        // performing delete operation 
+        $(function(){
+
+            // console.log("hello");
+            $(document).on("click",".btn-danger", function(){
+
+                var conf = confirm("Are you sure want to delete");
+
+                if(conf){
+
+                    var delete_id = $(this).attr("data-id");
+                    // var delete_id = $(this).attr("post-delete/{id}");
+
+                    var postdata = {
+                        "_token": "{{ csrf_token() }}",
+                        "delete_id": delete_id,
+                    }
+
+                    $.post( "{{ route('postdelete') }}", postdata, function(response){
+                        var data = $.parseJSON(response);
+
+                        if(data.status == 1){
+                            console.log("hello");
+                            location.reload();
+                        }
+                        else{
+                            alert(data.message);
+                        }
+                    })
+                }
             });
+            
         });
     </script>
-
-
-
-
 </body>
 </html>

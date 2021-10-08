@@ -22,12 +22,9 @@ class PostController extends Controller
                     ->select('id','title','body', 'status')
                     ->get();
 
-        // print_r($posts);
-        // die();
-
-        // return view('admin.views.allpost');
         return view('admin.views.allpost',['posts' => $posts]);
     }
+
 
 
     public function addpostData(Request $request) {
@@ -58,33 +55,33 @@ class PostController extends Controller
          return view('admin.views.addpost');
     }
 
-    // public function blog(Request $request){
-    //     $posts = DB::table('posts')
-    //                 ->select('title','body', 'image')
-    //                 ->get();
-
-    //     print_r($posts);
-    //     die();
-    // }
-
     #not completed in progress
     public function postedit(Request $request, $id=null){
         // $request = "Arpit";
-        return response()->json($request);
-        // echo $request;
-        // print_r($request);
-        // die();
-    // public function postedit(){
-        // $post_section = Post::find($id);
-        $post_section = Post::findorFail($id);
+        // return response()->json($request);
+        // $post_section = Post::findorFail($id);
 
-        // echo $post_section;
-        // die();
-
-        return view('admin.views.edit', compact(['post']));
+        return view('admin.views.edit');
         // return view('admin.views.postview');
     }
 
+
+    Public function postdelete(Request $request){
+
+        $id = $request->delete_id;
+
+        $post_data = Post::find($id);
+
+        if(isset($post_data->id)){
+            $post_data->delete();
+
+            echo json_encode(array("status" => 1, "message" => "post deleted successfully"));
+        } else{
+            echo json_encode(array("status" => 0, "message" => "Section error"));
+        }
+
+        return view('all-post');
+    }
 
 
 
