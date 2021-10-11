@@ -127,8 +127,8 @@ Route::get('/save', [PostController::class, 'save']);
 
 Route::get('/admin-header', [PostController::class,'adminheader'])->name('adminheader');
 
+Route::get('/post-edit/{post}',[PostController::class,'postedit'])->name('postedit');
+Route::post('/post-update/{id}',[PostController::class,'updatepost'])->name('updatepost');
+
 #below route not completed in progress
 Route::get('/post-delete/id', [PostController::class, 'postdelete'])->name('postdelete');
-
-Route::get('/post-edit/{id}',[PostController::class,'postedit'])->name('postedit');
-// Route::get('/post-edit/',[PostController::class,'postedit'])->name('postedit');

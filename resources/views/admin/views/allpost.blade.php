@@ -51,7 +51,7 @@
             </div>
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="admin/">Home</a></li>
                 <li class="breadcrumb-item active">All Post</li>
                 </ol>
             </div>
@@ -111,12 +111,12 @@
                                                     View
                                                 </a>
                                                 {{-- <a class="btn btn-info btn-sm" href="/post-edit"> --}}
-                                                <a class="btn btn-info btn-sm" href="/post-edit/">
+                                                <a class="btn btn-info btn-sm" href="/post-edit/{{ $data->id}}">
                                                     <i class="fas fa-pencil-alt">
                                                     </i>
                                                     Edit
                                                 </a>
-                                                <a class="btn btn-danger btn-sm" href="/post-delete/{id}">
+                                                <a class="btn btn-danger btn-sm" href="/post-delete/{{ $data->id}}">
                                                     <i class="fas fa-trash">
                                                     </i>
                                                     Delete
@@ -183,7 +183,7 @@
                 });
         });
 
-        // performing delete operation 
+        // performing delete operation
         $(function(){
 
             // console.log("hello");
@@ -214,7 +214,7 @@
                     })
                 }
             });
-            
+
         });
     </script>
 </body>

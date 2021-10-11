@@ -49,28 +49,36 @@ class PostController extends Controller
         return redirect('all-post')->withStatus(__('new post added successfully!'));
     }
 
-    #below functionality added by me
     public function addpost(Request $request){
 
          return view('admin.views.addpost');
     }
 
-    #not completed in progress
-    public function postedit(Request $request, $id=null){
-        // $request = "Arpit";
-        // return response()->json($request);
-        // $post_section = Post::findorFail($id);
+    public function postedit(Post $post){
 
-        return view('admin.views.edit');
-        // return view('admin.views.postview');
+        return view('admin.views.edit', compact('post'));
     }
 
+    public function updatepost(Request $request, $id)
+    {
+        $post = Post::findOrFail($id);
 
-    Public function postdelete(Request $request){
+        $post->title = $request->title;
+        $post->body = $request->body;
 
-        $id = $request->delete_id;
+        $post->update();
+        
+         return redirect('all-post')->withStatus(__('Post updated successfully!'));
 
-        $post_data = Post::find($id);
+    }
+
+    #work on below function
+    Public function postdelete(Request $request, $id){
+
+        // $id = $request->delete_id;
+        // $id = $request->id;
+
+        $post_data = Post::findorFail($id);
 
         if(isset($post_data->id)){
             $post_data->delete();
@@ -82,21 +90,5 @@ class PostController extends Controller
 
         return view('all-post');
     }
-
-
-
-
-    // public function adminheader(){
-    //     return view('admin.layouts.header');
-    // }
-
-        // https://stackoverflow.com/questions/58381808/sqlstate23000-integrity-constraint-violation-1048-column-title-cannot-be-n
-
-
-    #slug functionality added here
-    // public function check_slug(Request $request){
-    //     $slug = Str::slug($request->title);
-    //     return response()->json(['slug' => $slug]);
-    // }
 
 }
