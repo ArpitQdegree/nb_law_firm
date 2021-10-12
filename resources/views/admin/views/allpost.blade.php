@@ -11,7 +11,7 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="{{ asset('plugins/fontawesome-free/css/all.min.css') }}">
   <!-- summernote -->
-  <link rel="stylesheet" href="{{ asset('plugins/summernote/summernote-bs4.min.css') }}">
+  {{-- <link rel="stylesheet" href="{{ asset('plugins/summernote/summernote-bs4.min.css') }}"> --}}
   <!-- DataTables -->
   <link rel="stylesheet" href="{{ asset('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css')}}">
   <link rel="stylesheet" href="{{ asset('plugins/datatables-responsive/css/responsive.bootstrap4.min.css')}}">
@@ -23,12 +23,6 @@
 
    {{-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script> --}}
 
-
-
-    {{-- <script src="//code.jquery.com/jquery-1.12.3.js"></script> --}}
-    {{-- <script src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script> --}}
-    {{-- <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script> --}}
-    {{-- <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css"> --}}
 
 </head>
 
@@ -90,7 +84,7 @@
                                 </th>
 
                                 <th style="width: 8%" class="text-center">
-                                    Status
+                                    Action
                                 </th>
                             </tr>
                         </thead>
@@ -116,11 +110,15 @@
                                                     </i>
                                                     Edit
                                                 </a>
-                                                <a class="btn btn-danger btn-sm" href="/post-delete/{{ $data->id}}">
-                                                    <i class="fas fa-trash">
-                                                    </i>
-                                                    Delete
-                                                </a>
+                                                <form method="POST" action="{{ route('postdelete', $data->id) }}">
+                                                    {{ csrf_field() }}
+                                                    {{ method_field('DELETE') }}
+
+                                                    <div class="form-group">
+                                                        <input type="submit" class="btn btn-danger delete-user" value="Delete">
+                                                    </div>
+                                                </form>
+
                                             </td>
                                         </tr>
                                     @endforeach
@@ -169,52 +167,22 @@
     <script src="{{ asset('plugins/datatables-buttons/js/buttons.colVis.min.js') }}"></script>
     {{-- datatables scripts ends --}}
 
-
     <script type="text/javascript">
-        $(function () {
+        // $(function () {
+        $(document).ready(function(){
                 $('#example1').DataTable({
-                    "dom": 'Bfrtip',
-                    "serverSide": true,
-                    "lengthChange": false,
-                    "searching": true,
-                    "info": true,
-                    "pagination":true,
-                    "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+                    dom: 'Bfrtip',
+                    serverSide: true,
+                    ajax: "{{ route('allpost') }}",
+                    orderable: true,
+                    searchable: true,
+                    lengthChange: false,
+                    info: true,
+                    pagination:true,
+                    responsive: true,
+                    buttons: ["copy", "csv", "excel", "pdf", "print", "colvis"],
+
                 });
-        });
-
-        // performing delete operation
-        $(function(){
-
-            // console.log("hello");
-            $(document).on("click",".btn-danger", function(){
-
-                var conf = confirm("Are you sure want to delete");
-
-                if(conf){
-
-                    var delete_id = $(this).attr("data-id");
-                    // var delete_id = $(this).attr("post-delete/{id}");
-
-                    var postdata = {
-                        "_token": "{{ csrf_token() }}",
-                        "delete_id": delete_id,
-                    }
-
-                    $.post( "{{ route('postdelete') }}", postdata, function(response){
-                        var data = $.parseJSON(response);
-
-                        if(data.status == 1){
-                            console.log("hello");
-                            location.reload();
-                        }
-                        else{
-                            alert(data.message);
-                        }
-                    })
-                }
-            });
-
         });
     </script>
 </body>

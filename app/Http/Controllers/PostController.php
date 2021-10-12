@@ -67,28 +67,36 @@ class PostController extends Controller
         $post->body = $request->body;
 
         $post->update();
-        
+
          return redirect('all-post')->withStatus(__('Post updated successfully!'));
 
     }
 
-    #work on below function
-    Public function postdelete(Request $request, $id){
 
-        // $id = $request->delete_id;
-        // $id = $request->id;
+    public function postdelete($id){
 
-        $post_data = Post::findorFail($id);
+        $post_data = Post::find($id);
 
-        if(isset($post_data->id)){
+        if($post_data->id){
             $post_data->delete();
 
-            echo json_encode(array("status" => 1, "message" => "post deleted successfully"));
+           return redirect('/all-post')->with('success', 'Post Deleted Successfully');
         } else{
-            echo json_encode(array("status" => 0, "message" => "Section error"));
+
+            return redirect::back()->withErrors(['msg' => 'Error while deleting the post']);
         }
 
         return view('all-post');
+    }
+
+
+    public function index(){
+
+        // $posts = Post::Orderby('id', 'desc')->get();
+
+        $posts = Post::Orderby('id', 'desc')->paginate(5);
+
+        return view('blog', compact(['posts']));
     }
 
 }

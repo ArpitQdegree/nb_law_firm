@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="{{ asset('plugins/summernote/summernote-bs4.min.css')}}">
   <!-- CodeMirror -->
   <link rel="stylesheet" href="{{ asset('plugins/codemirror/codemirror.css')}}">
-  <link rel="stylesheet" href="{{ asset('lugins/codemirror/theme/monokai.css')}}">
+  <link rel="stylesheet" href="{{ asset('plugins/codemirror/theme/monokai.css')}}">
   <!-- SimpleMDE -->
   <link rel="stylesheet" href="{{ asset('plugins/simplemde/simplemde.min.css')}}">
 </head>

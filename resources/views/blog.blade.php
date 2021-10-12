@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-          @section('title', 'Blog')
+            @section('title', 'Blog')
         <title>NB Law Firm - @yield('title')</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Law Firm Website Template" name="keywords">
@@ -20,7 +20,7 @@
         <link href="lib/animate/animate.min.css" rel="stylesheet">
         <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-        <!-- Template Stylesheet -->
+        <!-- Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
     </head>
 
@@ -58,6 +58,8 @@
             transition: .3s;
         }
 
+
+
     </style>
 
     <body>
@@ -79,22 +81,31 @@
 
 
 
-                {{-- <p>All Blog will be</p> --}}
+                {{-- card starts here --}}
+                @foreach ($posts->chunk(3) as $chunk)
+                    <tr>
+                        <div class="card-group" style="margin-left: 100px;margin-right: 100px; padding:25px;">
+                            @foreach ($chunk as $post)
 
-                <div class="card" style="width: 18rem; margin-left:40px;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        {{-- @foreach ($posts as $posts =>$data)
-                            echo $posts
-                        @endforeach --}}
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
+                                <div class="card">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <h5 class="card-title">{{ $post->title }}</h5>
+                                    <p class="card-text">{{ $post->body }}</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div><span>&nbsp &nbsp</span>
+                                @endforeach
+                            </div>
+                    </tr>
+                @endforeach
 
+                {{ $posts->render() }}
 
+                {{-- till here added by me --}}
         </div>
+
+
 
             <div class="service">
                 <div class="container">

@@ -103,9 +103,11 @@ Route::get('contact-us', function(){
     return view('contact');
 });
 
-Route::get('blog/', function(){
-    return view('blog');
-});
+// Route::get('blog/', function(){
+//     return view('blog');
+// });
+
+Route::get('blog', [PostController::class, 'index']);
 
 Route::get('header', function(){
     return view('header');
@@ -131,4 +133,4 @@ Route::get('/post-edit/{post}',[PostController::class,'postedit'])->name('posted
 Route::post('/post-update/{id}',[PostController::class,'updatepost'])->name('updatepost');
 
 #below route not completed in progress
-Route::get('/post-delete/id', [PostController::class, 'postdelete'])->name('postdelete');
+Route::delete('/post-delete/{id}', [PostController::class, 'postdelete'])->name('postdelete');
