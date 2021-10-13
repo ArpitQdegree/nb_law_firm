@@ -13,6 +13,18 @@
 
   <link rel="stylesheet" href="{{ asset('plugins/codemirror/theme/monokai.css') }}">
   <link rel="stylesheet" href="{{ asset('plugins/simplemde/simplemde.min.css') }}">
+
+  {{-- below styles added by me for the fonts--}}
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
+  {{-- till here added by me --}}
+
 </head>
 
 <style>
@@ -78,7 +90,7 @@
                     @endforeach
                 </div>
             @endif
-            <form method="post" id="camp" action="{{ url('add-post-data') }}" autocomplete="off">
+            <form method="post" id="camp" action="{{ url('add-post-data') }}" autocomplete="off" enctype="multipart/form-data">
             @csrf
             @method('post')
             <div class="mb-3" style="margin-left:10px; margin-top:10px; margin-right:7px;">
@@ -86,14 +98,13 @@
                 {{-- <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Place Title Here"> --}}
                 <input type="text" class="form-control" id="title" name="title" placeholder="Place Title Here">
             </div>
-
+            <br>
             <div class="mb-3" style="margin-left:10px; margin-top:10px; margin-right:7px;">
                 <label for="exampleFormControlInput1" class="form-label">Slug/Url</label>
+                {{-- <input type="text" class="form-control" id="slug" name="slug" placeholder="slug"> --}}
                 <input type="text" class="form-control" id="slug" name="slug" placeholder="slug" disabled>
-                {{-- <input type="text" class="form-control" id="slug" name="slug" disabled> --}}
             </div>
-
-
+            <br>
             <div class="mb-3" style="margin-left:10px; margin-top:10px; margin-right:7px;">
                 <label for="exampleFormControlInput1" class="form-label">Content</label>
             </div>
@@ -107,8 +118,7 @@
             <div>
                 <label for="image" class="ml-2">Featured Image</label>
                 <div class="input-group">
-                    <input type="file" class="form-control" id="featured-image" aria-describedby="inputGroupFileAddon04" aria-label="Upload" style="margin-left:10px; margin-right:16px; margin-bottom:17px;padding-bottom: 38px;">
-                    {{-- <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button> --}}
+                    <input type="file" name="image" class="form-control" id="featured-image" aria-describedby="inputGroupFileAddon04" aria-label="Upload" style="margin-left:10px; margin-right:16px; margin-bottom:17px;padding-bottom: 38px;">
                 </div>
             </div>
 
@@ -161,14 +171,15 @@
 <!-- Page specific script -->
 <script>
   $(function () {
-    // Summernote
     $('#summernote').summernote()
-    CodeMirror.fromTextArea(document.getElementById("codeMirrorDemo"), {
-      mode: "htmlmixed",
-      theme: "monokai"
+        CodeMirror.fromTextArea(document.getElementById("codeMirrorDemo"), {
+        mode: "htmlmixed",
+        theme: "monokai",
     });
   });
 </script>
+
+
 
 {{-- below one is added by me --}}
 {{-- <script>

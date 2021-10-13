@@ -88,10 +88,12 @@
                             @foreach ($chunk as $post)
 
                                 <div class="card">
-                                    <img src="..." class="card-img-top" alt="...">
+                                    <img src="{{$post->image}}" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                    <h5 class="card-title">{{ $post->title }}</h5>
-                                    <p class="card-text">{{ $post->body }}</p>
+                                    {{-- <h5 class="card-title">{{ $post->title }}</h5> --}}
+                                    <h5 class="card-title"><a href="" >{{ $post->title }}</a></h5>
+                                    {{-- <p class="card-text">{{ $post->body }}</p> --}}
+                                    <p class="card-text"><a href="" >{{ $post->body }}</a></p>
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                     </div>
                                 </div><span>&nbsp &nbsp</span>

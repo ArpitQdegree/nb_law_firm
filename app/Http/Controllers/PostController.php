@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Post;
 use Illuminate\Support\Facades\Validator;
 use DB;
+use Illuminate\Support\Str;
 
 // use Illuminate\Support\Str;
 
@@ -19,19 +20,21 @@ class PostController extends Controller
     public function allpost(){
 
         $posts = DB::table('posts')
-                    ->select('id','title','body', 'status')
+                    ->select('id','title','body', 'status', 'image')
                     ->get();
 
         return view('admin.views.allpost',['posts' => $posts]);
     }
 
+    public function addpost(Request $request){
 
+        return view('admin.views.addpost');
+    }
 
     public function addpostData(Request $request) {
 
         $validator = Validator::make($request->all(), [
-            'title' => 'required|unique:posts|max:255',
-            // 'body' => 'required',
+            'title' => 'required|unique:posts|max:60',
         ]);
 
         if($validator->fails()) {
@@ -40,19 +43,30 @@ class PostController extends Controller
                         ->withInput();
         }
 
+        if ($request->hasFile('image')) {
+            $file = $request->file('image');
+            $file_name ="image/".Str::random(5).'-'.time().".".$file->getClientOriginalExtension();
+            $destinationPath = public_path('image');
+            $file->move($destinationPath, $file_name);
+            $data['image'] = $file_name;
+        }else{
+            return response("Please insert the image");
+        }
+
         $post = new Post;
         $post->title = $request->title;
-        $post->slug ="Put  the slug value here";
-        $post->body ="Put  the body value here";
+        $post->body = "Put  the body value here";
+
+        $post->slug = Str::slug($post->title,'-');
+        // $post->slug = $this->createSlug($post->title,"-");
+
+        $post->image = $file_name;
+       
         $post->save();
 
         return redirect('all-post')->withStatus(__('new post added successfully!'));
     }
 
-    public function addpost(Request $request){
-
-         return view('admin.views.addpost');
-    }
 
     public function postedit(Post $post){
 
@@ -97,6 +111,10 @@ class PostController extends Controller
         $posts = Post::Orderby('id', 'desc')->paginate(5);
 
         return view('blog', compact(['posts']));
+    }
+
+    Public function detailblog(){
+        return view('blog_detailed');
     }
 
 }

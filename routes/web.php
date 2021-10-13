@@ -109,6 +109,8 @@ Route::get('contact-us', function(){
 
 Route::get('blog', [PostController::class, 'index']);
 
+Route::get('blogdetailed', [PostController::class, 'detailblog']);
+
 Route::get('header', function(){
     return view('header');
 });

@@ -91,11 +91,12 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    @foreach ($posts as $posts => $data)
+                                    @foreach ($posts as $k => $data)
                                         <tr>
                                             <td>{{ $data->id}}</td>
                                             <td>{{ $data->title }}</td>
                                             <td>{{ $data->body }}</td>
+                                            <td><img src ="{{ URL::to($data->image) }}" width="50"></td>
                                             {{-- <td>{{ $data->status }}</td> --}}
 
                                             <td class="project-actions text-right">
