@@ -30,7 +30,24 @@
             On click on the blog card this detail of that particular blog will appear
         </p>
 
-        
-            
-               
+        {{-- @foreach ($posts->chunk(3) as $chunk)
+            <tr>
+                <div class="card-group" style="margin-left: 100px;margin-right: 100px; padding:25px;">
+                    @foreach ($chunk as $post)
+                    <div class="card">
+                        <img src="{{$post->image}}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="" >{{ $post->title }}</a></h5>
+                                <p class="card-text"><a href="" >{{ $post->body }}</a></p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div><span>&nbsp &nbsp</span>
+                        @endforeach
+                    </div>
+            </tr>
+        @endforeach --}}
+
+
+
+
 @include('layouts.footer')

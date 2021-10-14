@@ -79,36 +79,43 @@
                 </div>
             </div>
 
-
+            {{-- search button added here --}}
+               <form action="{{ route('search') }}" method="post" role="search">
+                    {{ csrf_field() }}
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="search" placeholder="Search blog"> 
+                        <span class="input-group-btn">
+                            <button type="submit" class="btn btn-primary">Search
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+            {{-- till here --}}
 
                 {{-- card starts here --}}
                 @foreach ($posts->chunk(3) as $chunk)
                     <tr>
-                        <div class="card-group" style="margin-left: 100px;margin-right: 100px; padding:25px;">
+                        <div class="card-group" style="margin-left: 100px; margin-right: 100px; padding:25px;">
                             @foreach ($chunk as $post)
-
                                 <div class="card">
                                     <img src="{{$post->image}}" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                    {{-- <h5 class="card-title">{{ $post->title }}</h5> --}}
-                                    <h5 class="card-title"><a href="" >{{ $post->title }}</a></h5>
-                                    {{-- <p class="card-text">{{ $post->body }}</p> --}}
-                                    <p class="card-text"><a href="" >{{ $post->body }}</a></p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                        <h5 class="card-title">{{ $post->title }}</h5>
+                                        <p class="card-text"><a href="" >{{ $post->body }}</a></p>
                                     </div>
                                 </div><span>&nbsp &nbsp</span>
-                                @endforeach
-                            </div>
+                            @endforeach
+                        </div>
                     </tr>
                 @endforeach
 
-                {{ $posts->render() }}
+                {{-- {{ $posts->render() }} --}}
+                {{$posts->links("pagination::bootstrap-4")}}
 
                 {{-- till here added by me --}}
         </div>
-
-
-
+        
             <div class="service">
                 <div class="container">
                     <div class="row">
@@ -158,3 +165,5 @@
             </div>
 
         @include('layouts.footer')
+        
+        

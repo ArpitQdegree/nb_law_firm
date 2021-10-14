@@ -113,8 +113,27 @@ class PostController extends Controller
         return view('blog', compact(['posts']));
     }
 
-    Public function detailblog(){
+    public function detailblog(){
         return view('blog_detailed');
+    }
+
+    #search functionality starts from here
+
+    public function search(Request $request){
+
+        $search = $request->input('search');
+      
+        $posts = Post::where('title','LIKE','%'.$search.'%')->paginate(5);
+
+        if(count($posts) > 0){
+            return view('blog', compact(['posts', 'search']));
+        }
+        else{
+            // return view ('blog')->withMessage('No Details found. Try to search again !');
+
+            return redirect::back()->withErrors(['msg' => 'No post found']);
+        }
+
     }
 
 }

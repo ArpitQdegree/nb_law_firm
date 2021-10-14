@@ -109,12 +109,14 @@ Route::get('contact-us', function(){
 
 Route::get('blog', [PostController::class, 'index']);
 
+// work on below route
 Route::get('blogdetailed', [PostController::class, 'detailblog']);
 
 Route::get('header', function(){
     return view('header');
 });
 
+Route::any('search', [PostController::class, 'search'])->name('search');
 
 #admin panel routes starts from here
 
@@ -134,5 +136,4 @@ Route::get('/admin-header', [PostController::class,'adminheader'])->name('adminh
 Route::get('/post-edit/{post}',[PostController::class,'postedit'])->name('postedit');
 Route::post('/post-update/{id}',[PostController::class,'updatepost'])->name('updatepost');
 
-#below route not completed in progress
 Route::delete('/post-delete/{id}', [PostController::class, 'postdelete'])->name('postdelete');
