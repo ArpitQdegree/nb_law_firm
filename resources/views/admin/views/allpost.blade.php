@@ -16,13 +16,14 @@
   <link rel="stylesheet" href="{{ asset('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css')}}">
   <link rel="stylesheet" href="{{ asset('plugins/datatables-responsive/css/responsive.bootstrap4.min.css')}}">
   <link rel="stylesheet" href="{{ asset('plugins/datatables-buttons/css/buttons.bootstrap4.min.css')}}">
+
+  {{-- <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css"> --}}
   <!-- Till here DataTables -->
 
   <!-- Theme style -->
   <link rel="stylesheet" href="{{ asset('dist/css/adminlte.min.css') }}">
 
    {{-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script> --}}
-
 
 </head>
 
@@ -82,8 +83,16 @@
                                 <th style="width: 20%">
                                     Body
                                 </th>
+                                
+                                {{-- <th style="width: 1%">
+                                    Slug
+                                </th> --}}
 
                                 <th style="width: 8%" class="text-center">
+                                    Image
+                                </th>
+
+                                <th style="width: 20%" class="text-center">
                                     Action
                                 </th>
                             </tr>
@@ -96,6 +105,7 @@
                                             <td>{{ $data->id}}</td>
                                             <td>{{ $data->title }}</td>
                                             <td>{{ $data->body }}</td>
+                                            {{-- <td>{{ $data->slug }}</td> --}}
                                             <td><img src ="{{ URL::to($data->image) }}" width="50"></td>
                                             {{-- <td>{{ $data->status }}</td> --}}
 
@@ -127,6 +137,7 @@
                             </tr>
                         </tbody>
                     </table>
+                    {{-- {{$posts->links("pagination::bootstrap-4")}} --}}
                 </div>
             </div>
         </section>
@@ -166,6 +177,11 @@
     <script src="{{ asset('plugins/datatables-buttons/js/buttons.html5.min.js') }}"></script>
     <script src="{{ asset('plugins/datatables-buttons/js/buttons.print.min.js') }}"></script>
     <script src="{{ asset('plugins/datatables-buttons/js/buttons.colVis.min.js') }}"></script>
+
+   
+
+    {{-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="/DataTables/datatables.js"></script> --}}
     {{-- datatables scripts ends --}}
 
     <script type="text/javascript">
@@ -176,11 +192,21 @@
                     serverSide: true,
                     ajax: "{{ route('allpost') }}",
                     orderable: true,
-                    searchable: true,
+                    // searchable: true,
+                    searching: true,
                     lengthChange: false,
                     info: true,
-                    pagination:true,
+                    //  processing: true,
+                    // pagination:true,
+                    // aLengthMenu: [ [2, 4, 8, -1], [2, 4, 8, "All"] ],
+                    // pageLength: 10 
+                    //  sPaginationType: "full_numbers"
+                    paging: true,
+                    // "autoWidth": false,
+                    // "pageLength": 4,
                     responsive: true,
+                    // select: true,
+                    // Sortable:true,
                     buttons: ["copy", "csv", "excel", "pdf", "print", "colvis"],
 
                 });

@@ -35,6 +35,8 @@ class PostController extends Controller
 
         $validator = Validator::make($request->all(), [
             'title' => 'required|unique:posts|max:60',
+
+            'content' => 'required'
         ]);
 
         if($validator->fails()) {
@@ -54,14 +56,14 @@ class PostController extends Controller
         }
 
         $post = new Post;
-        $post->title = $request->title;
-        $post->body = "Put  the body value here";
+        $post->title = ucfirst($request->title);
+        $post->body = $request->content;
+
 
         $post->slug = Str::slug($post->title,'-');
-        // $post->slug = $this->createSlug($post->title,"-");
 
         $post->image = $file_name;
-       
+
         $post->save();
 
         return redirect('all-post')->withStatus(__('new post added successfully!'));
@@ -80,9 +82,26 @@ class PostController extends Controller
         $post->title = $request->title;
         $post->body = $request->body;
 
+        if($image = $request->file('image')){
+                $file = $request->file('image');
+                $file_name = $request->file('image')->getClientOriginalName();
+                $destinationPath = 'image';
+                $file->move($destinationPath, $file_name);
+                $input['image'] = $file_name;
+                // $post->image = $file_name;
+        }
+
+
+        // $post->image_url = $file_name;
+        #till here added by
+
         $post->update();
 
-         return redirect('all-post')->withStatus(__('Post updated successfully!'));
+        // Post::image = $image_url;
+
+
+
+        return redirect('all-post')->withStatus(__('Post updated successfully!'));
 
     }
 
@@ -122,7 +141,7 @@ class PostController extends Controller
     public function search(Request $request){
 
         $search = $request->input('search');
-      
+
         $posts = Post::where('title','LIKE','%'.$search.'%')->paginate(5);
 
         if(count($posts) > 0){

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Add Post</title>
+  <title>NB law Firm- Add New Post</title>
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
    <link rel="stylesheet" href="{{ asset('plugins/fontawesome-free/css/all.min.css') }}">
@@ -101,7 +101,6 @@
             <br>
             <div class="mb-3" style="margin-left:10px; margin-top:10px; margin-right:7px;">
                 <label for="exampleFormControlInput1" class="form-label">Slug/Url</label>
-                {{-- <input type="text" class="form-control" id="slug" name="slug" placeholder="slug"> --}}
                 <input type="text" class="form-control" id="slug" name="slug" placeholder="slug" disabled>
             </div>
             <br>
@@ -110,7 +109,7 @@
             </div>
 
             <div class="card-body">
-              <textarea id="summernote">
+              <textarea id="summernote" name="content">
                 Place <u>text</u> <strong>here</strong>
               </textarea>
             </div>
@@ -134,12 +133,6 @@
             </div>
 
             </form>
-
-            {{-- <div>
-                <div class="ml-2 mb-2 mr-4">
-                    <button type="submit" class="btn btn-primary">Save</button>
-                </div>
-            </div> --}}
 
           </div>
         </div>
@@ -171,6 +164,7 @@
 <!-- Page specific script -->
 <script>
   $(function () {
+
     $('#summernote').summernote()
         CodeMirror.fromTextArea(document.getElementById("codeMirrorDemo"), {
         mode: "htmlmixed",
@@ -181,10 +175,10 @@
 
 
 
-{{-- below one is added by me --}}
+{{-- below one is for slug --}}
 {{-- <script>
   $('#title').change(function(e){
-      $.get('{{ route('pages.check_slug') }}',
+      $.get('{{ url('slug') }}',
       {'title': $(this).val()},
       function(data){
           $('#slug').val(data.slug);

@@ -137,3 +137,10 @@ Route::get('/post-edit/{post}',[PostController::class,'postedit'])->name('posted
 Route::post('/post-update/{id}',[PostController::class,'updatepost'])->name('updatepost');
 
 Route::delete('/post-delete/{id}', [PostController::class, 'postdelete'])->name('postdelete');
+
+// slug functionality added from here
+// Route::get('slug', function(){
+//     $slug = SlugService::createSlug(App\Models\Post::class, 'slug', request('title'));
+
+//     return response()->json(['slug' => $slug]);
+// });
