@@ -1,5 +1,6 @@
 <footer class="main-footer">
-    <strong>Copyright &copy; 2014-2021 <a href="http://nblawfirm.in/">NB Law Firm</a>.</strong>
+    <strong style="font-family: 'Times New Roman', Times, serif">
+        Copyright &copy; 2014-2021 <a href="https://nblawfirm.qdegrees.com/"><b>NB Law Firm</b></a>.</strong>
     All rights reserved.
     <div class="float-right d-none d-sm-inline-block">
     </div>

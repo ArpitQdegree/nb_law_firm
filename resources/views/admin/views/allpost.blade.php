@@ -25,6 +25,7 @@
 
    {{-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script> --}}
 
+
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -42,12 +43,12 @@
         <div class="container-fluid">
             <div class="row mb-2">
             <div class="col-sm-6">
-                <h1>All Post</h1><br>
+                <h1 style="font-family: 'Times New Roman', Times, serif;">All Post</h1><br>
             </div>
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
-                <li class="breadcrumb-item"><a href="admin/">Home</a></li>
-                <li class="breadcrumb-item active">All Post</li>
+                <li class="breadcrumb-item" style="font-family: 'Times New Roman', Times, serif;"><a href="admin/">Home</a></li>
+                <li class="breadcrumb-item active" style="font-family: 'Times New Roman', Times, serif;">All Post</li>
                 </ol>
             </div>
             </div>
@@ -59,7 +60,7 @@
             <!-- Default box -->
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title">All Post</h3>
+                    <h3 class="card-title" style="font-family: 'Times New Roman', Times, serif;">All Post</h3>
 
                     <div class="card-tools">
                         <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
@@ -70,8 +71,8 @@
 
 
                 <div class="card-body p-0">
-                    <table class="table table-striped projects" id="example1">
-                        <thead>
+                    <table class="table table-striped table-bordered" id="example1">
+                        <thead style="font-family: 'Times New Roman', Times, serif;">
                             <tr>
                                 <th style="width: 1%">
                                     Sr.No.
@@ -102,26 +103,26 @@
                                 <td>
                                     @foreach ($posts as $k => $data)
                                         <tr>
-                                            <td>{{ $data->id}}</td>
-                                            <td>{{ $data->title }}</td>
-                                            <td>{{ $data->body }}</td>
-                                            {{-- <td>{{ $data->slug }}</td> --}}
+                                            <td style="font-family: 'Times New Roman', Times, serif;">{{ $data->id}}</td>
+                                            <td style="font-family: 'Times New Roman', Times, serif;">{{ $data->title }}</td>
+                                            <td style="font-family: 'Times New Roman', Times, serif;">{{ $data->body }}</td>
+                                            {{-- <td>"{{ URL::to($data->slug) }}"</td> --}}
                                             <td><img src ="{{ URL::to($data->image) }}" width="50"></td>
                                             {{-- <td>{{ $data->status }}</td> --}}
 
                                             <td class="project-actions text-right">
-                                                <a class="btn btn-primary btn-sm" href="#">
+                                                <a class="btn btn-primary btn-sm" href="#" style="font-family: 'Times New Roman', Times, serif;">
                                                     <i class="fas fa-folder">
                                                     </i>
                                                     View
                                                 </a>
                                                 {{-- <a class="btn btn-info btn-sm" href="/post-edit"> --}}
-                                                <a class="btn btn-info btn-sm" href="/post-edit/{{ $data->id}}">
+                                                <a class="btn btn-info btn-sm" href="/post-edit/{{ $data->id}}" style="font-family: 'Times New Roman', Times, serif;">
                                                     <i class="fas fa-pencil-alt">
                                                     </i>
                                                     Edit
                                                 </a>
-                                                <form method="POST" action="{{ route('postdelete', $data->id) }}">
+                                                <form method="POST" action="{{ route('postdelete', $data->id) }}" style="font-family: 'Times New Roman', Times, serif;">
                                                     {{ csrf_field() }}
                                                     {{ method_field('DELETE') }}
 
@@ -137,7 +138,6 @@
                             </tr>
                         </tbody>
                     </table>
-                    {{-- {{$posts->links("pagination::bootstrap-4")}} --}}
                 </div>
             </div>
         </section>
@@ -185,31 +185,20 @@
     {{-- datatables scripts ends --}}
 
     <script type="text/javascript">
-        // $(function () {
         $(document).ready(function(){
                 $('#example1').DataTable({
                     dom: 'Bfrtip',
                     serverSide: true,
                     ajax: "{{ route('allpost') }}",
                     orderable: true,
-                    // searchable: true,
-                    searching: true,
+                    searchable: true,
+                    // searching: true,
                     lengthChange: false,
                     info: true,
-                    //  processing: true,
-                    // pagination:true,
-                    // aLengthMenu: [ [2, 4, 8, -1], [2, 4, 8, "All"] ],
-                    // pageLength: 10 
-                    //  sPaginationType: "full_numbers"
-                    paging: true,
-                    // "autoWidth": false,
-                    // "pageLength": 4,
                     responsive: true,
-                    // select: true,
-                    // Sortable:true,
                     buttons: ["copy", "csv", "excel", "pdf", "print", "colvis"],
-
                 });
+               
         });
     </script>
 </body>

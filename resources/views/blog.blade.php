@@ -101,8 +101,8 @@
                                 <div class="card">
                                     <img src="{{$post->image}}" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <h5 class="card-title">{{ $post->title }}</h5>
-                                        <p class="card-text"><a href="" >{{ $post->body }}</a></p>
+                                        <a href="{{ route('blog.show', $post->slug) }}"><h5 class="card-title">{{ $post->title }}</h5></a>
+                                        <p class="card-text">{{ $post->body }}</a></p>
                                     </div>
                                 </div><span>&nbsp &nbsp</span>
                             @endforeach

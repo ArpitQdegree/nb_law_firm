@@ -4,7 +4,7 @@
     <a href="" class="brand-link">
       {{-- <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8"> --}}
       <img src="/dist/img/Logo1.png" style="width:56px;" />
-      <span class="brand-text font-weight-light" href="/admin">NB Law Firm</span>
+      <span class="brand-text font-weight-light" href="/admin" style="font-family: 'Times New Roman', Times, serif;">NB Law Firm</span>
     </a>
 
     <!-- Sidebar -->
@@ -15,12 +15,12 @@
           <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div> --}}
         <div class="info">
-          <a href="" class="d-block">NB Law Firm</a>
+          <a href="" class="d-block" style="font-family: 'Times New Roman', Times, serif;">NB Law Firm</a>
         </div>
       </div>
 
       <!-- SidebarSearch Form -->
-      <div class="form-inline">
+      {{-- <div class="form-inline">
         <div class="input-group" data-widget="sidebar-search">
           <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
           <div class="input-group-append">
@@ -29,7 +29,7 @@
             </button>
           </div>
         </div>
-      </div>
+      </div> --}}
 
       <!-- Sidebar Menu -->
       <nav class="mt-2">
@@ -39,7 +39,7 @@
           <li class="nav-item menu-open">
             <a href="admin/" class="nav-link active">
               <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
+              <p style="font-family: 'Times New Roman', Times, serif;">
                 Dashboard
               </p>
             </a>
@@ -47,7 +47,7 @@
           <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-copy"></i>
-              <p>
+              <p style="font-family: 'Times New Roman', Times, serif;">
                 {{-- Layout Options --}}
                 Posts
                 <i class="fas fa-angle-left right"></i>

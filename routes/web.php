@@ -109,14 +109,15 @@ Route::get('contact-us', function(){
 
 Route::get('blog', [PostController::class, 'index']);
 
-// work on below route
-Route::get('blogdetailed', [PostController::class, 'detailblog']);
 
 Route::get('header', function(){
     return view('header');
 });
 
 Route::any('search', [PostController::class, 'search'])->name('search');
+
+// work on below route
+Route::get('blog/{slug}', [PostController::class, 'detailblog'])->name('blog.show');
 
 #admin panel routes starts from here
 
@@ -138,9 +139,3 @@ Route::post('/post-update/{id}',[PostController::class,'updatepost'])->name('upd
 
 Route::delete('/post-delete/{id}', [PostController::class, 'postdelete'])->name('postdelete');
 
-// slug functionality added from here
-// Route::get('slug', function(){
-//     $slug = SlugService::createSlug(App\Models\Post::class, 'slug', request('title'));
-
-//     return response()->json(['slug' => $slug]);
-// });

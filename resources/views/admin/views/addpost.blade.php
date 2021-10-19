@@ -29,8 +29,16 @@
 
 <style>
     .note-editor.note-frame .note-editing-area {
-    height: 500px;
-}
+        height: 500px;
+    }
+
+    .form-label{
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+     #feature-image{
+        font-family: 'Times New Roman', Times, serif;
+    }
 </style>
 
 
@@ -51,12 +59,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Text Editors</h1>
+            <h1 id="feature-image"><b>Text Editor</b></h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="">Home</a></li>
-              <li class="breadcrumb-item active">Text Editors</li>
+              {{-- <li class="breadcrumb-item active">Text Editors</li> --}}
             </ol>
           </div>
         </div>
@@ -115,7 +123,7 @@
             </div>
 
             <div>
-                <label for="image" class="ml-2">Featured Image</label>
+                <label for="image" class="ml-2" id="feature-image">Featured Image</label>
                 <div class="input-group">
                     <input type="file" name="image" class="form-control" id="featured-image" aria-describedby="inputGroupFileAddon04" aria-label="Upload" style="margin-left:10px; margin-right:16px; margin-bottom:17px;padding-bottom: 38px;">
                 </div>

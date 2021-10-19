@@ -9,10 +9,9 @@
    <link rel="stylesheet" href="{{ asset('plugins/fontawesome-free/css/all.min.css') }}">
   <link rel="stylesheet" href="{{ asset('dist/css/adminlte.min.css') }}">
   <link rel="stylesheet" href="{{ asset('plugins/summernote/summernote-bs4.min.css') }}">
-  <link rel="stylesheet" href="{{ asset('plugins/codemirror/codemirror.css') }}">
-
-  <link rel="stylesheet" href="{{ asset('plugins/codemirror/theme/monokai.css') }}">
-  <link rel="stylesheet" href="{{ asset('plugins/simplemde/simplemde.min.css') }}">
+  {{-- <link rel="stylesheet" href="{{ asset('plugins/codemirror/codemirror.css') }}">
+  <link rel="stylesheet" href="{{ asset('plugins/codemirror/theme/monokai.css') }}"> --}}
+  {{-- <link rel="stylesheet" href="{{ asset('plugins/simplemde/simplemde.min.css') }}"> --}}
 
   {{-- below styles added by me for the fonts appear in drop down--}}
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
@@ -29,8 +28,22 @@
 
 <style>
     .note-editor.note-frame .note-editing-area {
-    height: 500px;
-}
+        height: 500px;
+    }
+
+    .card-title{
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .form-label{
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    #feature-image{
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+
 </style>
 
 
@@ -41,7 +54,7 @@
     @include('admin.layouts.header')
 
     <div class="preloader flex-column justify-content-center align-items-center">
-        <img class="animation__shake" src="dist/img/Logo1.png" alt="NBLawFirm" height="60" width="60">
+        <img class="animation__shake" src="/dist/img/Logo1.png" alt="NBLawFirm" height="60" width="60">
     </div>
 
   @include('admin.layouts.left_sidebar')
@@ -55,7 +68,7 @@
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="">Home</a></li>
+              <li class="breadcrumb-item"><a href="admin/">Home</a></li>
               <li class="breadcrumb-item active">Text Editors</li>
             </ol>
           </div>
@@ -88,7 +101,7 @@
                     @endforeach
                 </div>
             @endif
-            <form method="post" id="camp" action="{{ route('updatepost', $post->id) }}" autocomplete="off">
+            <form method="post" id="camp" action="{{ route('updatepost', $post->id) }}" autocomplete="off" enctype="multipart/form-data">
             @csrf
             @method('post')
             <div class="mb-3" style="margin-left:10px; margin-top:10px; margin-right:7px;">
@@ -96,24 +109,28 @@
                 {{-- <input type="text" class="form-control" id="title" name="title" placeholder="Place Title Here"> --}}
                 <input type="text" class="form-control" id="title" value="{{ $post->title }}" name="title">
             </div>
-
+            <br>
             <div class="mb-3" style="margin-left:10px; margin-top:10px; margin-right:7px;">
                 <label for="exampleFormControlInput1" class="form-label">Slug/Url</label>
                 <input type="text" class="form-control" id="slug" name="slug" value="{{ $post->slug }}" placeholder="slug" disabled>
             </div>
-
+            <br>
+            <div class="mb-3" style="margin-left:10px; margin-top:10px; margin-right:7px;">
+                <label for="exampleFormControlInput1" class="form-label">Content</label>
+            </div>
 
             <div class="card-body">
-                <label for="exampleFormControlInput1" class="form-label">Content</label>
-
+                {{-- <label for="exampleFormControlInput1" class="form-label">Content</label> --}}
                 <textarea id="summernote" name="body">
                     <input type="text" class="form-control" id="body" value="{{ $post->body }}" name="body">
                 </textarea>
-
             </div>
 
+
+
+
             <div>
-                <label for="image" class="ml-2">Featured Image</label>
+                <label for="image" class="ml-2" id="feature-image">Featured Image</label>
                 <div class="input-group">
                     <input type="file" name="image" class="form-control" id="featured-image" aria-describedby="inputGroupFileAddon04" aria-label="Upload"
                     style="margin-left:10px; margin-right:16px; margin-bottom:17px;padding-bottom: 38px;">
@@ -160,7 +177,7 @@
   $(function () {
     // Summernote
     $('#summernote').summernote()
-    CodeMirror.fromTextArea(document.getElementById("codeMirrorDemo"), {
+      CodeMirror.fromTextArea(document.getElementById("codeMirrorDemo"), {
       mode: "htmlmixed",
       theme: "monokai"
     });

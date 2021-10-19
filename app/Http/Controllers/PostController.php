@@ -82,13 +82,13 @@ class PostController extends Controller
         $post->title = $request->title;
         $post->body = $request->body;
 
-        if($image = $request->file('image')){
-                $file = $request->file('image');
-                $file_name = $request->file('image')->getClientOriginalName();
-                $destinationPath = 'image';
-                $file->move($destinationPath, $file_name);
-                $input['image'] = $file_name;
-                // $post->image = $file_name;
+        // if($image = $request->file('image')){
+           if($request->hasfile('image')){
+            $file = $request->file('image');
+            $file_name ="image/".Str::random(5).'-'.time().".".$file->getClientOriginalExtension();
+            $destinationPath = 'image';
+            $request->file('image')->move($destinationPath, $file_name);
+            $post->image = $file_name;
         }
 
 
@@ -98,8 +98,6 @@ class PostController extends Controller
         $post->update();
 
         // Post::image = $image_url;
-
-
 
         return redirect('all-post')->withStatus(__('Post updated successfully!'));
 
@@ -132,8 +130,10 @@ class PostController extends Controller
         return view('blog', compact(['posts']));
     }
 
-    public function detailblog(){
-        return view('blog_detailed');
+    public function detailblog($slug){
+        $post = Post::where('slug', $slug)->firstOrFail();
+        
+        return view('blog_detailed', compact(['post']));
     }
 
     #search functionality starts from here
