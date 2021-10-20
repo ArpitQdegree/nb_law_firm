@@ -9,7 +9,7 @@
         {{-- <meta content="width=device-width, initial-scale=1.0" name="viewport"> --}}
 
         <!-- Favicon -->
-        <link href="img/favicon.ico" rel="icon">
+        <link rel="icon" href="/image/Logo1.png" sizes="16x16">
 
         <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600;1,700;1,800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">

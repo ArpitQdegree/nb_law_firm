@@ -8,7 +8,7 @@
         <meta content="Law Firm Website" name="description">
 
         <!-- Favicon -->
-        <link href="img/favicon.ico" rel="icon">
+        <link rel="icon" href="/image/Logo1.png" sizes="16x16">
 
         <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600;1,700;1,800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
@@ -248,7 +248,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
-                            <div class="service-item">
+                            <div class="service-item" style="margin-left:108%">
                                 <div class="service-icon">
                                     <i class="fa fa-gavel"></i>
                                 </div>

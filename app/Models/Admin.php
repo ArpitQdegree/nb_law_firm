@@ -21,4 +21,6 @@ class Admin extends Model
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+   
 }

@@ -16,10 +16,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
 Route::get('', [HomeController::class,'data']);
 
 Route::get('about-us/', function(){
@@ -29,7 +25,6 @@ Route::get('about-us/', function(){
 Route::get('our-services/', function(){
     return view('service');
 });
-
 
 Route::get('services/maintenance-alimony/', function(){
     return view('services.MaintenanceandAlimony');
@@ -103,9 +98,6 @@ Route::get('contact-us', function(){
     return view('contact');
 });
 
-// Route::get('blog/', function(){
-//     return view('blog');
-// });
 
 Route::get('blog', [PostController::class, 'index']);
 
@@ -116,26 +108,33 @@ Route::get('header', function(){
 
 Route::any('search', [PostController::class, 'search'])->name('search');
 
-// work on below route
 Route::get('blog/{slug}', [PostController::class, 'detailblog'])->name('blog.show');
+
 
 #admin panel routes starts from here
 
-// Route::get('admin/', "AdminHomeController@dashboard");
-Route::get('admin/', [AdminHomeController::class,'dashboard']);
+#below route is added for the admin login
+// Route::get('admin/login', [AdminAuthController::class, 'getlogin'])->name('adminLogin');
+// Route::get('admin/login', [AdminAuthController::class, 'postlogin'])->name('adminLoginPost');
+// Route::get('admin/logout', [AdminAuthController::class, 'logout'])->name('adminLogout');
+#till here added by me
 
-Route::get('/add-post',[PostController::class,'addpost'])->name('addpost');
-Route::post('/add-post-data',[PostController::class,'addpostData'])->name('addpostData');
+// Route::middleware([ 'AdminAuthenitcated'])->prefix('admin')->group(function () { #this line is added by me
+    
 
-Route::get('/all-post', [PostController::class,'allpost'])->name('allpost');
+    Route::get('admin/', [AdminHomeController::class,'dashboard']);
 
-#below route added by me to save data in DB
-Route::get('/save', [PostController::class, 'save']);
+    Route::get('/add-post',[PostController::class,'addpost'])->name('addpost');
+    Route::post('/add-post-data',[PostController::class,'addpostData'])->name('addpostData');
 
-Route::get('/admin-header', [PostController::class,'adminheader'])->name('adminheader');
+    Route::get('/all-post', [PostController::class,'allpost'])->name('allpost');
 
-Route::get('/post-edit/{post}',[PostController::class,'postedit'])->name('postedit');
-Route::post('/post-update/{id}',[PostController::class,'updatepost'])->name('updatepost');
+    Route::get('/save', [PostController::class, 'save']);
 
-Route::delete('/post-delete/{id}', [PostController::class, 'postdelete'])->name('postdelete');
+    Route::get('/admin-header', [PostController::class,'adminheader'])->name('adminheader');
 
+    Route::get('/post-edit/{post}',[PostController::class,'postedit'])->name('postedit');
+    Route::post('/post-update/{id}',[PostController::class,'updatepost'])->name('updatepost');
+
+    Route::delete('/post-delete/{id}', [PostController::class, 'postdelete'])->name('postdelete');
+// });

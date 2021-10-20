@@ -1,6 +1,6 @@
 {{-- <h3>Admin Panel</h3> --}}
 
-
+{{-- <link rel="icon" href="/image/Logo1.png" sizes="16x16"> --}}
 @extends("admin.layouts.layout")
 
 @section("title"," NB Law Firm | Admin Dashboard")

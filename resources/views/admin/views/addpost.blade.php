@@ -25,6 +25,8 @@
     <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
   {{-- till here added by me --}}
 
+  <link rel="icon" href="/image/Logo1.png" sizes="16x16">
+
 </head>
 
 <style>

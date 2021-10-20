@@ -11,6 +11,8 @@
         <!-- Favicon -->
         <link href="img/favicon.ico" rel="icon">
 
+        <link rel="icon" href="/image/Logo1.png" sizes="16x16">
+
         <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600;1,700;1,800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
@@ -83,7 +85,7 @@
                <form action="{{ route('search') }}" method="post" role="search">
                     {{ csrf_field() }}
                     <div class="input-group">
-                        <input type="text" class="form-control" name="search" placeholder="Search blog"> 
+                        <input type="text" class="form-control" name="search" placeholder="Search blog">
                         <span class="input-group-btn">
                             <button type="submit" class="btn btn-primary">Search
                                 <span class="glyphicon glyphicon-search"></span>
@@ -115,7 +117,7 @@
 
                 {{-- till here added by me --}}
         </div>
-        
+
             <div class="service">
                 <div class="container">
                     <div class="row">
@@ -165,5 +167,4 @@
             </div>
 
         @include('layouts.footer')
-        
-        
+

@@ -23,6 +23,8 @@
     <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
 
+    <link rel="icon" href="/image/Logo1.png" sizes="16x16">
+
   {{-- till here added by me --}}
 </head>
 

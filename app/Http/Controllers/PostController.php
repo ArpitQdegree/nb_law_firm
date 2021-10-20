@@ -13,9 +13,7 @@ use Illuminate\Support\Str;
 
 class PostController extends Controller
 {
-    // public function addpost(){
-    //     return view('admin.views.addpost');
-    // }
+
 
     public function allpost(){
 
@@ -123,7 +121,6 @@ class PostController extends Controller
 
     public function index(){
 
-        // $posts = Post::Orderby('id', 'desc')->get();
 
         $posts = Post::Orderby('id', 'desc')->paginate(5);
 
@@ -132,7 +129,7 @@ class PostController extends Controller
 
     public function detailblog($slug){
         $post = Post::where('slug', $slug)->firstOrFail();
-        
+
         return view('blog_detailed', compact(['post']));
     }
 

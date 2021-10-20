@@ -25,6 +25,8 @@
 
    {{-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script> --}}
 
+   <link rel="icon" href="/image/Logo1.png" sizes="16x16">
+
 
 </head>
 
@@ -62,11 +64,11 @@
                 <div class="card-header">
                     <h3 class="card-title" style="font-family: 'Times New Roman', Times, serif;">All Post</h3>
 
-                    <div class="card-tools">
+                    {{-- <div class="card-tools">
                         <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
                         <i class="fas fa-minus"></i>
                         </button>
-                    </div>
+                    </div> --}}
                 </div>
 
 
@@ -84,7 +86,7 @@
                                 <th style="width: 20%">
                                     Body
                                 </th>
-                                
+
                                 {{-- <th style="width: 1%">
                                     Slug
                                 </th> --}}
@@ -178,7 +180,7 @@
     <script src="{{ asset('plugins/datatables-buttons/js/buttons.print.min.js') }}"></script>
     <script src="{{ asset('plugins/datatables-buttons/js/buttons.colVis.min.js') }}"></script>
 
-   
+
 
     {{-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" charset="utf8" src="/DataTables/datatables.js"></script> --}}
@@ -198,7 +200,7 @@
                     responsive: true,
                     buttons: ["copy", "csv", "excel", "pdf", "print", "colvis"],
                 });
-               
+
         });
     </script>
 </body>

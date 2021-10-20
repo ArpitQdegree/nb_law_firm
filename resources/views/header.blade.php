@@ -9,7 +9,7 @@
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
         <!-- Favicon -->
-        <link href="img/favicon.ico" rel="icon">
+        <link href="{{asset('img/favicon.ico')}}" rel="icon">
 
         <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600;1,700;1,800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
@@ -21,7 +21,7 @@
         <link href="{{asset('lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
 
         <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
+        <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
     </head>
 
@@ -51,25 +51,6 @@
             /* min-width: 992px; */
         }
 
-    /* .search-hover {
-        content: "\f095";
-        border: 1px solid #ccc;
-        outline: none;
-        background-size: 22px;
-        background-position: 13px;
-        border-radius: 10px;
-        width: 50px;
-        height: 50px;
-        padding: 25px;
-        transition: all 0.5s;
-    }
-
-    .search-hover:hover {
-        content: "\f095";
-    width: 300px;
-    padding-left: 50px;
-    } */
-
 
     </style>
 
@@ -81,7 +62,7 @@
                         <div class="col-lg-3">
                            <div class="logo">
                                 <a href="/">
-                                   <span><img src="image/Logo1.png" alt="NB Law Firm Logo" style="color: white">
+                                   <span><img src="{{asset('image/Logo1.png')}}" alt="NB Law Firm Logo" style="color: white">
                                    <span style="color: white; font-size:13px;">NB Law Firm</span></span>
                                 </a>
                             </div>
@@ -237,11 +218,11 @@
          <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="{{asset('lib/easing/easing.min.js')}}"></script>
+        <script src="{{asset('lib/owlcarousel/owl.carousel.min.js')}}"></script>
+        <script src="{{asset('lib/isotope/isotope.pkgd.min.js')}}"></script>
 
         <!-- Template Javascript -->
-        <script src="js/main.js"></script>
+        <script src="{{asset('js/main.js')}}"></script>
     </body>
 </html>
