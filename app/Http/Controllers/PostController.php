@@ -5,9 +5,13 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Models\Post;
+use App\Models\Admin;
 use Illuminate\Support\Facades\Validator;
 use DB;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
+
+use Session;
 
 // use Illuminate\Support\Str;
 
@@ -21,7 +25,8 @@ class PostController extends Controller
                     ->select('id','title','body', 'status', 'image')
                     ->get();
 
-        return view('admin.views.allpost',['posts' => $posts]);
+        //return json_encode($posts);
+        return view('admin.views.allpost',compact('posts'));
     }
 
     public function addpost(Request $request){
@@ -152,4 +157,41 @@ class PostController extends Controller
 
     }
 
+    public function admninLoginForm(){
+
+        return view('admin.views.login');
+    }
+
+    public function checklogin(Request $request){
+
+
+        $validator = Validator::make(array(
+            "email" => $request->email,
+            "password" => $request->password
+        ), array(
+            "email" => "required",
+            "password" =>"required"
+        ));
+
+        if($validator->fails()){
+            return redirect("login")->withErrors($validator)->withInput();
+        }else{
+            $user_info = array(
+                "email" => $request->email,
+                "password" => $request->password
+            );
+
+            if(auth()->guard()->attempt($user_info)){
+                $logged_user_details = auth()->guard("admin")->user();
+
+                session(["is_active" => 1]);
+                session(["user_details" => $logged_user_details]);
+
+            }else{
+                $error_message = "Invalid credential";
+
+                return redirect()->back()->withErrors($error_message);
+            }
+        }
+    }
 }

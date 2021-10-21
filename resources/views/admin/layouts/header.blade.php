@@ -14,8 +14,7 @@
   <!-- CodeMirror -->
   <link rel="stylesheet" href="{{ asset('plugins/codemirror/codemirror.css')}}">
   <link rel="stylesheet" href="{{ asset('plugins/codemirror/theme/monokai.css')}}">
-  <!-- SimpleMDE -->
-  <link rel="stylesheet" href="{{ asset('plugins/simplemde/simplemde.min.css')}}">
+ 
 </head>
 <!-- Navbar -->
   <nav class="main-header navbar navbar-expand navbar-white navbar-light">
@@ -30,18 +29,15 @@
       <li class="nav-item d-none d-sm-inline-block">
         <a href="/admin" class="nav-link" style="font-family: 'Times New Roman', Times, serif;">Home</a>
       </li>
-      <li class="nav-item d-none d-sm-inline-block">
+      {{-- <li class="nav-item d-none d-sm-inline-block">
         <a href="#" class="nav-link" style="font-family: 'Times New Roman', Times, serif;">Contact</a>
-      </li>
+      </li> --}}
     </ul>
 
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
       <!-- Navbar Search -->
       <li class="nav-item">
-        {{-- <a class="nav-link" data-widget="navbar-search" href="#" role="button">
-          <i class="fas fa-search"></i>
-        </a> --}}
         <div class="navbar-search-block">
           <form class="form-inline">
             <div class="input-group input-group-sm">
@@ -58,19 +54,6 @@
           </form>
         </div>
       </li>
-
-      <!-- Messages Dropdown Menu -->
-      {{-- <li class="nav-item dropdown">
-        <a class="nav-link" data-toggle="dropdown" href="#">
-          <i class="far fa-comments"></i>
-        </a>
-      </li> --}}
-      <!-- Notifications Dropdown Menu -->
-      {{-- <li class="nav-item dropdown">
-        <a class="nav-link" data-toggle="dropdown" href="#">
-          <i class="far fa-bell"></i>
-        </a>
-      </li> --}}
       
       <li class="nav-item">
         <a class="nav-link" data-widget="fullscreen" href="#" role="button">
@@ -98,15 +81,3 @@
 <script src="{{ asset('plugins/codemirror/mode/htmlmixed/htmlmixed.js')}}"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="{{ asset('dist/js/demo.js')}}"></script>
-
-<!-- Page specific script -->
-{{-- <script>
-  $(function () {
-    $('#summernote').summernote()
-
-    CodeMirror.fromTextArea(document.getElementById("codeMirrorDemo"), {
-      mode: "htmlmixed",
-      theme: "monokai"
-    });
-  })
-</script> --}}

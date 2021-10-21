@@ -22,5 +22,7 @@ class Admin extends Model
         'password', 'remember_token',
     ];
 
+    protected $guard = "schoolAdmin";
+
    
 }

@@ -138,3 +138,19 @@ Route::get('blog/{slug}', [PostController::class, 'detailblog'])->name('blog.sho
 
     Route::delete('/post-delete/{id}', [PostController::class, 'postdelete'])->name('postdelete');
 // });
+
+
+
+// Route::get('/login', [PostController::class,'admninLoginForm'])->name('admninLoginForm');
+// Route::post('/check-login', [PostController::class,'checklogin'])->name('checklogin');
+
+
+//Auth::routes();
+
+// Route::get('/',[HomeController::class, 'login']);
+
+Route::post('/admin/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+// Auth::routes();
+
+Route::get('/admin/home', [App\Http\Controllers\HomeController::class, 'login'])->name('home');

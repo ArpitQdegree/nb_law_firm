@@ -540,9 +540,9 @@
                         <div class="testimonial-item">
                             <i class="fa fa-quote-right"></i>
                             <div class="row align-items-center">
-                                <div class="col-3">
+                                {{-- <div class="col-3">
                                     <img src="img/testimonial-1.jpg" alt="">
-                                </div>
+                                </div> --}}
                                 <div class="col-9">
                                     <h2>Client Name</h2>
                                     <p>Profession</p>
@@ -557,9 +557,9 @@
                         <div class="testimonial-item">
                             <i class="fa fa-quote-right"></i>
                             <div class="row align-items-center">
-                                <div class="col-3">
+                                {{-- <div class="col-3">
                                     <img src="img/testimonial-2.jpg" alt="">
-                                </div>
+                                </div> --}}
                                 <div class="col-9">
                                     <h2>Client Name</h2>
                                     <p>Profession</p>
@@ -574,9 +574,9 @@
                         <div class="testimonial-item">
                             <i class="fa fa-quote-right"></i>
                             <div class="row align-items-center">
-                                <div class="col-3">
+                                {{-- <div class="col-3">
                                     <img src="img/testimonial-3.jpg" alt="">
-                                </div>
+                                </div> --}}
                                 <div class="col-9">
                                     <h2>Client Name</h2>
                                     <p>Profession</p>
@@ -591,9 +591,9 @@
                         <div class="testimonial-item">
                             <i class="fa fa-quote-right"></i>
                             <div class="row align-items-center">
-                                <div class="col-3">
+                                {{-- <div class="col-3">
                                     <img src="img/testimonial-4.jpg" alt="">
-                                </div>
+                                </div> --}}
                                 <div class="col-9">
                                     <h2>Client Name</h2>
                                     <p>Profession</p>
@@ -608,9 +608,9 @@
                         <div class="testimonial-item">
                             <i class="fa fa-quote-right"></i>
                             <div class="row align-items-center">
-                                <div class="col-3">
+                                {{-- <div class="col-3">
                                     <img src="img/testimonial-1.jpg" alt="">
-                                </div>
+                                </div> --}}
                                 <div class="col-9">
                                     <h2>Client Name</h2>
                                     <p>Profession</p>
@@ -625,9 +625,9 @@
                         <div class="testimonial-item">
                             <i class="fa fa-quote-right"></i>
                             <div class="row align-items-center">
-                                <div class="col-3">
+                                {{-- <div class="col-3">
                                     <img src="img/testimonial-2.jpg" alt="">
-                                </div>
+                                </div> --}}
                                 <div class="col-9">
                                     <h2>Client Name</h2>
                                     <p>Profession</p>
@@ -642,9 +642,9 @@
                         <div class="testimonial-item">
                             <i class="fa fa-quote-right"></i>
                             <div class="row align-items-center">
-                                <div class="col-3">
+                                {{-- <div class="col-3">
                                     <img src="img/testimonial-3.jpg" alt="">
-                                </div>
+                                </div> --}}
                                 <div class="col-9">
                                     <h2>Client Name</h2>
                                     <p>Profession</p>

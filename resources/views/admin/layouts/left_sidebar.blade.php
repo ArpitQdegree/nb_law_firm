@@ -1,3 +1,12 @@
+<style>
+    body:not(.layout-fixed) .main-sidebar {
+    height: inherit;
+    min-height: 242%;
+    position: absolute;
+    top: 0;
+}
+</style>
+
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="" class="brand-link">
