@@ -5,7 +5,7 @@
                         <div class="col-md-6 col-lg-4">
                             <div class="footer-about">
                                 <h2>About Us</h2>
-                                <p style="text-align:justify">
+                                <p style=text-align:justify>
                                     The NB Law Firm is a brain-child of Advocate Nidhi Banga ( LLM) , a successful practitioner of law.
 
                                     The firm came into existence in Oct 2016 at 2nd floor, Jungpura Extension, New Delhi . Among the objectives of the Firm, the foremost is Resolving Family Conflicts.
@@ -69,7 +69,7 @@
                         <div class="col-md-12">
                             <p>&copy; <a href="https://nblawfirm.qdegrees.com/">NBLaw</a>, All Right Reserved.</p>
                         </div>
-                       
+
                     </div>
                 </div>
             </div>

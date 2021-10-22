@@ -279,7 +279,7 @@
                                 </div>
                                 <h3>Will probation cases</h3>
                                 <p>
-                                    Probation in criminal law is a period of supervision over an offender, ordered by the court as an alternative …..
+                                    Probation in criminal law is a period of supervision over an offender, ordered by the court as …..
                                 </p>
                                 <a class="btn" href="services/will-probation-cases">Learn More</a>
                             </div>
@@ -540,9 +540,6 @@
                         <div class="testimonial-item">
                             <i class="fa fa-quote-right"></i>
                             <div class="row align-items-center">
-                                {{-- <div class="col-3">
-                                    <img src="img/testimonial-1.jpg" alt="">
-                                </div> --}}
                                 <div class="col-9">
                                     <h2>Client Name</h2>
                                     <p>Profession</p>
@@ -557,9 +554,6 @@
                         <div class="testimonial-item">
                             <i class="fa fa-quote-right"></i>
                             <div class="row align-items-center">
-                                {{-- <div class="col-3">
-                                    <img src="img/testimonial-2.jpg" alt="">
-                                </div> --}}
                                 <div class="col-9">
                                     <h2>Client Name</h2>
                                     <p>Profession</p>
@@ -574,9 +568,6 @@
                         <div class="testimonial-item">
                             <i class="fa fa-quote-right"></i>
                             <div class="row align-items-center">
-                                {{-- <div class="col-3">
-                                    <img src="img/testimonial-3.jpg" alt="">
-                                </div> --}}
                                 <div class="col-9">
                                     <h2>Client Name</h2>
                                     <p>Profession</p>
@@ -591,9 +582,6 @@
                         <div class="testimonial-item">
                             <i class="fa fa-quote-right"></i>
                             <div class="row align-items-center">
-                                {{-- <div class="col-3">
-                                    <img src="img/testimonial-4.jpg" alt="">
-                                </div> --}}
                                 <div class="col-9">
                                     <h2>Client Name</h2>
                                     <p>Profession</p>
@@ -608,9 +596,6 @@
                         <div class="testimonial-item">
                             <i class="fa fa-quote-right"></i>
                             <div class="row align-items-center">
-                                {{-- <div class="col-3">
-                                    <img src="img/testimonial-1.jpg" alt="">
-                                </div> --}}
                                 <div class="col-9">
                                     <h2>Client Name</h2>
                                     <p>Profession</p>
@@ -625,9 +610,6 @@
                         <div class="testimonial-item">
                             <i class="fa fa-quote-right"></i>
                             <div class="row align-items-center">
-                                {{-- <div class="col-3">
-                                    <img src="img/testimonial-2.jpg" alt="">
-                                </div> --}}
                                 <div class="col-9">
                                     <h2>Client Name</h2>
                                     <p>Profession</p>
@@ -642,9 +624,6 @@
                         <div class="testimonial-item">
                             <i class="fa fa-quote-right"></i>
                             <div class="row align-items-center">
-                                {{-- <div class="col-3">
-                                    <img src="img/testimonial-3.jpg" alt="">
-                                </div> --}}
                                 <div class="col-9">
                                     <h2>Client Name</h2>
                                     <p>Profession</p>
@@ -663,14 +642,13 @@
 
 
             <!-- Blog Start -->
-            <div class="blog">
+            {{-- <div class="blog">
                 <div class="container">
                     <div class="section-header">
                         <h2>Latest From Blog</h2>
                     </div>
                     <div class="owl-carousel blog-carousel">
                         <div class="blog-item">
-                            {{-- <img src="img/blog-1.jpg" alt="Blog"> --}}
                             <h3>Lockdown measures taken by the Government of India to prevent the spread of COVID-19 pandemic</h3>
                             <div class="meta">
                                 <i class="fa fa-list-alt"></i>
@@ -684,7 +662,6 @@
                             <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
                         </div>
                         <div class="blog-item">
-                            {{-- <img src="img/blog-2.jpg" alt="Blog"> --}}
                             <h3>NRI MARRIAGES IN INDIA</h3>
                             <div class="meta">
                                 <i class="fa fa-list-alt"></i>
@@ -698,7 +675,6 @@
                             <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
                         </div>
                         <div class="blog-item">
-                            {{-- <img src="img/blog-3.jpg" alt="Blog"> --}}
                             <h3>LANDMARK JUDGEMENTS OF 2018</h3>
                             <div class="meta">
                                 <i class="fa fa-list-alt"></i>
@@ -712,7 +688,6 @@
                             <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
                         </div>
                         <div class="blog-item">
-                            {{-- <img src="img/blog-1.jpg" alt="Blog"> --}}
                             <h3>Lorem ipsum dolor</h3>
                             <div class="meta">
                                 <i class="fa fa-list-alt"></i>
@@ -726,7 +701,6 @@
                             <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
                         </div>
                         <div class="blog-item">
-                            {{-- <img src="img/blog-2.jpg" alt="Blog"> --}}
                             <h3>Lorem ipsum dolor</h3>
                             <div class="meta">
                                 <i class="fa fa-list-alt"></i>
@@ -740,7 +714,6 @@
                             <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
                         </div>
                         <div class="blog-item">
-                            {{-- <img src="img/blog-3.jpg" alt="Blog"> --}}
                             <h3>Lorem ipsum dolor</h3>
                             <div class="meta">
                                 <i class="fa fa-list-alt"></i>
@@ -754,7 +727,6 @@
                             <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
                         </div>
                         <div class="blog-item">
-                            {{-- <img src="img/blog-1.jpg" alt="Blog"> --}}
                             <h3>Lorem ipsum dolor</h3>
                             <div class="meta">
                                 <i class="fa fa-list-alt"></i>
@@ -769,16 +741,17 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <!-- Blog End -->
 
 
             <!-- Newsletter Start -->
-            <div class="newsletter">
-                <div class="container">
+             <div class="container">
+                <div class="newsletter">
+
                     <div class="section-header">
                         <h2>Send Query For Free Legal Advice:</h2>
-                    </div>
+
                     <div class="form">
                         <input type="text" class="form-control" placeholder="Please Enter Your Name" required><br>
                         <input type="email" class="form-control" placeholder="Please Entery Your Email" required><br>
@@ -789,6 +762,7 @@
                                 <button type="submit" style="margin:0; position:absolute; top:50%; -ms-transform: translateY(-50%); transform: translateY(-50%);" class="btn btn-info">Submit</button>
                             </div>
                         </div>
+                    </div>
                     </div>
                 </div>
             </div>

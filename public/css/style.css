@@ -1266,7 +1266,7 @@ a:focus {
 }
 
 .timeline .timeline-container.left {
-    left: 0;
+    left: 15px;
 }
 
 .timeline .timeline-container.right {
@@ -1674,9 +1674,10 @@ a:focus {
 
 .newsletter {
     position: relative;
-    max-width: 900px;
+    /* max-width: 900px;
     margin: 45px auto -140px auto;
-    padding: 30px 15px;
+    padding: 30px 15px; */
+    /* margin-top: 20px; */
     background: #aa9166;
     z-index: 1;
 }

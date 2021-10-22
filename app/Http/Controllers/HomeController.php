@@ -37,9 +37,7 @@ class HomeController extends Controller
 
         if(Auth::attempt($credential)){
             $user = $request->user();
-            
-           
-            // dd($user);
+
             return view("admin.views.dashboard",compact('user'));
 
         }
@@ -49,10 +47,10 @@ class HomeController extends Controller
         }
     }
 
-    public function dashboard(Request $request){
+    // public function dashboard(Request $request){
 
-    }
-    
+    // }
+
     // public function login(Request $request){
 
     // }

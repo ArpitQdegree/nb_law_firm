@@ -157,41 +157,41 @@ class PostController extends Controller
 
     }
 
-    public function admninLoginForm(){
+    // public function admninLoginForm(){
 
-        return view('admin.views.login');
-    }
+    //     return view('admin.views.login');
+    // }
 
-    public function checklogin(Request $request){
+    // public function checklogin(Request $request){
 
 
-        $validator = Validator::make(array(
-            "email" => $request->email,
-            "password" => $request->password
-        ), array(
-            "email" => "required",
-            "password" =>"required"
-        ));
+    //     $validator = Validator::make(array(
+    //         "email" => $request->email,
+    //         "password" => $request->password
+    //     ), array(
+    //         "email" => "required",
+    //         "password" =>"required"
+    //     ));
 
-        if($validator->fails()){
-            return redirect("login")->withErrors($validator)->withInput();
-        }else{
-            $user_info = array(
-                "email" => $request->email,
-                "password" => $request->password
-            );
+    //     if($validator->fails()){
+    //         return redirect("login")->withErrors($validator)->withInput();
+    //     }else{
+    //         $user_info = array(
+    //             "email" => $request->email,
+    //             "password" => $request->password
+    //         );
 
-            if(auth()->guard()->attempt($user_info)){
-                $logged_user_details = auth()->guard("admin")->user();
+    //         if(auth()->guard()->attempt($user_info)){
+    //             $logged_user_details = auth()->guard("admin")->user();
 
-                session(["is_active" => 1]);
-                session(["user_details" => $logged_user_details]);
+    //             session(["is_active" => 1]);
+    //             session(["user_details" => $logged_user_details]);
 
-            }else{
-                $error_message = "Invalid credential";
+    //         }else{
+    //             $error_message = "Invalid credential";
 
-                return redirect()->back()->withErrors($error_message);
-            }
-        }
-    }
+    //             return redirect()->back()->withErrors($error_message);
+    //         }
+    //     }
+    // }
 }

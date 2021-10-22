@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('', [HomeController::class,'data']);
 
 Route::get('about-us/', function(){
@@ -120,11 +121,11 @@ Route::get('blog/{slug}', [PostController::class, 'detailblog'])->name('blog.sho
 #till here added by me
 
 // Route::middleware([ 'AdminAuthenitcated'])->prefix('admin')->group(function () { #this line is added by me
-    
 
-    Route::get('admin/', [AdminHomeController::class,'dashboard']);
 
-    Route::get('/add-post',[PostController::class,'addpost'])->name('addpost');
+    Route::get('admin/', [AdminHomeController::class,'dashboard'])->middleware('auth');
+
+    Route::get('/add-post',[PostController::class,'addpost'])->name('addpost')->middleware('auth');
     Route::post('/add-post-data',[PostController::class,'addpostData'])->name('addpostData');
 
     Route::get('/all-post', [PostController::class,'allpost'])->name('allpost');
@@ -145,12 +146,10 @@ Route::get('blog/{slug}', [PostController::class, 'detailblog'])->name('blog.sho
 // Route::post('/check-login', [PostController::class,'checklogin'])->name('checklogin');
 
 
-//Auth::routes();
+Auth::routes();
 
 // Route::get('/',[HomeController::class, 'login']);
 
-Route::post('/admin/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::post('/admin/login', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-// Auth::routes();
-
-Route::get('/admin/home', [App\Http\Controllers\HomeController::class, 'login'])->name('home');
+Route::get('/admin/login', [App\Http\Controllers\HomeController::class, 'login'])->name('admin.home');

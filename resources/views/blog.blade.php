@@ -112,8 +112,8 @@
                     </tr>
                 @endforeach
 
-                {{-- {{ $posts->render() }} --}}
                 {{$posts->links("pagination::bootstrap-4")}}
+
 
                 {{-- till here added by me --}}
         </div>
@@ -165,6 +165,6 @@
                     </div>
                 </div>
             </div>
-
+            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
         @include('layouts.footer')
 
