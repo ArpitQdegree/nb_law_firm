@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
 
-        @section('title', 'Best Matrimonail Lawywer in Delhi NCR, Family....')
+        @section('title', 'Best Matrimonail Lawyer in Delhi NCR, Family....')
         <title>NB Law Firm - @yield('title')</title>
 
         {{-- <meta content="width=device-width, initial-scale=1.0" name="viewport"> --}}
@@ -48,7 +48,14 @@
             width: 498px;
         }
 
-
+        .floating-wpp {
+            position: fixed;
+            z-index: 999;
+            bottom: 15px;
+            left: 15px;
+            font-size: 14px;
+            transition: bottom .2s;
+        }
 
         /* #search-field {
              display: none;
@@ -529,7 +536,7 @@
             </div>
             <!-- FAQs End -->
 
-
+            <div id="WAButton"></div>
             <!-- Testimonial Start -->
             <div class="testimonial">
                 <div class="container">
@@ -769,7 +776,7 @@
             <!-- Newsletter End -->
 
             <!--Div where the WhatsApp will be rendered-->
-            <div id="WAButton"></div>
+            {{-- <div id="WAButton"></div> --}}
 
             <!-- Footer Start -->
             @include('layouts.footer')
@@ -848,7 +855,7 @@
                 </div>
             </div> --}}
             <!-- Footer End -->
-
+            {{-- <div id="WAButton"></div> --}}
             <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
         </div>
 
@@ -858,7 +865,6 @@
         <script src="lib/easing/easing.min.js"></script>
         <script src="lib/owlcarousel/owl.carousel.min.js"></script>
         <script src="lib/isotope/isotope.pkgd.min.js"></script>
-
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
 

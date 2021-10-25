@@ -126,18 +126,18 @@ Route::get('blog/{slug}', [PostController::class, 'detailblog'])->name('blog.sho
     Route::get('admin/', [AdminHomeController::class,'dashboard'])->middleware('auth');
 
     Route::get('/add-post',[PostController::class,'addpost'])->name('addpost')->middleware('auth');
-    Route::post('/add-post-data',[PostController::class,'addpostData'])->name('addpostData');
+    Route::post('/add-post-data',[PostController::class,'addpostData'])->name('addpostData')->middleware('auth');
 
-    Route::get('/all-post', [PostController::class,'allpost'])->name('allpost');
+    Route::get('/all-post', [PostController::class,'allpost'])->name('allpost')->middleware('auth');
 
-    Route::get('/save', [PostController::class, 'save']);
+    Route::get('/save', [PostController::class, 'save'])->middleware('auth');
 
-    Route::get('/admin-header', [PostController::class,'adminheader'])->name('adminheader');
+    Route::get('/admin-header', [PostController::class,'adminheader'])->name('adminheader')->middleware('auth');
 
-    Route::get('/post-edit/{post}',[PostController::class,'postedit'])->name('postedit');
-    Route::post('/post-update/{id}',[PostController::class,'updatepost'])->name('updatepost');
+    Route::get('/post-edit/{post}',[PostController::class,'postedit'])->name('postedit')->middleware('auth');
+    Route::post('/post-update/{id}',[PostController::class,'updatepost'])->name('updatepost')->middleware('auth');
 
-    Route::delete('/post-delete/{id}', [PostController::class, 'postdelete'])->name('postdelete');
+    Route::delete('/post-delete/{id}', [PostController::class, 'postdelete'])->name('postdelete')->middleware('auth');
 // });
 
 

@@ -14,13 +14,23 @@
   <!-- CodeMirror -->
   <link rel="stylesheet" href="{{ asset('plugins/codemirror/codemirror.css')}}">
   <link rel="stylesheet" href="{{ asset('plugins/codemirror/theme/monokai.css')}}">
- 
+  <style>
+
+.logout:hover{
+    color: rgb(175, 3, 3) !important;
+    font-weight: 600 !important;
+
+}
+
+
+    </style>
+
 </head>
 <!-- Navbar -->
   <nav class="main-header navbar navbar-expand navbar-white navbar-light">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
-        
+
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="#" role="button">
             <i class="fas fa-bars"></i>
@@ -54,12 +64,16 @@
           </form>
         </div>
       </li>
-      
+
       <li class="nav-item">
         <a class="nav-link" data-widget="fullscreen" href="#" role="button">
           <i class="fas fa-expand-arrows-alt"></i>
         </a>
       </li>
+
+       <li class="nav-item d-none d-sm-inline-block">
+        <a href="/admin/login" class="nav-link logout" style="font-family: 'Times New Roman', Times, serif;">Logout</a>
+       </li>
 
     </ul>
   </nav>

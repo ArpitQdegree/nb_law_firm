@@ -22,6 +22,13 @@ class HomeController extends Controller
     }
 
     public function index(Request $request){
+        // echo "Hello";
+        // die();
+
+        $total_post = DB::table('posts')
+                        ->count();
+
+
         $validator = Validator::make($request->all(),[
             'email' => 'required | email | string',
             'password' => 'required|string',
@@ -38,7 +45,7 @@ class HomeController extends Controller
         if(Auth::attempt($credential)){
             $user = $request->user();
 
-            return view("admin.views.dashboard",compact('user'));
+            return view("admin.views.dashboard",compact(['user','total_post']));
 
         }
 
@@ -46,10 +53,6 @@ class HomeController extends Controller
           return view("auth.login");
         }
     }
-
-    // public function dashboard(Request $request){
-
-    // }
 
     // public function login(Request $request){
 

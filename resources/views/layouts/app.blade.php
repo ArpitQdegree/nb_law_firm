@@ -22,6 +22,8 @@
 
         <!-- Template Stylesheet -->
         <link href="{{asset('css/style.css')}}" rel="stylesheet">
+        <link rel="icon" href="/image/Logo1.png" sizes="16x16">
+
 
     </head>
 

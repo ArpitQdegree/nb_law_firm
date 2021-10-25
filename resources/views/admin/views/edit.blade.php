@@ -9,11 +9,8 @@
    <link rel="stylesheet" href="{{ asset('plugins/fontawesome-free/css/all.min.css') }}">
   <link rel="stylesheet" href="{{ asset('dist/css/adminlte.min.css') }}">
   <link rel="stylesheet" href="{{ asset('plugins/summernote/summernote-bs4.min.css') }}">
-  {{-- <link rel="stylesheet" href="{{ asset('plugins/codemirror/codemirror.css') }}">
-  <link rel="stylesheet" href="{{ asset('plugins/codemirror/theme/monokai.css') }}"> --}}
-  {{-- <link rel="stylesheet" href="{{ asset('plugins/simplemde/simplemde.min.css') }}"> --}}
 
-  {{-- below styles added by me for the fonts appear in drop down--}}
+
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 
@@ -25,7 +22,6 @@
 
     <link rel="icon" href="/image/Logo1.png" sizes="16x16">
 
-  {{-- till here added by me --}}
 </head>
 
 <style>
@@ -119,17 +115,17 @@
             <br>
             <div class="mb-3" style="margin-left:10px; margin-top:10px; margin-right:7px;">
                 <label for="exampleFormControlInput1" class="form-label">Content</label>
-            </div>
 
-            <div class="card-body">
-                {{-- <label for="exampleFormControlInput1" class="form-label">Content</label> --}}
-                <textarea id="summernote" name="body">
+                 <textarea id="summernote" name="body">
                     <input type="text" class="form-control" id="body" value="{{ $post->body }}" name="body">
                 </textarea>
             </div>
 
-
-
+            {{-- <div class="card-body">
+                <textarea id="summernote" name="body">
+                    <input type="text" class="form-control" id="body" value="{{ $post->body }}" name="body">
+                </textarea>
+            </div> --}}
 
             <div>
                 <label for="image" class="ml-2" id="feature-image">Featured Image</label>
@@ -148,7 +144,6 @@
                         <button type="submit" class="btn btn-primary">Update</button>
                     </a>
                 </div>
-
             </div>
 
             </form>
@@ -174,6 +169,9 @@
 <!-- AdminLTE for demo purposes -->
 <script src="{{ asset('dist/js/demo.js')}}"></script>
 
+
+
+
 <!-- Page specific script -->
 <script>
   $(function () {
@@ -183,9 +181,8 @@
       mode: "htmlmixed",
       theme: "monokai"
     });
-
-
   });
+
 </script>
 
 </body>
