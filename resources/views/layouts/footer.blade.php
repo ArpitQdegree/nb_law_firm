@@ -6,9 +6,9 @@
                             <div class="footer-about">
                                 <h2>About Us</h2>
                                 <p style=text-align:justify>
-                                    The NB Law Firm is a brain-child of Advocate Nidhi Banga ( LLM) , a successful practitioner of law.
+                                    The NB Law Firm is a brain-child of Advocate Nidhi Banga ( LLM) , a successful practitioner of law.<br><br>
 
-                                    The firm came into existence in Oct 2016 at 2nd floor, Jungpura Extension, New Delhi . Among the objectives of the Firm, the foremost is Resolving Family Conflicts.
+                                    The firm came into existence in Oct 2016 at 2nd floor, Jungpura Extension, New Delhi. Among the objectives of the Firm, the foremost is Resolving Family Conflicts.
                                 </p>
                             </div>
                         </div>
@@ -43,11 +43,11 @@
                                 <p><i class="fa fa-phone-alt"></i>9999221769</p>
                                 <p><i class="fa fa-envelope"></i>nblawfirm@yahoo.com</p>
                                 <div class="footer-social">
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://twitter.com/advbanganidhi"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.facebook.com/nblawfirm.in"><i class="fab fa-facebook-f"></i></a>
                                     <a href=""><i class="fab fa-youtube"></i></a>
-                                    <a href=""><i class="fab fa-instagram"></i></a>
-                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="https://www.instagram.com/nblawfirm.in/?hl=en"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://in.linkedin.com/in/nidhi-banga-596174159"><i class="fab fa-linkedin-in"></i></a>
                                 </div>
                             </div>
                         </div>

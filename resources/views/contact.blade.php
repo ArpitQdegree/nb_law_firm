@@ -22,6 +22,11 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+
+        {{-- google map integration  --}}
+
+
+
     </head>
 
     <style>
@@ -80,6 +85,8 @@
                 </div>
             </div>
             <!-- Page Header End -->
+
+            <div style="margin-left:20px; margin-right:20px; margin-bottom:20px;"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=100&amp;hl=en&amp;q=+(NB%20Law%20Firm)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="http://www.gps.ie/">truck gps</a></iframe></div>
 
             <!-- Newsletter Start -->
             <div class="newsletter">
@@ -143,11 +150,21 @@
                 </div>
 
             </div>
+        {{-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14008.506893501417!2d77.07823082983427!3d28.625963853624455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d05e3082918c5%3A0xbfeb4720745c2652!2sProntoLife!5e0!3m2!1sen!2sin!4v1605941940255!5m2!1sen!2sin" 
+            width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" 
+            aria-hidden="false" tabindex="0">
+        </iframe>             --}}
+
+        
+
 
             <!-- Footer Start -->
-             @include('layouts.footer')
+            @include('layouts.footer')
 
             <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+             
+
         </div>
 
         <!-- JavaScript Libraries -->
@@ -156,8 +173,27 @@
         <script src="lib/easing/easing.min.js"></script>
         <script src="lib/owlcarousel/owl.carousel.min.js"></script>
         <script src="lib/isotope/isotope.pkgd.min.js"></script>
-
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+
+         {{-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&libraries=&v=weekly&channel=2"
+            async></script> --}}
+
     </body>
+
+
+    {{-- <script>
+        function initMap() {
+            const uluru = { lat: -25.344, lng: 131.036 };
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 4,
+                center: uluru,
+            });
+            const marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+            });
+        }
+    </script> --}}
+
 </html>

@@ -227,7 +227,7 @@
                                 <p>
                                     Under Indian law, maximum importance is given to the best interests of the child …….
                                 </p>
-                                <a class="btn" href="services/child-custody">Learn More</a>
+                                <a class="btn" href="services/child-custody" style="margin-top:-9px;">Learn More</a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
@@ -336,8 +336,9 @@
                                     </div>
                                     <h3>Dishonour of Cheque (Negotiable Instruments Act)</h3>
                                     <p>
-                                        Also known as the ‘Cheque Bounce Case, the members of the Firm take care of the litigation as well as advisory interests of the corporate clients.
-                                         The team is well versed with....
+                                        {{-- Also known as the ‘Cheque Bounce Case, the members of the Firm take care of the litigation as well as advisory interests of the corporate clients.
+                                        The team is well versed with.... --}}
+                                        Also known as the ‘Cheque Bounce Case, the members of the Firm take care of the litigation as well as advisory interests of the corporate clients. The team is well versed with the legalities involved in the cases relating to Section 138 of the Negotiable Instruments Act and represent client interests before High Courts and Supreme Court.
                                     </p>
                                 </div>
                         </div>
@@ -349,7 +350,9 @@
                                     </div>
                                     <h3>Mergers & Acquisitions</h3>
                                     <p>
-                                       From financing to cross border transactions. the Firm has experience in handling multijurisdictional work in the field of mergers, acquisitions, amalgamation, joint ventures and de-mergers. The Firm possesses expertise in servicing its clients from varied industry sectors in due diligence...
+                                       {{-- From financing to cross border transactions. the Firm has experience in handling multijurisdictional work in the field of mergers, acquisitions, amalgamation, joint ventures and de-mergers. The Firm possesses expertise in servicing its clients from varied industry sectors in due diligence... --}}
+
+                                       From financing to cross border transactions. the Firm has experience in handling multijurisdictional work in the field of mergers, acquisitions, amalgamation, joint ventures and de-mergers. The Firm possesses expertise in servicing its clients from varied industry sectors in due diligence, shareholders agreement, share purchases agreement. Regulatory affairs and compliances.
                                     </p>
                                 </div>
                         </div>
@@ -363,7 +366,8 @@
                                     </div>
                                     <h3>White Collar Crime and Money Laundering</h3>
                                     <p>
-                                        Marking its brand in the niche but yet the most talked about fraudulent practices resulting in financial crimes causing operational difficulties in the country, the Firm has developed itself a team of robust and enthusiastic lawyers who are well-versed with the legalities and safeguard the interests of the clients when dealing with matters like market manipulation, frauds, bribery, insider trading and...
+                                        {{-- Marking its brand in the niche but yet the most talked about fraudulent practices resulting in financial crimes causing operational difficulties in the country, the Firm has developed itself a team of robust and enthusiastic lawyers who are well-versed with the legalities and safeguard the interests of the clients when dealing with matters like market manipulation, frauds, bribery, insider trading and... --}}
+                                        Marking its brand in the niche but yet the most talked about fraudulent practices resulting in financial crimes causing operational difficulties in the country, the Firm has developed itself a team of robust and enthusiastic lawyers who are well-versed with the legalities and safeguard the interests of the clients when dealing with matters like market manipulation, frauds, bribery, insider trading and money laundering.
                                     </p>
                                 </div>
                         </div>
@@ -375,7 +379,8 @@
                                     </div>
                                     <h3>SARFAESI Act, 2002</h3>
                                     <p style="height:357px;">
-                                       The lawyers at the Firm are committed to protecting the client-facing debt collection lawsuits before Debt Recovery Tribunals, Appellate Authorities, High Courts and Supreme Court. The Firm goes to length to find the right fit to recover the Non-Performing Asset either through Securitization (acquiring financial assets), Asset Reconstruction (management of the business).....
+                                       {{-- The lawyers at the Firm are committed to protecting the client-facing debt collection lawsuits before Debt Recovery Tribunals, Appellate Authorities, High Courts and Supreme Court. The Firm goes to length to find the right fit to recover the Non-Performing Asset either through Securitization (acquiring financial assets), Asset Reconstruction (management of the business)..... --}}
+                                       The lawyers at the Firm are committed to protecting the client-facing debt collection lawsuits before Debt Recovery Tribunals, Appellate Authorities, High Courts and Supreme Court. The Firm goes to length to find the right fit to recover the Non-Performing Asset either through Securitization (acquiring financial assets), Asset Reconstruction (management of the business) or Enforcement of Security without Court’s intervention.
                                     </p>
                                 </div>
                         </div>
@@ -387,7 +392,9 @@
                                     </div>
                                     <h3>Insolvency and Bankruptcy Code</h3>
                                     <p>
-                                       With the Government of India chartering into the insolvency and bankruptcy area, the team at NBlaw Firm  has been brainstorming and formulating strategies to manage the portfolios of lenders and borrowers and providing advisory and consultancy services under the Insolvency and Bankruptcy Code, 2016 covering issues,  Asset Reconstruction....
+                                       {{-- With the Government of India chartering into the insolvency and bankruptcy area, the team at NBlaw Firm  has been brainstorming and formulating strategies to manage the portfolios of lenders and borrowers and providing advisory and consultancy services under the Insolvency and Bankruptcy Code, 2016 covering issues,  Asset Reconstruction.... --}}
+
+                                       With the Government of India chartering into the insolvency and bankruptcy area, the team at NBlaw Firm  has been brainstorming and formulating strategies to manage the portfolios of lenders and borrowers and providing advisory and consultancy services under the Insolvency and Bankruptcy Code, 2016 covering issues related to securities. structuring transactions, filing and drafting of term sheets, negotiations and regulatory framework.
                                     </p>
                                 </div>
                         </div>

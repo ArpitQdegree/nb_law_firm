@@ -24,7 +24,7 @@
 </style>
 
 <div class="align-content">
-    <h1 class="text">Mediation And Counseling</h1>
+    <h1 class="text">Counselling and Mediation</h1>
 
     <p>All families at some time experience difficulties and stress. Family disputes can be about almost anything. Some of the most common topics in mediation & Conciliation on Family Disputes are:</p>
 

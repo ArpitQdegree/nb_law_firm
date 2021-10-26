@@ -102,7 +102,7 @@
                                                             </div>
                                                         </div>
                                                     </div> --}}
-                                                    <a href="/media" class="nav-item nav-link {{ request()->is('media') ? 'active' : '' }}">Media</a>
+                                                    <a href="/media" class="nav-item nav-link">Media</a>
                                                     <a href="/disclamier" class="nav-item nav-link">Disclamier</a>
 
                                                     <a href="/blog" class="nav-item nav-link">Blog</a>
@@ -115,7 +115,8 @@
                                                         </div>
                                                     </div> --}}
 
-                                                    <a href="contact-us" class="nav-item nav-link">Contact Us</a>
+                                                    <a href="contact-us" class="nav-item nav-link ">Contact Us</a>
+                                                    <a href="our-team" class="nav-item nav-link">Our Team</a>
                                                 </div>
                                                 {{-- <div class="ml-auto">
                                                     <a class="btn" href="contact-us">Got a Query</a>
@@ -134,7 +135,8 @@
                         <div class="col-md-12">
                             <div class="nav-bar">
                                 <span><i class="fa fa-calendar" aria-hidden="true" style="color: white">&nbsp;&nbsp;Mon - Fri&nbsp;&nbsp;10:00 AM - 7:00 PM</i></span>&nbsp;&nbsp;
-                                <span><i class="fa fa-phone" aria-hidden="true" style="color: white; cursor: pointer;">&nbsp;&nbsp;011-4587-4391</i></span>&nbsp;&nbsp;
+                                <span><i class="fa fa-phone-alt" aria-hidden="true" style="color: white; cursor: pointer;">&nbsp;&nbsp;+011-4587-4391</i></span>&nbsp;&nbsp;
+                                <span><i class="fa fa-phone-alt" aria-hidden="true" style="color: white; cursor: pointer;">&nbsp;&nbsp;+91-9999221769</i></span>&nbsp;&nbsp;
                                 <span><i class="fa fa-envelope" aria-hidden="true" style="color: white; cursor: pointer;">&nbsp;&nbsp;nblawfirm@yahoo.com</i></span>
 
                                 {{-- <a class="btn right" style="float: right" href="contact-us">Got a Query</a> --}}

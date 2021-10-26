@@ -2951,7 +2951,7 @@
                                     {{-- <i class="fa fa-globe"></i> --}}
                                     <i class="fa fa-user"></i>
                                 </div>
-                                <h3>498a and Allied Criminal Proceedings</h3>
+                                <h3>498A and Allied Criminal Proceedings</h3>
                                 <p>
                                     The section was enacted to combat the menace of dowry deaths. It was introduced in the code by the Criminal Law …..
                                 </p>

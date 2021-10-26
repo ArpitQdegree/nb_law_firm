@@ -1,11 +1,8 @@
-@extends('layouts.app')
 
+<link rel="icon" href="/image/Logo1.png" sizes="16x16">
 
-@section('content')
+@include('header')
 
-<section></section>
-
-{{-- <h1>Hello</h1> --}}
 
 <style>
     .text{
@@ -14,10 +11,10 @@
     }
 
     .center{
-            margin-left: 111px;
-            text-align: justify;
-            margin-right: 101px;
-            margin-top: 69px;
+        margin-left: 111px;
+        text-align: justify;
+        margin-right: 101px;
+        margin-top: 69px;
     }
 </style>
 
@@ -35,6 +32,7 @@
 
     <p>Permanent maintenance is usually only awarded in cases in which there is a large disparity in the parties’ incomes or earning capacities. Permanent maintenance cases are rare and the length of the marriage is not the determining factor. The goal of any maintenance award is to enable the recipient to become financially self-sufficient with time. Permanent maintenance is typically available only in long-term marriages.  Maintenance is an integral part of all matrimonial proceedings. NB Law Firm tries to get the client the best possible remedy in these cases and get adequate funds for the spouse in need.</p>
 </div>
-@endsection
+
+@include('layouts.footer')
 
 

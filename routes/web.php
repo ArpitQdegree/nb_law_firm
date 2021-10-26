@@ -99,6 +99,9 @@ Route::get('contact-us', function(){
     return view('contact');
 });
 
+Route::get('our-team', function(){
+    return view('ourteam');
+});
 
 Route::get('blog', [PostController::class, 'index']);
 
