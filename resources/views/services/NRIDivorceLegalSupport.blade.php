@@ -1,9 +1,13 @@
-@extends('layouts.app')
+{{-- @extends('layouts.app')
 
 
 @section('content')
 
-<section></section>
+<section></section> --}}
+
+<link rel="icon" href="/image/Logo1.png" sizes="16x16">
+
+@include('header')
 
 <style>
     .text{
@@ -35,4 +39,5 @@
     <p>If you want recognition of the divorce in India, it has to be a mutual consent divorce. In certain cases, the divorce granted by a foreign court will not be recognized in India. Our expert NRI lawyers with all their knowledge will make sure that all these cases are covered, by the exceptions provided by the Indian Code of Civil Procedure. They deal with conclusiveness of a foreign judgment.</p>
 
 </div>
-@endsection
+{{-- @endsection --}}
+@include('layouts.footer')

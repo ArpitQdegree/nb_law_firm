@@ -1,9 +1,11 @@
-@extends('layouts.app')
+{{-- @extends('layouts.app')
 
 
 @section('content')
 
-<section></section>
+<section></section> --}}
+
+<link rel="icon" href="/image/Logo1.png" sizes="16x16">
 
 <style>
     .text{
@@ -19,6 +21,8 @@
     }
 </style>
 
+@include('header')
+
 <h1 class="text">Solemnization of marriage</h1>
 
 <div class="align-content">
@@ -30,4 +34,5 @@
     <p>In some cases, cyber stalking is handled on the civil level, but sometimes it can be a felony. For example, if the offender makes threats i.e. particular threats to kidnap or harm the person, then the offender could be criminally charged and if you reach out to us, our professionals can help you get adequate services. The offender could also be charged with improper use of computers.</p> --}}
 </div>
 
-@endsection
+@include('layouts.footer')
+{{-- @endsection --}}

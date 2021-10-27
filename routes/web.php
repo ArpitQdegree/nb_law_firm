@@ -21,23 +21,23 @@ Route::get('', [HomeController::class,'data']);
 
 Route::get('about-us/', function(){
     return view('about');
-});
+})->name('about-us');
 
 Route::get('our-services/', function(){
     return view('service');
-});
+})->name('our-services');
 
 Route::get('services/maintenance-alimony/', function(){
     return view('services.MaintenanceandAlimony');
-});
+})->name('services/maintenance-alimony/');
 
 Route::get('services/domestic-violence-cases/', function(){
     return view('services.DomesticViolence');
-});
+})->name('services/domestic-violence-cases/');
 
 Route::get('services/child-custody/', function(){
     return view('services.ChildCustodyandVisitation');
-});
+})->name('services/child-custody/');
 
 Route::get('services/nri-legal-services/', function(){
     return view('services.NRIDivorceLegalSupport');
@@ -53,7 +53,7 @@ Route::get('services/mutual-consent-divorce-procedure/', function(){
 
 Route::get('services/civil-suits-in-property/', function(){
     return view('services.civilsuitsproperty');
-});
+})->name('services/civil-suits-in-property/');
 
 Route::get('services/counseling-mediation/', function(){
     return view('services.counsellingmeditation');
@@ -73,7 +73,12 @@ Route::get('services/will-probation-cases/', function(){
 
 Route::get('services/annulment-of-marriage/', function(){
     return view('services.annulmentmarriage');
-});
+})->name('services/annulment-of-marriage/');
+
+
+Route::get('services/judicial-separation/', function(){
+    return view('services.judicialseparation');
+})->name('services/judicial-separation/');
 
 Route::get('services/restitution-of-conjugal-rights/', function(){
     return view('services.restitutionconjugalrights');
@@ -89,21 +94,21 @@ Route::get('services/solemnization-of-marriages/', function(){
 
 Route::get('media', function(){
     return view('media');
-});
+})->name('media');
 
 Route::get('disclamier', function(){
     return view('disclaimer');
-});
+})->name('disclamier');
 
 Route::get('contact-us', function(){
     return view('contact');
-});
+})->name('contact-us');
 
 Route::get('our-team', function(){
     return view('ourteam');
-});
+})->name('our-team');;
 
-Route::get('blog', [PostController::class, 'index']);
+Route::get('blog', [PostController::class, 'index'])->name('blog');
 
 
 Route::get('header', function(){

@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Best Litigation Law Firms in Delhi, Best Divorce Lawyer in Delhi</title>
+        <title>NB Law Firm - Our Team</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Law Firm Website Template" name="keywords">
         <meta content="Law Firm Website Template" name="description">
@@ -52,7 +52,7 @@
                             <h2>Our Team</h2>
                         </div>
                         <div class="col-12">
-                            <a href="">Home</a>
+                            <a href="/">Home</a>
                             <a href="">Our Team</a>
                         </div>
                     </div>
@@ -167,5 +167,6 @@
                 </div>
             </div>
             <!-- Team End -->
+            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
             @include('layouts.footer')

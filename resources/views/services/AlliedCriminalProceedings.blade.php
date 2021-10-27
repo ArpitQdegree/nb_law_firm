@@ -1,10 +1,8 @@
-@extends('layouts.app')
 
 
-@section('content')
+<link rel="icon" href="/image/Logo1.png" sizes="16x16">
 
-<section></section>
-
+@include('header')
 
 <style>
     .text{
@@ -30,4 +28,4 @@
 
 </div>
 
-@endsection
+@include('layouts.footer')

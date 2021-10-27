@@ -49,7 +49,7 @@
                             <h2>Media</h2>
                         </div>
                         <div class="col-12">
-                            <a href="">Home</a>
+                            <a href="/">Home</a>
                         </div>
                     </div>
                 </div>

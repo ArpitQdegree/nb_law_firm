@@ -1,9 +1,13 @@
-@extends('layouts.app')
+{{-- @extends('layouts.app')
 
 
 @section('content')
 
-<section></section>
+<section></section> --}}
+
+<link rel="icon" href="/image/Logo1.png" sizes="16x16">
+
+@include('header')
 
 <style>
     .text{
@@ -32,4 +36,6 @@
     <p>Before a court case is filed for partition of property in India, we help you send a legal notice to the other co-owners regarding family property partition. The legal notice for partition suit must include the shares of each co-owner, details of the property in dispute and the action required to be taken. If the co-owners do not respond to the legal notice or send insufficient reply, a partition suit can be filed.</p>
 </div>
 
-@endsection
+{{-- @endsection --}}
+
+@include('layouts.footer')

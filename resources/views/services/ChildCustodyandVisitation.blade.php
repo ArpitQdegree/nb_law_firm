@@ -1,9 +1,13 @@
-@extends('layouts.app')
+{{-- @extends('layouts.app')
 
 
 @section('content')
 
-<section></section>
+<section></section> --}}
+
+<link rel="icon" href="/image/Logo1.png" sizes="16x16">
+
+@include('header')
 
 <style>
     .text{
@@ -36,4 +40,5 @@
 
 </div>
 
-@endsection
+@include('layouts.footer')
+{{-- @endsection --}}

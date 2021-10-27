@@ -2864,7 +2864,7 @@
                             <h2>Legal Services</h2>
                         </div>
                         <div class="col-12">
-                            <a href="">Home</a>
+                            <a href="/">Home</a>
                             <a href="">Our Services</a>
                         </div>
                     </div>
@@ -2987,7 +2987,9 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="service-item">
                                 <div class="service-icon">
-                                    <i class="fa fa-globe"></i>
+                                    {{-- <i class="fa fa-globe"></i> --}}
+                                    <i class="fas fa-restroom"></i>
+                                    {{-- <i class="fas fa-heart-broken"></i> --}}
                                 </div>
                                 <h3>Annulment of marriages</h3>
                                 <p>
@@ -3058,7 +3060,7 @@
                                 <p>
                                     The concept of judicial separation is always often raised as a question by the general crowd who are not aware of this …..
                                 </p>
-                                <a class="btn" href="">Learn More</a>
+                                <a class="btn" href="services/judicial-separation/">Learn More</a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
@@ -3071,7 +3073,7 @@
                                 <p style="height:165px;">
                                     Online stalking is a form of harassment that, which may seem innocent enough, can establish fear in the victim …..
                                 </p>
-                                <a class="btn" href="">Learn More</a>
+                                <a class="btn" href="services/cyber-stalking/">Learn More</a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
@@ -3084,7 +3086,7 @@
                                 <p>
                                     Solemnization is a legal procedure for declaring a marriage null and void. With the exception of bigamy and.... .
                                 </p>
-                                <a class="btn" href="">Learn More</a>
+                                <a class="btn" href="services/solemnization-of-marriages/">Learn More</a>
                             </div>
                         </div>
                     </div>

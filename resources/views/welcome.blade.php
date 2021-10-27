@@ -65,6 +65,74 @@
             display: inline-block;
         } */
 
+        /* below style is for contact us */
+        * {
+        box-sizing: border-box;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        }
+
+        .sidebar-contact {
+        position: fixed;
+        transform: translateY(-50%);
+        top: 50%;
+        left: -350px;
+        width: 350px;
+        height: auto;
+        padding: 40px;
+        background: #fff;
+        box-shadow: 0 20px 50px rgba(0,0,0, .5);
+        transition: 0.5s ease-in-out;
+        }
+
+        .sidebar-contact.active {
+        left: 0;
+        z-index: 1000;
+        }
+
+        .sidebar-contact input,
+        .sidebar-contact textarea{
+        width: 100%;
+        height: 36px;
+        padding: 5px;
+        margin-bottom: 10px;
+        border: 1px solid rgba(0,0,0, .5);
+        outline: none;
+        }
+
+        .sidebar-contact textarea {
+        height: 60px;
+        resize: none;
+        }
+
+        .sidebar-contact input[type="submit"] {
+        background: #00bcd4;
+        color: #fff;
+        cursor: pointer;
+        border: none;
+        font-size: 18px;
+        
+        }
+        .sidebar-contact h2 {
+        margin: 0 0  20px;
+        padding: 0;
+        }
+
+        .toggle {
+            position: absolute;
+            right: -62px;
+            width: 61px;
+            height: 29px;
+            margin-top: 60px;
+            padding-left: -5px;
+            text-align: center;
+            cursor: pointer;
+            background: #aa9166;
+            z-index: 176;
+            font-size: 14px;
+        }
+        /* till here is for contact us */
+
     </style>
 
     <body>
@@ -294,7 +362,8 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="service-item">
                                 <div class="service-icon">
-                                    <i class="fa fa-globe"></i>
+                                    {{-- <i class="fa fa-globe"></i> --}}
+                                    <i class="fas fa-heart-broken"></i>
                                 </div>
                                 <h3>Annulment of marriages</h3>
                                 <p>
@@ -336,9 +405,9 @@
                                     </div>
                                     <h3>Dishonour of Cheque (Negotiable Instruments Act)</h3>
                                     <p>
-                                        {{-- Also known as the ‘Cheque Bounce Case, the members of the Firm take care of the litigation as well as advisory interests of the corporate clients.
-                                        The team is well versed with.... --}}
-                                        Also known as the ‘Cheque Bounce Case, the members of the Firm take care of the litigation as well as advisory interests of the corporate clients. The team is well versed with the legalities involved in the cases relating to Section 138 of the Negotiable Instruments Act and represent client interests before High Courts and Supreme Court.
+                                        Also known as the ‘Cheque Bounce Case, the members of the Firm take care of the litigation as well as advisory interests of the corporate clients.
+                                        The team is well versed with....
+                                        {{-- Also known as the ‘Cheque Bounce Case, the members of the Firm take care of the litigation as well as advisory interests of the corporate clients. The team is well versed with the legalities involved in the cases relating to Section 138 of the Negotiable Instruments Act and represent client interests before High Courts and Supreme Court. --}}
                                     </p>
                                 </div>
                         </div>
@@ -350,9 +419,9 @@
                                     </div>
                                     <h3>Mergers & Acquisitions</h3>
                                     <p>
-                                       {{-- From financing to cross border transactions. the Firm has experience in handling multijurisdictional work in the field of mergers, acquisitions, amalgamation, joint ventures and de-mergers. The Firm possesses expertise in servicing its clients from varied industry sectors in due diligence... --}}
+                                       From financing to cross border transactions. the Firm has experience in handling multijurisdictional work in the field of mergers, acquisitions, amalgamation, joint ventures and de-mergers. The Firm possesses expertise in servicing its clients from varied industry sectors in due diligence...
 
-                                       From financing to cross border transactions. the Firm has experience in handling multijurisdictional work in the field of mergers, acquisitions, amalgamation, joint ventures and de-mergers. The Firm possesses expertise in servicing its clients from varied industry sectors in due diligence, shareholders agreement, share purchases agreement. Regulatory affairs and compliances.
+                                       {{-- From financing to cross border transactions. the Firm has experience in handling multijurisdictional work in the field of mergers, acquisitions, amalgamation, joint ventures and de-mergers. The Firm possesses expertise in servicing its clients from varied industry sectors in due diligence, shareholders agreement, share purchases agreement. Regulatory affairs and compliances. --}}
                                     </p>
                                 </div>
                         </div>
@@ -366,8 +435,8 @@
                                     </div>
                                     <h3>White Collar Crime and Money Laundering</h3>
                                     <p>
-                                        {{-- Marking its brand in the niche but yet the most talked about fraudulent practices resulting in financial crimes causing operational difficulties in the country, the Firm has developed itself a team of robust and enthusiastic lawyers who are well-versed with the legalities and safeguard the interests of the clients when dealing with matters like market manipulation, frauds, bribery, insider trading and... --}}
-                                        Marking its brand in the niche but yet the most talked about fraudulent practices resulting in financial crimes causing operational difficulties in the country, the Firm has developed itself a team of robust and enthusiastic lawyers who are well-versed with the legalities and safeguard the interests of the clients when dealing with matters like market manipulation, frauds, bribery, insider trading and money laundering.
+                                        Marking its brand in the niche but yet the most talked about fraudulent practices resulting in financial crimes causing operational difficulties in the country, the Firm has developed itself a team of robust and enthusiastic lawyers who are well-versed with the legalities and safeguard the interests of the clients when dealing with matters like market manipulation, frauds, bribery, insider trading and...
+                                        {{-- Marking its brand in the niche but yet the most talked about fraudulent practices resulting in financial crimes causing operational difficulties in the country, the Firm has developed itself a team of robust and enthusiastic lawyers who are well-versed with the legalities and safeguard the interests of the clients when dealing with matters like market manipulation, frauds, bribery, insider trading and money laundering. --}}
                                     </p>
                                 </div>
                         </div>
@@ -392,9 +461,9 @@
                                     </div>
                                     <h3>Insolvency and Bankruptcy Code</h3>
                                     <p>
-                                       {{-- With the Government of India chartering into the insolvency and bankruptcy area, the team at NBlaw Firm  has been brainstorming and formulating strategies to manage the portfolios of lenders and borrowers and providing advisory and consultancy services under the Insolvency and Bankruptcy Code, 2016 covering issues,  Asset Reconstruction.... --}}
+                                       With the Government of India chartering into the insolvency and bankruptcy area, the team at NBlaw Firm  has been brainstorming and formulating strategies to manage the portfolios of lenders and borrowers and providing advisory and consultancy services under the Insolvency and Bankruptcy Code, 2016 covering issues,  Asset Reconstruction....
 
-                                       With the Government of India chartering into the insolvency and bankruptcy area, the team at NBlaw Firm  has been brainstorming and formulating strategies to manage the portfolios of lenders and borrowers and providing advisory and consultancy services under the Insolvency and Bankruptcy Code, 2016 covering issues related to securities. structuring transactions, filing and drafting of term sheets, negotiations and regulatory framework.
+                                       {{-- With the Government of India chartering into the insolvency and bankruptcy area, the team at NBlaw Firm  has been brainstorming and formulating strategies to manage the portfolios of lenders and borrowers and providing advisory and consultancy services under the Insolvency and Bankruptcy Code, 2016 covering issues related to securities. structuring transactions, filing and drafting of term sheets, negotiations and regulatory framework. --}}
                                     </p>
                                 </div>
                         </div>
@@ -760,7 +829,7 @@
 
 
             <!-- Newsletter Start -->
-             <div class="container">
+            {{-- <div class="container">
                 <div class="newsletter">
 
                     <div class="section-header">
@@ -779,11 +848,26 @@
                     </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <!-- Newsletter End -->
 
             <!--Div where the WhatsApp will be rendered-->
             {{-- <div id="WAButton"></div> --}}
+
+            {{-- #below line is added by me --}}
+            <div class="sidebar-contact">
+                <div class="toggle">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </div>
+                <h2>Contact Us</h2>
+                <form action="">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="rel" placeholder="Phone Number">
+                <textarea placeholder="Message"></textarea>
+                <input type="submit" value="Send">
+                </form>
+            </div>
 
             <!-- Footer Start -->
             @include('layouts.footer')
@@ -902,19 +986,15 @@
     </script>
     {{-- till here is for the whatsapp integration --}}
 
-    {{-- <script type="text/javascript">
-        $(document).ready(function(){
-            ('.counter').each(function(){
-                $(this).prop('Counter',0).animate({
-                    Counter:$(this).text()
-                },{
-                    duration:4000,
-                    easing:'swing',
-                    step:function(now){
-                        $(this).text(Math.ceil(now));
-                    }
-                });
-            });
+    {{-- below script is for sidebar contact --}}
+    <script type="text/javascript">
+            $(document).ready(function(){
+        $('.toggle').click(function() {
+            $('.sidebar-contact').toggleClass('active');
+            $('.toggle').toggleClass('active');
+            
+        })
+        
         });
-    </script> --}}
+</script>
 </html>

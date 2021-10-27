@@ -79,8 +79,13 @@
                                             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                                                 <div class="navbar-nav mr-auto">
                                                     <a href="/" class="nav-item nav-link {{ request()->is('/') ? 'active' : '' }} ">Home</a>
-                                                    <a href="about-us" class="nav-item nav-link {{ request()->is('about-us') ? 'active' : '' }}">About</a>
-                                                    <a href="our-services" class="nav-item nav-link {{ request()->is('our-services') ? 'active' : '' }}">Our Services</a>
+                                                    {{-- <a href="about-us" class="nav-item nav-link {{ request()->is('about-us') ? 'active' : '' }}">About</a> --}}
+                                                    
+                                                    <a href="<?=route('about-us')?>" class="nav-item nav-link {{ request()->is('about-us') ? 'active' : '' }}">About</a>
+                                                    
+                                                    <a href="<?=route('our-services')?>" class="nav-item nav-link {{ request()->is('our-services') ? 'active' : '' }}">Our Services</a>
+                                                    {{-- <a href="our-services" class="nav-item nav-link {{ request()->is('our-services') ? 'active' : '' }}">Our Services</a> --}}
+                                                    
                                                     {{-- <a href="our-services" class="nav-link dropdown-toggle" data-toggle="dropdown">Our Services</a>
                                                     <div class="nav-item dropdown">
                                                         <a href="our-services" class="nav-link dropdown-toggle" data-toggle="dropdown">Our Services</a>
@@ -102,10 +107,16 @@
                                                             </div>
                                                         </div>
                                                     </div> --}}
-                                                    <a href="/media" class="nav-item nav-link">Media</a>
-                                                    <a href="/disclamier" class="nav-item nav-link">Disclamier</a>
+                                                    {{-- <a href="/media" class="nav-item nav-link {{ request()->is('media') ? 'active' : '' }}">Media</a> --}}
+                                                    <a href="<?=route('media')?>" class="nav-item nav-link {{ request()->is('media') ? 'active' : '' }}">Media</a>
 
-                                                    <a href="/blog" class="nav-item nav-link">Blog</a>
+                                                    {{-- <a href="/blog" class="nav-item nav-link">Disclamier</a> --}}
+                                                    {{-- <a href="/disclamier" class="nav-item nav-link {{ request()->is('disclamier') ? 'active' : '' }}">Disclamier</a> --}}
+                                                    <a href="<?=route('disclamier')?>" class="nav-item nav-link {{ request()->is('disclamier') ? 'active' : '' }}">Disclamier</a>
+
+                                                    {{-- <a href="/blog" class="nav-item nav-link">Blog</a> --}}
+                                                    {{-- <a href="/blog" class="nav-item nav-link {{ request()->is('blog') ? 'active' : '' }}">Blog</a> --}}
+                                                    <a href="<?=route('blog')?>" class="nav-item nav-link {{ request()->is('blog') ? 'active' : '' }}">Blog</a>
 
                                                     {{-- <div class="nav-item dropdown">
                                                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
@@ -115,8 +126,13 @@
                                                         </div>
                                                     </div> --}}
 
-                                                    <a href="contact-us" class="nav-item nav-link ">Contact Us</a>
-                                                    <a href="our-team" class="nav-item nav-link">Our Team</a>
+                                                    {{-- <a href="contact-us" class="nav-item nav-link ">Contact Us</a> --}}
+                                                    {{-- <a href="/contact-us" class="nav-item nav-link {{ request()->is('contact-us') ? 'active' : '' }}">Contact Us</a> --}}
+                                                    <a href="<?=route('contact-us')?>" class="nav-item nav-link {{ request()->is('contact-us') ? 'active' : '' }}">Contact Us</a>
+
+                                                    {{-- <a href="our-team" class="nav-item nav-link">Our Team</a> --}}
+                                                    {{-- <a href="/our-team" class="nav-item nav-link {{ request()->is('our-team') ? 'active' : '' }}">Our Team</a> --}}
+                                                    <a href="<?=route('our-team')?>" class="nav-item nav-link {{ request()->is('our-team') ? 'active' : '' }}">Our Team</a>
                                                 </div>
                                                 {{-- <div class="ml-auto">
                                                     <a class="btn" href="contact-us">Got a Query</a>
