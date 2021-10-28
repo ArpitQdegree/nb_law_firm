@@ -111,7 +111,7 @@
         cursor: pointer;
         border: none;
         font-size: 18px;
-        
+
         }
         .sidebar-contact h2 {
         margin: 0 0  20px;
@@ -206,8 +206,8 @@
                             <div class="feature-item">
                                 <i class="far fa-thumbs-up"></i>
                                 <h3>Success</h3>
-                                {{-- <p>99.99% Case Won</p> --}}
-                                <p class="counter">99.99% Case Won</p>
+                                <p>99.99% Case Won</p>
+                                {{-- <span class="counter" style="font-size: 18px;">100</span><pre>%</pre> --}}
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -448,8 +448,8 @@
                                     </div>
                                     <h3>SARFAESI Act, 2002</h3>
                                     <p style="height:357px;">
-                                       {{-- The lawyers at the Firm are committed to protecting the client-facing debt collection lawsuits before Debt Recovery Tribunals, Appellate Authorities, High Courts and Supreme Court. The Firm goes to length to find the right fit to recover the Non-Performing Asset either through Securitization (acquiring financial assets), Asset Reconstruction (management of the business)..... --}}
-                                       The lawyers at the Firm are committed to protecting the client-facing debt collection lawsuits before Debt Recovery Tribunals, Appellate Authorities, High Courts and Supreme Court. The Firm goes to length to find the right fit to recover the Non-Performing Asset either through Securitization (acquiring financial assets), Asset Reconstruction (management of the business) or Enforcement of Security without Court’s intervention.
+                                       The lawyers at the Firm are committed to protecting the client-facing debt collection lawsuits before Debt Recovery Tribunals, Appellate Authorities, High Courts and Supreme Court. The Firm goes to length to find the right fit to recover the Non-Performing Asset either through Securitization (acquiring financial assets), Asset Reconstruction (management of the business).....
+                                       {{-- The lawyers at the Firm are committed to protecting the client-facing debt collection lawsuits before Debt Recovery Tribunals, Appellate Authorities, High Courts and Supreme Court. The Firm goes to length to find the right fit to recover the Non-Performing Asset either through Securitization (acquiring financial assets), Asset Reconstruction (management of the business) or Enforcement of Security without Court’s intervention. --}}
                                     </p>
                                 </div>
                         </div>
@@ -861,13 +861,14 @@
                 </div>
                 <h2>Contact Us</h2>
                 <form action="">
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <input type="rel" placeholder="Phone Number">
-                <textarea placeholder="Message"></textarea>
-                <input type="submit" value="Send">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="rel" placeholder="Phone Number">
+                    <textarea placeholder="Message"></textarea>
+                    <input type="submit" value="Send">
                 </form>
             </div>
+
 
             <!-- Footer Start -->
             @include('layouts.footer')
@@ -992,9 +993,27 @@
         $('.toggle').click(function() {
             $('.sidebar-contact').toggleClass('active');
             $('.toggle').toggleClass('active');
-            
+
         })
-        
+
         });
-</script>
+    </script>
+
+    {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> --}}
+
+    {{-- <script type="text/javascript">
+        $(document).ready(function () {
+            $('.counter').each(function(){
+                $(this).prop('Counter',0).animate({
+                    Counter: $(this).text()
+                }, {
+                    duration:4000,
+                    easing: 'swing',
+                    step:function(now){
+                        $(this).text(Math.ceil(now));
+                    }
+                });
+            });
+        });
+    </script> --}}
 </html>

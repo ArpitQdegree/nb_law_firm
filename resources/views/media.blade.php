@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
 
-        @section('title', 'Best Matrimonail Lawywer in Delhi NCR, Family....')
-        <title>NB Law Firm - @yield('title')</title>
+        @section('title', 'NB Law Firm')
+        <title>Media - @yield('title')</title>
 
         {{-- <meta content="width=device-width, initial-scale=1.0" name="viewport"> --}}
 

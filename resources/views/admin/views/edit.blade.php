@@ -117,7 +117,8 @@
                 <label for="exampleFormControlInput1" class="form-label">Content</label>
 
                  <textarea id="summernote" name="body">
-                    <input type="text" class="form-control" id="body" value="{{ $post->body }}" name="body">
+                    {!! $post->body !!}
+                     {{-- <input type="text" class="form-control" id="body" value="{{ $post->body }}" name="body"> --}}
                 </textarea>
             </div>
 

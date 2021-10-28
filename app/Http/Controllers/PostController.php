@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Validator;
 use DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
-
+// use App\Http\Controllers\redirect;
 use Session;
 
 // use Illuminate\Support\Str;
@@ -150,8 +150,6 @@ class PostController extends Controller
             return view('blog', compact(['posts', 'search']));
         }
         else{
-            // return view ('blog')->withMessage('No Details found. Try to search again !');
-
             return redirect::back()->withErrors(['msg' => 'No post found']);
         }
 

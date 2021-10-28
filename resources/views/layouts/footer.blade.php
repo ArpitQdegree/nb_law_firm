@@ -49,9 +49,13 @@
                             <div class="footer-contact">
                                 <h2>Get In Touch</h2>
                                 <p><i class="fa fa-map-marker-alt"></i>M-132, First Floor, GK-2, Delhi – 110048.</p>
-                                <p><i class="fa fa-phone-alt"></i>+011-4587-4391</p>
-                                <p><i class="fa fa-phone-alt"></i>9999221769</p>
-                                <p><i class="fa fa-envelope"></i>nblawfirm@yahoo.com</p>
+                                {{-- <p><i class="fa fa-phone-alt"></i>+011-4587-4391</p> --}}
+                                {{-- <p><i class="fa fa-phone-alt" aria-hidden="true" style="color: grey; cursor: pointer;">&nbsp;&nbsp;<a href="tel:+01145874391" style="color:grey;">+01145874391</a></i></p> --}}
+                                <p><i class="fa fa-phone-alt" aria-hidden="true" style="color: grey; cursor: pointer;">&nbsp;&nbsp;<a href="tel:+01145874391" style="color:grey;">+01145874391</a></i></p>
+                                {{-- <p><i class="fa fa-phone-alt"></i>9999221769</p> --}}
+                                <p><i class="fa fa-phone-alt"aria-hidden="true" style="color: grey; cursor: pointer;">&nbsp;&nbsp;<a href="tel:+01145874391" style="color:grey;">9999221769</a></i></p>
+                                {{-- <p><i class="fa fa-envelope"></i>nblawfirm@yahoo.com</p> --}}
+                                <p><i class="fa fa-envelope" aria-hidden="true" style="color: grey; cursor: pointer;">&nbsp;&nbsp;<a href="mailto:nblawfirm@yahoo.com" style="color:grey;">nblawfirm@yahoo.com</a></i></p>
                                 <div class="footer-social">
                                     <a href="https://twitter.com/advbanganidhi"><i class="fab fa-twitter"></i></a>
                                     <a href="https://www.facebook.com/nblawfirm.in"><i class="fab fa-facebook-f"></i></a>

@@ -112,7 +112,13 @@
                     </tr>
                 @endforeach
 
-                {{$posts->links("pagination::bootstrap-4")}}
+                {{-- {{$posts->links("pagination::bootstrap-4")}} --}}
+
+                <div class="d-flex">
+                    <div class="mx-auto">
+                        {{$posts->links("pagination::bootstrap-4")}}
+                    </div>
+                </div>
 
 
                 {{-- till here added by me --}}

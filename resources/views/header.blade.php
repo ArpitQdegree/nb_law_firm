@@ -80,12 +80,12 @@
                                                 <div class="navbar-nav mr-auto">
                                                     <a href="/" class="nav-item nav-link {{ request()->is('/') ? 'active' : '' }} ">Home</a>
                                                     {{-- <a href="about-us" class="nav-item nav-link {{ request()->is('about-us') ? 'active' : '' }}">About</a> --}}
-                                                    
+
                                                     <a href="<?=route('about-us')?>" class="nav-item nav-link {{ request()->is('about-us') ? 'active' : '' }}">About</a>
-                                                    
+
                                                     <a href="<?=route('our-services')?>" class="nav-item nav-link {{ request()->is('our-services') ? 'active' : '' }}">Our Services</a>
                                                     {{-- <a href="our-services" class="nav-item nav-link {{ request()->is('our-services') ? 'active' : '' }}">Our Services</a> --}}
-                                                    
+
                                                     {{-- <a href="our-services" class="nav-link dropdown-toggle" data-toggle="dropdown">Our Services</a>
                                                     <div class="nav-item dropdown">
                                                         <a href="our-services" class="nav-link dropdown-toggle" data-toggle="dropdown">Our Services</a>
@@ -150,10 +150,14 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="nav-bar">
-                                <span><i class="fa fa-calendar" aria-hidden="true" style="color: white">&nbsp;&nbsp;Mon - Fri&nbsp;&nbsp;10:00 AM - 7:00 PM</i></span>&nbsp;&nbsp;
-                                <span><i class="fa fa-phone-alt" aria-hidden="true" style="color: white; cursor: pointer;">&nbsp;&nbsp;+011-4587-4391</i></span>&nbsp;&nbsp;
-                                <span><i class="fa fa-phone-alt" aria-hidden="true" style="color: white; cursor: pointer;">&nbsp;&nbsp;+91-9999221769</i></span>&nbsp;&nbsp;
-                                <span><i class="fa fa-envelope" aria-hidden="true" style="color: white; cursor: pointer;">&nbsp;&nbsp;nblawfirm@yahoo.com</i></span>
+                                <span><i class="fa fa-calendar" aria-hidden="true" style="color: white">&nbsp;&nbsp;Mon - Fri&nbsp;&nbsp;10:00 AM - 8:00 PM</i></span>&nbsp;&nbsp;
+                                <span><i class="fa fa-phone-alt" aria-hidden="true" style="color: white; cursor: pointer;">&nbsp;&nbsp;<a href="tel:+01145874391" style="color:white;">+011-4587-4391</a></i></span>&nbsp;&nbsp;
+                                {{-- <span><i class="fa fa-phone-alt" aria-hidden="true" style="color: white; cursor: pointer;">&nbsp;&nbsp;+011-4587-4391</i></span>&nbsp;&nbsp; --}}
+                                <span><i class="fa fa-phone-alt" aria-hidden="true" style="color: white; cursor: pointer;">&nbsp;&nbsp;<a href="tel:+91-9999221769" style="color:white;">+91-9999221769</a></i></span>&nbsp;&nbsp;
+                                {{-- <span><i class="fa fa-phone-alt" aria-hidden="true" style="color: white; cursor: pointer;">&nbsp;&nbsp;+91-9999221769</i></span>&nbsp;&nbsp; --}}
+                                <span><i class="fa fa-envelope" aria-hidden="true" style="color: white; cursor: pointer;">&nbsp;&nbsp;<a href="mailto:nblawfirm@yahoo.com" style="color:white;">nblawfirm@yahoo.com</a></i></span>
+                                {{-- <span><i class="fa fa-envelope" aria-hidden="true" style="color: white; cursor: pointer;">&nbsp;&nbsp;<a href="mailto:nblawfirm@yahoo.com" style="color:white;">nblawfirm@yahoo.com</a></i></span> --}}
+                                {{-- <span><i class="fa fa-envelope" aria-hidden="true" style="color: white; cursor: pointer;">&nbsp;&nbsp;nblawfirm@yahoo.com</i></span> --}}
 
                                 {{-- <a class="btn right" style="float: right" href="contact-us">Got a Query</a> --}}
                                 <a class="btn right" style="float: right" href="contact-us">Get in Touch</a>
