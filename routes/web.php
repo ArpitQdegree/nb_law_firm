@@ -131,7 +131,8 @@ Route::get('blog/{slug}', [PostController::class, 'detailblog'])->name('blog.sho
 // Route::middleware([ 'AdminAuthenitcated'])->prefix('admin')->group(function () { #this line is added by me
 
 
-    Route::get('admin/', [AdminHomeController::class,'dashboard'])->middleware('auth');
+    // Route::get('admin/', [AdminHomeController::class,'dashboard'])->middleware('auth');
+    Route::get('admin/', [AdminHomeController::class,'dashboard'])->name('admin')->middleware('auth');
 
     Route::get('/add-post',[PostController::class,'addpost'])->name('addpost')->middleware('auth');
     Route::post('/add-post-data',[PostController::class,'addpostData'])->name('addpostData')->middleware('auth');

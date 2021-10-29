@@ -85,9 +85,10 @@
                <form action="{{ route('search') }}" method="post" role="search">
                     {{ csrf_field() }}
                     <div class="input-group">
-                        <input type="text" class="form-control" name="search" placeholder="Search blog">
+                        {{-- <input type="text" class="form-control" name="search" placeholder="Search blog"> --}}
+                        <input type="text" class="form-control" name="search" placeholder="Search blog" style="width:97%; margin-left:20px;">
                         <span class="input-group-btn">
-                            <button type="submit" class="btn btn-primary">Search
+                            <button type="submit" class="btn btn-primary" style="margin-right: 20px;">Search
                                 <span class="glyphicon glyphicon-search"></span>
                             </button>
                         </span>
@@ -105,6 +106,7 @@
                                     <div class="card-body">
                                         <a href="{{ route('blog.show', $post->slug) }}"><h5 class="card-title">{{ $post->title }}</h5></a>
                                         <p class="card-text">{{ $post->body }}</a></p>
+                                        {{-- <p class="card-text"><?= $post->body; ?></a></p> --}}
                                     </div>
                                 </div><span>&nbsp &nbsp</span>
                             @endforeach

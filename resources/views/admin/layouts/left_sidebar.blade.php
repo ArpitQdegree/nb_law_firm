@@ -13,6 +13,7 @@
       {{-- <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8"> --}}
       <img src="/dist/img/Logo1.png" style="width:56px;" />
       <span class="brand-text font-weight-light" href="/admin" style="font-family: 'Times New Roman', Times, serif;">NB Law Firm</span>
+      {{-- <span class="brand-text font-weight-light" <a href="<?= route('admin') ?>" style="font-family: 'Times New Roman', Times, serif;">NB Law Firm</a></span> --}}
     </a>
 
     <!-- Sidebar -->
@@ -27,7 +28,8 @@
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <li class="nav-item menu-open">
-            <a href="admin/" class="nav-link active">
+            {{-- <a href="admin/" class="nav-link active"> --}}
+            <a href="<?=route('admin') ?>"class="nav-link active"</a>
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p style="font-family: 'Times New Roman', Times, serif;">
                 Dashboard

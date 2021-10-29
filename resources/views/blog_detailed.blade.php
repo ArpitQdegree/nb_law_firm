@@ -71,14 +71,15 @@
 
 
     </style>
-    
+
     <body>
         @include('header')
 
             <h1 class="title">{{ $post->title }}</h1>
 
 
-            <p class="body">{{ $post->body }}</p>
+            {{-- <p class="body">{{ $post->body }}</p> --}}
+             <p class="body"><?= $post->body; ?></a></p>
 
             <div class="service">
                 <div class="container">

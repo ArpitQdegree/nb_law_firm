@@ -1,7 +1,7 @@
 
 @extends("admin.layouts.layout")
 
-@section("title"," NB Law Firm | Admin Dashboard")
+@section("title","NB Law Firm | Admin Dashboard")
 
 @section("content")
 

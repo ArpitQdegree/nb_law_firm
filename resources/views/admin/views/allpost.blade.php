@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="{{ asset('plugins/fontawesome-free/css/all.min.css') }}">
-  
+
   <!-- DataTables -->
   <link rel="stylesheet" href="{{ asset('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css')}}">
   <link rel="stylesheet" href="{{ asset('plugins/datatables-responsive/css/responsive.bootstrap4.min.css')}}">
@@ -77,7 +77,7 @@
                                     Body
                                 </th>
 
-                                
+
                                 <th style="width: 8%" class="text-center">
                                     Image
                                 </th>
@@ -88,16 +88,16 @@
                             </tr>
                         </thead>
                         <tbody>
-                            
+
                                     @foreach ($posts as $k => $data)
                                         <tr>
                                             <td style="font-family: 'Times New Roman', Times, serif;">{{ $data->id}}</td>
                                             <td style="font-family: 'Times New Roman', Times, serif;">{{ $data->title }}</td>
                                             <td style="font-family: 'Times New Roman', Times, serif;">{{ substr($data->body,0, 20) }}...</td>
                                             {{-- <td style="font-family: 'Times New Roman', Times, serif;">{{ $data->body }}</td> --}}
-                                            
+
                                             <td><img src ="{{ URL::to($data->image) }}" width="50"></td>
-                                   
+
 
                                             <td class="project-actions text-right">
                                                 <a class="btn btn-primary btn-sm" href="#" style="font-family: 'Times New Roman', Times, serif;">
@@ -105,7 +105,7 @@
                                                     </i>
                                                     View
                                                 </a>
-                                              
+
                                                 <a class="btn btn-info btn-sm" href="/post-edit/{{ $data->id}}" style="font-family: 'Times New Roman', Times, serif;">
                                                     <i class="fas fa-pencil-alt">
                                                     </i>
@@ -116,7 +116,10 @@
                                                     {{ method_field('DELETE') }}
 
                                                     <div class="form-group">
-                                                        <input type="submit" class="btn btn-danger delete-user" value="Delete">
+                                                        <i class="fa fa-trash">
+                                                        <input type="submit" class="btn btn-danger delete-user" value="Delete"></i>
+                                                        {{-- <i class="fa-solid fa-trash-can"></i> --}}
+
                                                     </div>
                                                 </form>
 

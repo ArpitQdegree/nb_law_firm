@@ -1734,7 +1734,7 @@ a:focus {
 /*******************************/
 
 .footer {
-    position: relative;
+    /* position: relative; */
     margin-top: 45px;
     padding-top: 180px;
     background: #121518;

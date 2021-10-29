@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="{{ asset('plugins/codemirror/codemirror.css') }}">
 
   <link rel="stylesheet" href="{{ asset('plugins/codemirror/theme/monokai.css') }}">
-  <link rel="stylesheet" href="{{ asset('plugins/simplemde/simplemde.min.css') }}">
+  {{-- <link rel="stylesheet" href="{{ asset('plugins/simplemde/simplemde.min.css') }}"> --}}
 
   {{-- below styles added by me for the fonts--}}
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
@@ -23,6 +23,9 @@
 
     <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
+
+    {{-- below script is putted by me to avoid the console error 29-10-2021--}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplemde/1.11.2/simplemde.min.js" integrity="sha512-ksSfTk6JIdsze75yZ8c+yDVLu09SNefa9IicxEE+HZvWo9kLPY1vrRlmucEMHQReWmEdKqusQWaDMpkTb3M2ug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   {{-- till here added by me --}}
 
   <link rel="icon" href="/image/Logo1.png" sizes="16x16">
@@ -65,7 +68,7 @@
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="">Home</a></li>
+              <li class="breadcrumb-item"><a href="/admin">Home</a></li>
               {{-- <li class="breadcrumb-item active">Text Editors</li> --}}
             </ol>
           </div>
@@ -101,46 +104,46 @@
                 </div>
             @endif
             <form method="post" id="camp" action="{{ url('add-post-data') }}" autocomplete="off" enctype="multipart/form-data">
-            @csrf
-            @method('post')
-            <div class="mb-3" style="margin-left:10px; margin-top:10px; margin-right:7px;">
-                <label for="title" class="form-label">Title</label>
-                {{-- <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Place Title Here"> --}}
-                <input type="text" class="form-control" id="title" name="title" placeholder="Place Title Here">
-            </div>
-            <br>
-            <div class="mb-3" style="margin-left:10px; margin-top:10px; margin-right:7px;">
-                <label for="exampleFormControlInput1" class="form-label">Slug/Url</label>
-                <input type="text" class="form-control" id="slug" name="slug" placeholder="slug" disabled>
-            </div>
-            <br>
-            <div class="mb-3" style="margin-left:10px; margin-top:10px; margin-right:7px;">
-                <label for="exampleFormControlInput1" class="form-label">Content</label>
-            </div>
-
-            <div class="card-body">
-              <textarea id="summernote" name="content">
-                Place <u>text</u> <strong>here</strong>
-              </textarea>
-            </div>
-
-            <div>
-                <label for="image" class="ml-2" id="feature-image">Featured Image</label>
-                <div class="input-group">
-                    <input type="file" name="image" class="form-control" id="featured-image" aria-describedby="inputGroupFileAddon04" aria-label="Upload" style="margin-left:10px; margin-right:16px; margin-bottom:17px;padding-bottom: 38px;">
+                @csrf
+                @method('post')
+                <div class="mb-3" style="margin-left:10px; margin-top:10px; margin-right:7px;">
+                    <label for="title" class="form-label">Title</label>
+                    {{-- <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Place Title Here"> --}}
+                    <input type="text" class="form-control" id="title" name="title" placeholder="Place Title Here">
                 </div>
-            </div>
-
-            <div>
-                <div class="ml-2 mb-2 mr-4">
-                    <button type="submit" class="btn btn-primary">Post</button>
-
-                    <a href="save">
-                        <button type="submit" class="btn btn-primary">Save</button>
-                    </a>
+                <br>
+                <div class="mb-3" style="margin-left:10px; margin-top:10px; margin-right:7px;">
+                    <label for="exampleFormControlInput1" class="form-label">Slug/Url</label>
+                    <input type="text" class="form-control" id="slug" name="slug" placeholder="slug" disabled>
+                </div>
+                <br>
+                <div class="mb-3" style="margin-left:10px; margin-top:10px; margin-right:7px;">
+                    <label for="exampleFormControlInput1" class="form-label">Content</label>
                 </div>
 
-            </div>
+                <div class="card-body">
+                <textarea id="summernote" name="content">
+                    Place <u>text</u> <strong>here</strong>
+                </textarea>
+                </div>
+
+                <div>
+                    <label for="image" class="ml-2" id="feature-image">Featured Image</label>
+                    <div class="input-group">
+                        <input type="file" name="image" class="form-control" id="featured-image" aria-describedby="inputGroupFileAddon04" aria-label="Upload" style="margin-left:10px; margin-right:16px; margin-bottom:17px;padding-bottom: 38px;">
+                    </div>
+                </div>
+
+                <div>
+                    <div class="ml-2 mb-2 mr-4">
+                        <button type="submit" class="btn btn-primary">Post</button>
+
+                        <a href="save">
+                            <button type="submit" class="btn btn-primary">Save</button>
+                        </a>
+                    </div>
+
+                </div>
 
             </form>
 
@@ -185,16 +188,24 @@
 
 
 
-{{-- below one is for slug --}}
 {{-- <script>
-  $('#title').change(function(e){
-      $.get('{{ url('slug') }}',
-      {'title': $(this).val()},
-      function(data){
-          $('#slug').val(data.slug);
-      }
-      );
-  });
+ $('#summernote').summernote({
+  toolbar: [
+    ['style', ['bold', 'italic', 'underline', 'clear']],
+    ['font', ['strikethrough', 'superscript', 'subscript']],
+    ['fontsize', ['fontsize']],
+    ['color', ['color']],
+    ['para', ['ul', 'ol', 'paragraph']],
+    ['height', ['height']],
+    ['picture', ['picture']],
+  ],
+
+  styleTags: [
+    'p',
+        { title: 'Blockquote', tag: 'blockquote', className: 'blockquote', value: 'blockquote' },
+        'pre', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'
+	],
+});
 </script> --}}
 </body>
 </html>
