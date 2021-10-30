@@ -133,6 +133,25 @@
         }
         /* till here is for contact us */
 
+.close1 {
+  top: 0px;
+  right: 51px;
+  height: 50px;
+  cursor: pointer;
+  position: absolute;
+  /* top: 50%;
+  right: 0%; */
+  padding: 12px 16px;
+  transform: translate(0%, -50%);
+}
+
+@media only screen and (max-width: 600px) {
+ #carousel{
+    width: auto;
+   max-height: 200px;
+  }
+}
+
     </style>
 
     <body>
@@ -543,7 +562,7 @@
                             <div class="section-header">
                                 <h2>Have A Questions?</h2>
                             </div>
-                            
+
                             <div id="accordion">
                                 <div class="card">
                                     <div class="card-header">
@@ -856,12 +875,17 @@
             {{-- <div id="WAButton"></div> --}}
 
             {{-- #below line is added by me --}}
+
             <div class="sidebar-contact">
+                <div class="close1">
+                 <span class="toggle">x</span>
+                </div>
                 <div class="toggle">
                     {{-- <i class="fa fa-envelope" aria-hidden="true"></i> --}}
                     <img src="image/getintouch.png" alt="get-in-touch" style="background-color:black; margin-left:-1px; float:left;">
                 </div>
                 <h2>Contact Us</h2>
+
                 <form action="">
                     <input type="text" placeholder="Name">
                     <input type="email" placeholder="Email">
@@ -927,6 +951,21 @@
 
         });
     </script>
+
+
+
+
+    {{-- <script>
+            var closebtns = document.getElementsByClassName("close");
+            var i;
+
+            for (i = 0; i < closebtns.length; i++) {
+            closebtns[i].addEventListener("click", function() {
+                this.parentElement.style.display = 'none';
+            });
+            }
+        </script> --}}
+
 
     {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> --}}
 

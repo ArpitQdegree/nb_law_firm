@@ -39,7 +39,7 @@
             position: fixed;
             top: 0;
             width: 100%;
-}
+        }
 
        .sticky + .top-bar{
             padding-top: 60px;
@@ -70,11 +70,12 @@
                             <div class="col-lg-9">
                                 <div class="nav-bar">
                                     <div class="container-fluid">
+
                                         <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
                                             {{-- <a href="#" class="navbar-brand">MENU</a> --}}
-                                            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                                                <span class="navbar-toggler-icon"></span>
-                                            </button>
+                                                 <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarCollapse" aria-expanded="false">
+                                                         <span class="navbar-toggler-icon"></span>
+                                                </button>
 
                                             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                                                 <div class="navbar-nav mr-auto">
@@ -152,18 +153,18 @@
                             <div class="nav-bar">
                                 <span><i class="fa fa-calendar" aria-hidden="true" style="color: white">&nbsp;&nbsp;Mon - Fri&nbsp;&nbsp;10:00 AM - 8:00 PM</i></span>&nbsp;&nbsp;
                                 <span><i class="fa fa-phone-alt" aria-hidden="true" style="color: white; cursor: pointer;">&nbsp;&nbsp;<a href="tel:+01145874391" style="color:white;">+011-4587-4391</a></i></span>&nbsp;&nbsp;
-                                {{-- <span><i class="fa fa-phone-alt" aria-hidden="true" style="color: white; cursor: pointer;">&nbsp;&nbsp;+011-4587-4391</i></span>&nbsp;&nbsp; --}}
-                                <span><i class="fa fa-phone-alt" aria-hidden="true" style="color: white; cursor: pointer;">&nbsp;&nbsp;<a href="tel:+91-9999221769" style="color:white;">+91-9999221769</a></i></span>&nbsp;&nbsp;
-                                {{-- <span><i class="fa fa-phone-alt" aria-hidden="true" style="color: white; cursor: pointer;">&nbsp;&nbsp;+91-9999221769</i></span>&nbsp;&nbsp; --}}
-                                <span><i class="fa fa-envelope" aria-hidden="true" style="color: white; cursor: pointer;">&nbsp;&nbsp;<a href="mailto:nblawfirm@yahoo.com" style="color:white;">nblawfirm@yahoo.com</a></i></span>
-                                {{-- <span><i class="fa fa-envelope" aria-hidden="true" style="color: white; cursor: pointer;">&nbsp;&nbsp;<a href="mailto:nblawfirm@yahoo.com" style="color:white;">nblawfirm@yahoo.com</a></i></span> --}}
-                                {{-- <span><i class="fa fa-envelope" aria-hidden="true" style="color: white; cursor: pointer;">&nbsp;&nbsp;nblawfirm@yahoo.com</i></span> --}}
 
-                                {{-- <a class="btn right" style="float: right" href="contact-us">Got a Query</a> --}}
+                                <span><i class="fa fa-phone-alt" aria-hidden="true" style="color: white; cursor: pointer;">&nbsp;&nbsp;<a href="tel:+91-9999221769" style="color:white;">+91-9999221769</a></i></span>&nbsp;&nbsp;
+
+                                <span><i class="fa fa-envelope" aria-hidden="true" style="color: white; cursor: pointer;">&nbsp;&nbsp;<a href="mailto:nblawfirm@yahoo.com" style="color:white;">nblawfirm@yahoo.com</a></i></span>
+
+
+
                                 <a class="btn right" style="float: right" href="contact-us">Get in Touch</a>
                             </div>
                         </div>
                     </div>
+
                 {{-- </div> --}}
             {{-- </div> --}}
         </div>

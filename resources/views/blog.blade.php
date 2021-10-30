@@ -62,6 +62,7 @@
 
 
 
+
     </style>
 
     <body>
@@ -85,7 +86,6 @@
                <form action="{{ route('search') }}" method="post" role="search">
                     {{ csrf_field() }}
                     <div class="input-group">
-                        {{-- <input type="text" class="form-control" name="search" placeholder="Search blog"> --}}
                         <input type="text" class="form-control" name="search" placeholder="Search blog" style="width:97%; margin-left:20px;">
                         <span class="input-group-btn">
                             <button type="submit" class="btn btn-primary" style="margin-right: 20px;">Search
@@ -173,6 +173,37 @@
                     </div>
                 </div>
             </div>
+
+
+           {{--  <div class="search-wrapper">
+                <div class="input-holder">
+                    <input type="text" class="search-input" placeholder="Type to search" />
+                    <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+                </div>
+                <span class="close" onclick="searchToggle(this, event);"></span>
+            </div> --}}
+
+
+
+
+
+
+
             <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+            {{-- <script type="text/javascript">
+                function searchToggle(obj, evt){
+                    var container = $(obj).closest('.search-wrapper');
+                        if(!container.hasClass('active')){
+                            container.addClass('active');
+                            evt.preventDefault();
+                        }
+        else if(container.hasClass('active') && $(obj).closest('.input-holder').length == 0){
+            container.removeClass('active');
+            // clear input
+            container.find('.search-input').val('');
+        }
+}
+            </script> --}}
         @include('layouts.footer')
 

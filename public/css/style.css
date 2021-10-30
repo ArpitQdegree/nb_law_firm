@@ -1724,6 +1724,13 @@ a:focus {
     background: #aa9166;
 }
 
+@media only screen and (max-width: 600px) {
+    #carousel {
+        width: auto;
+        max-height: 200px;
+    }
+}
+
 
 /*******************************/
 
