@@ -54,7 +54,5 @@ class HomeController extends Controller
         }
     }
 
-    // public function login(Request $request){
 
-    // }
 }

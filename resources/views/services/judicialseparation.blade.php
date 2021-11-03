@@ -1,4 +1,4 @@
-<link rel="icon" href="/image/Logo1.png" sizes="16x16">
+{{-- <link rel="icon" href="/image/Logo1.png" sizes="16x16"> --}}
 
 <style>
     .text{

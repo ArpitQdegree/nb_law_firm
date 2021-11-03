@@ -23,6 +23,8 @@
         <!-- Template Stylesheet -->
         <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
+        <link rel="icon" href="/image/Logo1.png" sizes="16x16">
+
     </head>
 
     <style>
@@ -67,17 +69,21 @@
                                     </a>
                                 </div>
                             </div>
+
                             <div class="col-lg-9">
                                 <div class="nav-bar">
                                     <div class="container-fluid">
-
                                         <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-                                            {{-- <a href="#" class="navbar-brand">MENU</a> --}}
-                                                 <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarCollapse" aria-expanded="false">
+                                                <a href="#" class="navbar-brand">MENU</a>
+                                                 {{-- <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarCollapse" aria-expanded="false">
                                                          <span class="navbar-toggler-icon"></span>
+                                                </button> --}}
+                                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                                    <span class="navbar-toggler-icon"></span>
                                                 </button>
 
                                             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                                                    {{-- <a href="#" class="navbar-brand">MENU</a> --}}
                                                 <div class="navbar-nav mr-auto">
                                                     <a href="/" class="nav-item nav-link {{ request()->is('/') ? 'active' : '' }} ">Home</a>
                                                     {{-- <a href="about-us" class="nav-item nav-link {{ request()->is('about-us') ? 'active' : '' }}">About</a> --}}
@@ -160,13 +166,21 @@
 
 
 
-                                <a class="btn right" style="float: right" href="contact-us">Get in Touch</a>
+                                {{-- <a class="btn right" style="float: right" href="contact-us">Get in Touch</a> --}}
+                                <a class="btn right" style="float: right" href="<?=route('contact-us')?>">Get in Touch</a>
                             </div>
                         </div>
                     </div>
 
                 {{-- </div> --}}
             {{-- </div> --}}
+
+            {{-- below lines are added by me for the navbar buton --}}
+            {{-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a> --}}
+            {{-- till here is added by me --}}
+
         </div>
 
          <!-- JavaScript Libraries -->
@@ -178,5 +192,16 @@
 
         <!-- Template Javascript -->
         <script src="{{asset('js/main.js')}}"></script>
+
+        <script type="text/javascript">
+            function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+            }
+        </script>
     </body>
 </html>

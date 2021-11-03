@@ -246,12 +246,12 @@
             <div class="about">
                 <div class="container">
                     <div class="row align-items-center">
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-5 col-md-6">
                             <div class="about-img">
                                 <img src="image/Logo1.png" alt="Image">
                             </div>
                         </div>
-                        <div class="col-lg-8 col-md-6">
+                        <div class="col-lg-7 col-md-6">
                             <div class="section-header">
                                 <h2>Welcome To NB Law Firm</h2>
                             </div>
@@ -280,31 +280,31 @@
                         <h2>Our Services</h2>
                     </div>
                     <div class="row">
-                            <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 col-md-6">
 
-                                <div class="service-item">
-                                    <div class="service-icon">
-                                        <i class="fa fa-landmark"></i>
-                                    </div>
-                                    <h3>Maintenance & alimony</h3>
-                                    <p>
-                                    When a married couple gets a divorce, the court may award “alimony” or spousal support to one of the former spouses …..
-                                    </p>
-                                    <a class="btn" href="services/maintenance-alimony">Learn More</a>
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="fa fa-landmark"></i>
                                 </div>
+                                <h3>Maintenance & alimony</h3>
+                                <p>
+                                    When a married couple gets a divorce, the court may award “alimony” or spousal support to one of the former spouses
+                                </p>
+                                <a class="btn" href="services/maintenance-alimony">Learn More</a>
                             </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="service-item">
-                                    <div class="service-icon">
-                                        <i class="fa fa-users"></i>
-                                    </div>
-                                    <h3>Domestic Violence Cases</h3>
-                                    <p>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="fa fa-users"></i>
+                                </div>
+                                <h3>Domestic Violence Cases</h3>
+                                <p>
                                     Domestic violence is any kind of behavior that a person uses, or threatens to use, to control an intimate partner….
-                                    </p>
-                                    <a class="btn" href="services/domestic-violence-cases">Learn More</a>
-                                </div>
+                                </p>
+                                <a class="btn" href="services/domestic-violence-cases">Learn More</a>
                             </div>
+                        </div>
                         <div class="col-lg-4 col-md-6">
                             <div class="service-item">
                                 <div class="service-icon">
@@ -312,7 +312,7 @@
                                 </div>
                                 <h3>Child Custody and Visitation</h3>
                                 <p>
-                                Under Indian law, maximum importance is given to the best interests of the child and so either parent does not have a clear primacy …….
+                                    Under Indian law, maximum importance is given to the best interests of the child …….
                                 </p>
                                 <a class="btn" href="services/child-custody" style="margin-top:-9px;">Learn More</a>
                             </div>
@@ -324,7 +324,7 @@
                                 </div>
                                 <h3>NRI Divorce Legal Support</h3>
                                 <p>
-                                The subject of foreign divorce in India sounds quite complicated and people are hardly ….
+                                    The subject of foreign divorce in India sounds quite complicated and people are hardly usually, these cases ….. ….
                                 </p>
                                 <a class="btn" href="services/nri-legal-services/">Learn More</a>
                             </div>
@@ -336,7 +336,7 @@
                                 </div>
                                 <h3>Mutual Consent and Contested Divorce</h3>
                                 <p>
-                                Mutual Consent Divorce is the basic way of coming out of the marriage and dissolving it legally. Important requirement…..
+                                    Mutual Consent Divorce is the basic way of coming out of the marriage and dissolving it legally.
                                 </p>
                                 <a class="btn" href="services/mutual-consent-divorce-procedure">Learn More</a>
                             </div>
@@ -348,7 +348,7 @@
                                 </div>
                                 <h3>498a and Allied Criminal Proceedings</h3>
                                 <p>
-                                The section was enacted to combat the menace of dowry deaths. It was introduced in the code by the Criminal Law …..
+                                    The section was enacted to combat the menace of dowry deaths. It was introduced in the code …..
                                 </p>
                                 <a class="btn" href="services/498a-allied-criminal-proceedings">Learn More</a>
                             </div>
@@ -361,7 +361,7 @@
                                 </div>
                                 <h3>Civil Suits in Property</h3>
                                 <p>
-                                One significant category of small claims disputes involves property damage cases. Usually, these cases …..
+                                    One significant category of small claims disputes involves property damage cases.…..
                                 </p>
                                 <a class="btn" href="services/civil-suits-in-property">Learn More</a>
                             </div>
@@ -373,7 +373,7 @@
                                 </div>
                                 <h3>Will probation cases</h3>
                                 <p>
-                                Probation in criminal law is a period of supervision over an offender, ordered by the court as an alternative …..
+                                    Probation in criminal law is a period of supervision over an offender, ordered by the court as …..
                                 </p>
                                 <a class="btn" href="services/will-probation-cases">Learn More</a>
                             </div>
@@ -386,7 +386,7 @@
                                 </div>
                                 <h3>Annulment of marriages</h3>
                                 <p>
-                                Annulment is a legal procedure for declaring a marriage null and void. With the exception of bigamy…..
+                                    Annulment is a legal procedure for declaring a marriage null and void. With the exception of bigamy…..
                                 </p>
                                 <a class="btn" href="services/annulment-of-marriage">Learn More</a>
                             </div>
@@ -406,41 +406,41 @@
                     <p style="text-align: justify;">For any organization managing business affairs in the complex legal environment is a task seamlessly handled by the experts at the NBLaw Firm. The Firm houses a team having a cumulative experience of over twenty years in resolving intricate issues and challenges with a bespoke strategy and holistic approach. The Firm advises, guides and represents various domestic and international organizations across various sectors like healthcare, automobiles, technology, energy, real estate, consumer goods, pharmaceuticals etc, in the following matters</p>
                     <div class="row">
                         <div class="col-lg-4 col-md-6">
-                                <div class="service-item1">
+                                <div class="service-item">
                                     <div class="service-icon">
                                         <i class="fa fa-globe"></i>
                                     </div>
                                     <h3>Anti — Trust / Competition</h3>
-                                    <p>
+                                    <p style="height:224px;">
                                         Engaged as the ‘trusted counsel’ by the Regulatory Authorities and Corporations, the team handles matters related to cartels, abuse of dominant positions, merger control, leniency applications and anti-competitive and concession
                                     </p>
                                 </div>
                         </div>
 
                         <div class="col-lg-4 col-md-6">
-                                <div class="service-item1">
+                                <div class="service-item">
                                     <div class="service-icon">
                                         <i class="fa fa-globe"></i>
                                     </div>
                                     <h3>Dishonour of Cheque (Negotiable Instruments Act)</h3>
                                     <p>
-                                        <!-- Also known as the ‘Cheque Bounce Case, the members of the Firm take care of the litigation as well as advisory interests of the corporate clients.
-                                        The team is well versed with.... -->
-                                        Also known as the ‘Cheque Bounce Case, the members of the Firm take care of the litigation as well as advisory interests of the corporate clients. The team is well versed with the legalities involved in the cases relating to Section 138 of the Negotiable Instruments Act and represent client interests before High Courts and Supreme Court.
+                                        Also known as the ‘Cheque Bounce Case, the members of the Firm take care of the litigation as well as advisory interests of the corporate clients.
+                                        The team is well versed with....
+                                        {{-- Also known as the ‘Cheque Bounce Case, the members of the Firm take care of the litigation as well as advisory interests of the corporate clients. The team is well versed with the legalities involved in the cases relating to Section 138 of the Negotiable Instruments Act and represent client interests before High Courts and Supreme Court. --}}
                                     </p>
                                 </div>
                         </div>
 
                         <div class="col-lg-4 col-md-6">
-                                <div class="service-item1">
+                                <div class="service-item">
                                     <div class="service-icon">
                                         <i class="fa fa-globe"></i>
                                     </div>
                                     <h3>Mergers & Acquisitions</h3>
                                     <p>
-                                       <!-- From financing to cross border transactions. the Firm has experience in handling multijurisdictional work in the field of mergers, acquisitions, amalgamation, joint ventures and de-mergers. The Firm possesses expertise in servicing its clients from varied industry sectors in due diligence... -->
+                                       From financing to cross border transactions. the Firm has experience in handling multijurisdictional work in the field of mergers, acquisitions, amalgamation, joint ventures and de-mergers. The Firm possesses expertise in servicing its clients from varied industry sectors in due diligence...
 
-                                       From financing to cross border transactions. the Firm has experience in handling multijurisdictional work in the field of mergers, acquisitions, amalgamation, joint ventures and de-mergers. The Firm possesses expertise in servicing its clients from varied industry sectors in due diligence, shareholders agreement, share purchases agreement. Regulatory affairs and compliances.
+                                       {{-- From financing to cross border transactions. the Firm has experience in handling multijurisdictional work in the field of mergers, acquisitions, amalgamation, joint ventures and de-mergers. The Firm possesses expertise in servicing its clients from varied industry sectors in due diligence, shareholders agreement, share purchases agreement. Regulatory affairs and compliances. --}}
                                     </p>
                                 </div>
                         </div>
@@ -448,41 +448,41 @@
 
                     <div class="row">
                         <div class="col-lg-4 col-md-6">
-                                <div class="service-item1">
+                                <div class="service-item">
                                     <div class="service-icon">
                                         <i class="fa fa-globe"></i>
                                     </div>
                                     <h3>White Collar Crime and Money Laundering</h3>
                                     <p>
-                                        <!-- Marking its brand in the niche but yet the most talked about fraudulent practices resulting in financial crimes causing operational difficulties in the country, the Firm has developed itself a team of robust and enthusiastic lawyers who are well-versed with the legalities and safeguard the interests of the clients when dealing with matters like market manipulation, frauds, bribery, insider trading and... -->
-                                        Marking its brand in the niche but yet the most talked about fraudulent practices resulting in financial crimes causing operational difficulties in the country, the Firm has developed itself a team of robust and enthusiastic lawyers who are well-versed with the legalities and safeguard the interests of the clients when dealing with matters like market manipulation, frauds, bribery, insider trading and money laundering.
+                                        Marking its brand in the niche but yet the most talked about fraudulent practices resulting in financial crimes causing operational difficulties in the country, the Firm has developed itself a team of robust and enthusiastic lawyers who are well-versed with the legalities and safeguard the interests of the clients when dealing with matters like market manipulation, frauds, bribery, insider trading and...
+                                        {{-- Marking its brand in the niche but yet the most talked about fraudulent practices resulting in financial crimes causing operational difficulties in the country, the Firm has developed itself a team of robust and enthusiastic lawyers who are well-versed with the legalities and safeguard the interests of the clients when dealing with matters like market manipulation, frauds, bribery, insider trading and money laundering. --}}
                                     </p>
                                 </div>
                         </div>
 
                         <div class="col-lg-4 col-md-6">
-                                <div class="service-item1">
+                                <div class="service-item">
                                     <div class="service-icon">
                                         <i class="fa fa-globe"></i>
                                     </div>
                                     <h3>SARFAESI Act, 2002</h3>
-                                    <p>
-                                       <!-- The lawyers at the Firm are committed to protecting the client-facing debt collection lawsuits before Debt Recovery Tribunals, Appellate Authorities, High Courts and Supreme Court. The Firm goes to length to find the right fit to recover the Non-Performing Asset either through Securitization (acquiring financial assets), Asset Reconstruction (management of the business)..... -->
-                                       The lawyers at the Firm are committed to protecting the client-facing debt collection lawsuits before Debt Recovery Tribunals, Appellate Authorities, High Courts and Supreme Court. The Firm goes to length to find the right fit to recover the Non-Performing Asset either through Securitization (acquiring financial assets), Asset Reconstruction (management of the business) or Enforcement of Security without Court’s intervention.
+                                    <p style="height:357px;">
+                                       The lawyers at the Firm are committed to protecting the client-facing debt collection lawsuits before Debt Recovery Tribunals, Appellate Authorities, High Courts and Supreme Court. The Firm goes to length to find the right fit to recover the Non-Performing Asset either through Securitization (acquiring financial assets), Asset Reconstruction (management of the business).....
+                                       {{-- The lawyers at the Firm are committed to protecting the client-facing debt collection lawsuits before Debt Recovery Tribunals, Appellate Authorities, High Courts and Supreme Court. The Firm goes to length to find the right fit to recover the Non-Performing Asset either through Securitization (acquiring financial assets), Asset Reconstruction (management of the business) or Enforcement of Security without Court’s intervention. --}}
                                     </p>
                                 </div>
                         </div>
 
                         <div class="col-lg-4 col-md-6">
-                                <div class="service-item1">
+                                <div class="service-item">
                                     <div class="service-icon">
                                         <i class="fa fa-globe"></i>
                                     </div>
                                     <h3>Insolvency and Bankruptcy Code</h3>
                                     <p>
-                                       <!-- With the Government of India chartering into the insolvency and bankruptcy area, the team at NBlaw Firm  has been brainstorming and formulating strategies to manage the portfolios of lenders and borrowers and providing advisory and consultancy services under the Insolvency and Bankruptcy Code, 2016 covering issues,  Asset Reconstruction.... -->
+                                       With the Government of India chartering into the insolvency and bankruptcy area, the team at NBlaw Firm  has been brainstorming and formulating strategies to manage the portfolios of lenders and borrowers and providing advisory and consultancy services under the Insolvency and Bankruptcy Code, 2016 covering issues,  Asset Reconstruction....
 
-                                       With the Government of India chartering into the insolvency and bankruptcy area, the team at NBlaw Firm  has been brainstorming and formulating strategies to manage the portfolios of lenders and borrowers and providing advisory and consultancy services under the Insolvency and Bankruptcy Code, 2016 covering issues related to securities. structuring transactions, filing and drafting of term sheets, negotiations and regulatory framework.
+                                       {{-- With the Government of India chartering into the insolvency and bankruptcy area, the team at NBlaw Firm  has been brainstorming and formulating strategies to manage the portfolios of lenders and borrowers and providing advisory and consultancy services under the Insolvency and Bankruptcy Code, 2016 covering issues related to securities. structuring transactions, filing and drafting of term sheets, negotiations and regulatory framework. --}}
                                     </p>
                                 </div>
                         </div>
@@ -490,23 +490,21 @@
                 </div>
             </div>
 
-
-
             <!-- Feature Start -->
             <div class="feature">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-8">
+                        <div class="col-md-7">
                             <div class="section-header">
                                 <h2>Why Choose Us</h2>
                             </div>
                             <div class="row align-items-center feature-item">
-                                <div class="col-3">
+                                <div class="col-5">
                                     <div class="feature-icon">
                                         <i class="fa fa-gavel"></i>
                                     </div>
                                 </div>
-                                <div class="col-9">
+                                <div class="col-7">
                                     <h3>Experienced Team</h3>
                                     <p>
                                         Our team of experienced and skilled business/legal advisors is just a phone call away, in case you have any questions regarding the process or if you want to discuss your case. We try to make sure that all your doubts are cleared before they actually arise.
@@ -514,12 +512,12 @@
                                 </div>
                             </div>
                             <div class="row align-items-center feature-item">
-                                <div class="col-3">
+                                <div class="col-5">
                                     <div class="feature-icon">
                                         <i class="fa fa-balance-scale"></i>
                                     </div>
                                 </div>
-                                <div class="col-9">
+                                <div class="col-7">
                                     <h3>QUICK AND ACCURATE SOLUTION</h3>
                                     <p>
                                         Instead of leaving behind unresolved legal issues until your next trip to India, with the help of NRI Legal World you can now get solution and advice for all your NRI legal concerns over the phone/email.
@@ -527,12 +525,12 @@
                                 </div>
                             </div>
                             <div class="row align-items-center feature-item">
-                                <div class="col-3">
+                                <div class="col-5">
                                     <div class="feature-icon">
                                         <i class="far fa-smile"></i>
                                     </div>
                                 </div>
-                                <div class="col-9">
+                                <div class="col-7">
                                     <h3>SMOOTH PROCESS</h3>
                                     <p>
                                         We try to make your interaction with the authorities as smooth as possible by doing & managing all the paperwork on your behalf. Our team also provides you complete clarity about the process beforehand to set rational expectations.
@@ -540,7 +538,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-5">
                             <div class="feature-img">
                                 <img src="image/feature.jpg" alt="Feature">
                             </div>
@@ -555,12 +553,12 @@
             <div class="faqs">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-5">
                             <div class="faqs-img">
                                 <img src="image/question-image.jpg" alt="Image">
                             </div>
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-7">
                             <div class="section-header">
                                 <h2>Have A Questions?</h2>
                             </div>
@@ -626,34 +624,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                {{-- below questions are added by me --}}
-                                {{-- <div class="card">
-                                    <div class="card-header">
-                                        <a class="card-link" data-toggle="collapse" href="#collapseFive">
-                                            <span>5</span> Lorem ipsum dolor sit amet?
-                                        </a>
-                                    </div>
-                                    <div id="collapseFive" class="collapse" data-parent="#accordion">
-                                        <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                                        </div>
-                                    </div>
-                                </div>
-
-                                 <div class="card">
-                                    <div class="card-header">
-                                        <a class="card-link" data-toggle="collapse" href="#collapseFive">
-                                            <span>5</span> Lorem ipsum dolor sit amet?
-                                        </a>
-                                    </div>
-                                    <div id="collapseFive" class="collapse" data-parent="#accordion">
-                                        <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                                        </div>
-                                    </div>
-                                </div> --}}
-                                
-                                {{-- till here is added by me --}}
                             </div>
                             <a class="btn" href="/contact-us">Ask more</a>
                         </div>
@@ -935,7 +905,7 @@
         </div>
 
         <!-- JavaScript Libraries -->
-        <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
         {{-- <script src="lib/easing/easing.min.js"></script> --}}
         <script src="{{asset('lib/easing/easing.min.js')}}"></script>
@@ -946,9 +916,7 @@
         <!-- Template Javascript -->
         {{-- <script src="js/main.js"></script> --}}
         <script src="{{asset('js/main.js')}}"></script>
-        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-         -->
-         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
         {{-- whataspp integration added here --}}
 
             <!--Jquery-->
@@ -1032,6 +1000,4 @@
             });
         });
     </script> --}}
-
-    
 </html>

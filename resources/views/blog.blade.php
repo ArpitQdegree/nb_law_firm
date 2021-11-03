@@ -83,7 +83,7 @@
             </div>
 
             {{-- search button added here --}}
-               <form action="{{ route('search') }}" method="post" role="search">
+                <form action="{{ route('search') }}" method="post" role="search">
                     {{ csrf_field() }}
                     <div class="input-group">
                         <input type="text" class="form-control" name="search" placeholder="Search blog" style="width:97%; margin-left:20px;">

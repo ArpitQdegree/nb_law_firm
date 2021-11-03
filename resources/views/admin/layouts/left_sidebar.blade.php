@@ -9,11 +9,12 @@
 
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="" class="brand-link">
+    <a href="<?= route('admin') ?>" class="brand-link">
+  
       {{-- <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8"> --}}
       <img src="/dist/img/Logo1.png" style="width:56px;" />
-      <span class="brand-text font-weight-light" href="/admin" style="font-family: 'Times New Roman', Times, serif;">NB Law Firm</span>
-      {{-- <span class="brand-text font-weight-light" <a href="<?= route('admin') ?>" style="font-family: 'Times New Roman', Times, serif;">NB Law Firm</a></span> --}}
+      {{-- <span class="brand-text font-weight-light" href="/admin" style="font-family: 'Times New Roman', Times, serif;">NB Law Firm</span> --}}
+      <span class="brand-text font-weight-light" <a href="<?= route('admin') ?>" style="font-family: 'Times New Roman', Times, serif;">NB Law Firm</a></span>
     </a>
 
     <!-- Sidebar -->

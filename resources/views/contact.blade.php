@@ -30,7 +30,7 @@
     </head>
 
     <style>
-        .top-bar .logo h1 {
+        /* .top-bar .logo h1 {
             margin: 0;
             color: #aa9166;
             font-size: 32px;
@@ -44,9 +44,9 @@
 
         .contact-text{
             color: black;
-        }
+        } */
 
-        .newsletter .btn {
+        /* .newsletter .btn {
             position: absolute;
             top: 297px;
             right: 17px;
@@ -59,9 +59,8 @@
             background: #121518;
             border-radius: 0;
             border: 2px solid;
-            /* border: 2px solid #aa9166; */
             transition: .3s;
-        }
+        } */
 
     </style>
 
@@ -85,9 +84,7 @@
                 </div>
             </div>
             <!-- Page Header End -->
-
-            <div style="margin-left:20px; margin-right:20px; margin-bottom:20px;"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=100&amp;hl=en&amp;q=+(NB%20Law%20Firm)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="http://www.gps.ie/">truck gps</a></iframe></div>
-
+                <iframe class="map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=100&amp;hl=en&amp;q=+(NB%20Law%20Firm)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="http://www.gps.ie/">truck gps</a></iframe>
             <!-- Newsletter Start -->
             <div class="newsletter">
                 <div class="container">
@@ -97,7 +94,8 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-md-6">
+
+                        <div class="col-sm-6">
                             <div class="contact-info">
                                 <div class="contact-item">
                                     <i class="fa fa-map-marker-alt"></i>
@@ -123,9 +121,12 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-md-6">
+
                             <div class="contact-form">
-                                <form>
+
+                                <form method="post">
                                     <div class="form-group">
                                         <input type="text" class="form-control" placeholder="Your Name*" required="required" />
                                     </div>
@@ -138,10 +139,11 @@
                                     <div class="form-group">
                                         <textarea class="form-control" placeholder="Message*" required="required" ></textarea>
                                     </div>
-                                    <div>
-                                        <button class="btn" type="submit" href="" style="margin-top:290px;">Send Message</button>
-                                    </div>
                                 </form>
+                                 <div class="form-group">
+                                        <button class="btn" type="submit" href="">Send Message</button>
+                                    </div> 
+                               
                             </div>
                         </div>
                     </div>

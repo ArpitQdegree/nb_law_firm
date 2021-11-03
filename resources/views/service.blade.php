@@ -3012,7 +3012,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
-                            <div class="service-item" style="height:518px;">
+                            <div class="service-item">
                                 <div class="service-icon">
                                     {{-- <i class="fa fa-gavel"></i> --}}
                                     <i class="fa fa-balance-scale"></i>
@@ -3021,11 +3021,11 @@
                                 <p>
                                     In the majority of cases, this provision is invoked in married matters and frequently at the instance….
                                 </p>
-                                <a class="btn" href="services/transfer-petition/" style="margin-top:30px;">Learn More</a>
+                                <a class="btn" href="services/transfer-petition/">Learn More</a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
-                            <div class="service-item" style="height:518px;">
+                            <div class="service-item">
                                 <div class="service-icon">
                                     <i class="fa fa-globe"></i>
                                     {{-- <i class="fa fa-arrows"></i> --}}
@@ -3034,7 +3034,7 @@
                                 <p>
                                     Partition means division of property between two or more co-owners. Partition of property in India takes….
                                 </p>
-                                <a class="btn" href="services/civil-suits-for-partition/" style="margin-top:53px;">Learn More</a>
+                                <a class="btn" href="services/civil-suits-for-partition/">Learn More</a>
                             </div>
                         </div>
 
@@ -3052,7 +3052,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
-                            <div class="service-item" style="height:518px;">
+                            <div class="service-item">
                                 <div class="service-icon">
                                     <i class="fa fa-gavel"></i>
                                 </div>
@@ -3070,14 +3070,14 @@
                                     <i class="fa fa-male"></i>
                                 </div>
                                 <h3>Cyber Stalking</h3>
-                                <p style="height:165px;">
+                                <p>
                                     Online stalking is a form of harassment that, which may seem innocent enough, can establish fear in the victim …..
                                 </p>
                                 <a class="btn" href="services/cyber-stalking/">Learn More</a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
-                            <div class="service-item" style="margin-left:108%">
+                            <div class="service-item">
                                 <div class="service-icon">
                                     {{-- <i class="fa fa-gavel"></i> --}}
                                     <i class="fa fa-heartbeat"></i>
@@ -3096,6 +3096,9 @@
 
             <div class="service">
                 <div class="container">
+                <div class="section-header">
+                        <h2>Get In Touch</h2>
+                    </div>
                     <div class="row">
                         <div class="col-lg-4 col-md-6">
                                 <div class="service-item">
@@ -3115,13 +3118,15 @@
                                         <i class="fa fa-globe"></i>
                                     </div>
                                     <h3>Contact Us</h3>
-                                    <p>
-                                       Feel free to call us on <br>
+                                    <div class="text-center">
+                                        <p>
+                                        Feel free to call us on <br>
 
-                                        ‎011-4587-4391 <br>
-                                        9999221769<br>
-                                        {{-- Monday - Friday, 10am - 7pm --}}
-                                    </p>
+                                            ‎011-4587-4391 <br>
+                                            9999221769<br>
+                                            {{-- Monday - Friday, 10am - 7pm --}}
+                                        </p>
+                                    </div>
                                 </div>
                         </div>
 
