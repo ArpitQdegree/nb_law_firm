@@ -3027,8 +3027,9 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="service-item">
                                 <div class="service-icon">
-                                    <i class="fa fa-globe"></i>
+                                    <i class="fas fa-arrows-alt"></i>
                                     {{-- <i class="fa fa-arrows"></i> --}}
+                                    {{-- <i class="fa-solid fa-house-crack"></i> --}}
                                 </div>
                                 <h3>Civil suits for partition</h3>
                                 <p>

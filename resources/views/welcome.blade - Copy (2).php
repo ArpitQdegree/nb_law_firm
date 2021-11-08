@@ -26,12 +26,6 @@
     </head>
 
     <style>
-
-    .card-body{
-            overflow: hidden;
-            height: 100px;
-            overflow-y: auto;
-        }
         .top-bar .logo h1 {
             margin: 0;
             color: #aa9166;
@@ -73,55 +67,55 @@
 
         /* below style is for contact us */
         * {
-            box-sizing: border-box;
-            border-top-right-radius: 3px;
-            border-bottom-right-radius: 3px;
+        box-sizing: border-box;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
         }
 
         .sidebar-contact {
-            position: fixed;
-            transform: translateY(-50%);
-            top: 50%;
-            left: -350px;
-            width: 350px;
-            height: auto;
-            padding: 40px;
-            background: #fff;
-            box-shadow: 0 20px 50px rgba(0,0,0, .5);
-            transition: 0.5s ease-in-out;
+        position: fixed;
+        transform: translateY(-50%);
+        top: 50%;
+        left: -350px;
+        width: 350px;
+        height: auto;
+        padding: 40px;
+        background: #fff;
+        box-shadow: 0 20px 50px rgba(0,0,0, .5);
+        transition: 0.5s ease-in-out;
         }
 
         .sidebar-contact.active {
-            left: 0;
-            z-index: 1000;
+        left: 0;
+        z-index: 1000;
         }
 
         .sidebar-contact input,
         .sidebar-contact textarea{
-            width: 100%;
-            height: 36px;
-            padding: 5px;
-            margin-bottom: 10px;
-            border: 1px solid rgba(0,0,0, .5);
-            outline: none;
+        width: 100%;
+        height: 36px;
+        padding: 5px;
+        margin-bottom: 10px;
+        border: 1px solid rgba(0,0,0, .5);
+        outline: none;
         }
 
         .sidebar-contact textarea {
-            height: 60px;
-            resize: none;
+        height: 60px;
+        resize: none;
         }
 
         .sidebar-contact input[type="submit"] {
-            background: #00bcd4;
-            color: #fff;
-            cursor: pointer;
-            border: none;
-            font-size: 18px;
+        background: #00bcd4;
+        color: #fff;
+        cursor: pointer;
+        border: none;
+        font-size: 18px;
 
         }
         .sidebar-contact h2 {
-            margin: 0 0  20px;
-            padding: 0;
+        margin: 0 0  20px;
+        padding: 0;
         }
 
         .toggle {
@@ -139,24 +133,24 @@
         }
         /* till here is for contact us */
 
-        .close1 {
-            top: 0px;
-            right: 51px;
-            height: 50px;
-            cursor: pointer;
-            position: absolute;
-            /* top: 50%;
-            right: 0%; */
-            padding: 12px 16px;
-            transform: translate(0%, -50%);
-        }
+.close1 {
+  top: 0px;
+  right: 51px;
+  height: 50px;
+  cursor: pointer;
+  position: absolute;
+  /* top: 50%;
+  right: 0%; */
+  padding: 12px 16px;
+  transform: translate(0%, -50%);
+}
 
-        @media only screen and (max-width: 600px) {
-        #carousel{
-            width: auto;
-            max-height: 200px;
-        }
-    }
+@media only screen and (max-width: 600px) {
+ #carousel{
+    width: auto;
+   max-height: 200px;
+  }
+}
 
     </style>
 
@@ -164,7 +158,6 @@
         @include('header')
 
         <div class="wrapper">
-
             <!-- Carousel Start -->
             <div id="carousel" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -329,7 +322,7 @@
                                 <div class="service-icon">
                                     <i class="fa fa-graduation-cap"></i>
                                 </div>
-                                <h3>NRI Divorce Legal <br> Support</h3>
+                                <h3>NRI Divorce Legal Support</h3>
                                 <p>
                                 The subject of foreign divorce in India sounds quite complicated and people are hardly ….
                                 </p>
@@ -351,8 +344,7 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="service-item">
                                 <div class="service-icon">
-                                    {{-- <i class="fa fa-globe"></i> --}}
-                                    <i class="fa fa-user"></i>
+                                    <i class="fa fa-globe"></i>
                                 </div>
                                 <h3>498a and Allied Criminal Proceedings</h3>
                                 <p>
@@ -563,13 +555,11 @@
             <div class="faqs">
                 <div class="container">
                     <div class="row">
-
                         <div class="col-md-4">
                             <div class="faqs-img">
                                 <img src="image/question-image.jpg" alt="Image">
                             </div>
                         </div>
-
                         <div class="col-md-8">
                             <div class="section-header">
                                 <h2>Have A Questions?</h2>
@@ -585,17 +575,6 @@
                                     <div id="collapseOne" class="collapse show" data-parent="#accordion">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
-
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
-
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
-
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
-
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
-
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
                                         </div>
                                     </div>
                                 </div>
@@ -647,56 +626,34 @@
                                         </div>
                                     </div>
                                 </div>
-
-
+                                {{-- below questions are added by me --}}
                                 {{-- <div class="card">
                                     <div class="card-header">
                                         <a class="card-link" data-toggle="collapse" href="#collapseFive">
                                             <span>5</span> Lorem ipsum dolor sit amet?
                                         </a>
                                     </div>
-                                    <div id="collapseSix" class="collapse" data-parent="#accordion">
+                                    <div id="collapseFive" class="collapse" data-parent="#accordion">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card">
+
+                                 <div class="card">
                                     <div class="card-header">
                                         <a class="card-link" data-toggle="collapse" href="#collapseFive">
                                             <span>5</span> Lorem ipsum dolor sit amet?
                                         </a>
                                     </div>
-                                    <div id="collapseSeven" class="collapse" data-parent="#accordion">
-                                        <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header">
-                                        <a class="card-link" data-toggle="collapse" href="#collapseFive">
-                                            <span>5</span> Lorem ipsum dolor sit amet?
-                                        </a>
-                                    </div>
-                                    <div id="collapseEight" class="collapse" data-parent="#accordion">
-                                        <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header">
-                                        <a class="card-link" data-toggle="collapse" href="#collapseFive">
-                                            <span>5</span> Lorem ipsum dolor sit amet?
-                                        </a>
-                                    </div>
-                                    <div id="collapseNine" class="collapse" data-parent="#accordion">
+                                    <div id="collapseFive" class="collapse" data-parent="#accordion">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
                                         </div>
                                     </div>
                                 </div> --}}
+                                
+                                {{-- till here is added by me --}}
                             </div>
                             <a class="btn" href="/contact-us">Ask more</a>
                         </div>
@@ -716,9 +673,6 @@
                         <div class="testimonial-item">
                             <i class="fa fa-quote-right"></i>
                             <div class="row align-items-center">
-                            <!-- <div class="col-3">
-                                    <img src="img/testimonial-1.jpg" alt="my-img">
-                                </div> -->
                                 <div class="col-9">
                                     <h2>Client Name</h2>
                                     <p>Profession</p>
@@ -983,14 +937,14 @@
         <!-- JavaScript Libraries -->
         <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-
+        {{-- <script src="lib/easing/easing.min.js"></script> --}}
         <script src="{{asset('lib/easing/easing.min.js')}}"></script>
-
+        {{-- <script src="lib/owlcarousel/owl.carousel.min.js"></script> --}}
         <script src="{{asset('lib/owlcarousel/owl.carousel.min.js')}}"></script>
-
+        {{-- <script src="lib/isotope/isotope.pkgd.min.js"></script> --}}
         <script src="{{asset('lib/isotope/isotope.pkgd.min.js')}}"></script>
         <!-- Template Javascript -->
-
+        {{-- <script src="js/main.js"></script> --}}
         <script src="{{asset('js/main.js')}}"></script>
         <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
          -->
@@ -1079,5 +1033,5 @@
         });
     </script> --}}
 
-
+    
 </html>

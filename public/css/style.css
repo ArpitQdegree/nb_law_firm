@@ -18,6 +18,21 @@ body {
     font-weight: 400;
 }
 
+.fa-calendar:before {
+    content: "\f133";
+    color: #aa9166;
+}
+
+.fa-phone-alt:before {
+    content: "\f879";
+    color: #aa9166;
+}
+
+.fa-envelope:before {
+    content: "\f0e0";
+    color: #aa9166;
+}
+
 h1,
 h2,
 h3,
@@ -262,7 +277,7 @@ a:focus {
     }
     .nav-bar,
     .nav-bar .navbar {
-        background: #121518 !important;
+        background: #000000 !important;
     }
     .nav-bar .navbar-brand {
         display: none;
@@ -277,7 +292,7 @@ a:focus {
 @media (max-width: 991.98px) {
     .nav-bar,
     .nav-bar .navbar {
-        padding: 3px 0;
+        padding: -1px 0;
         background: #121518 !important;
     }
     .nav-bar a.nav-link {
@@ -341,7 +356,7 @@ a:focus {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* height: calc(100vh - 170px); */
+    height: calc(100vh - 170px);
 }
 
 .carousel .carousel-caption h1 {
@@ -743,21 +758,17 @@ a:focus {
 
 .service .service-item p {
     margin: 0;
+    height: 150px;
     color: #999999;
     padding: 0 25px 25px 25px;
     font-size: 15px;
-    /* text-align: justify; */
-    text-align: center;
-    line-height: 2;
+    text-align: justify;
 }
 
 .service .service-item a.btn {
-    /* position: relative; */
-    /* margin-bottom: 30px; */
-    position: absolute;
-    bottom: 18px;
-    right: 120px;
-    padding: 5px 12px;
+    position: relative;
+    margin-bottom: 30px;
+    padding: 10px 20px;
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 1px;
@@ -1037,6 +1048,7 @@ a:focus {
 .faqs .faqs-img img {
     width: 100%;
     height: 100%;
+    /* min-height: 445px; */
     object-fit: cover;
 }
 
@@ -1817,9 +1829,8 @@ a:focus {
 }
 
 .newsletter .btn:hover {
-    color: white;
-    /* background: black; */
-    background: black;
+    color: #121518;
+    background: #aa9166;
 }
 
 .map {
