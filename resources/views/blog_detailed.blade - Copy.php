@@ -29,65 +29,28 @@
 </head>
 
 <style>
-    .main{
-    background-color: #121518;
-    margin: 20px;
-    padding: 20px;
-    margin: auto;
-    min-height: 350px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    .title {
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 50px;
+        margin-left: 100px;
+        font-style: normal;
     }
 
-.btn11{
-    position: relative;
-    margin-bottom: 30px;
-    padding: 10px 20px;
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #aa9166;
-    border: 2px solid #aa9166;
-    border-radius: 0;
-    background: #121518;
-    transition: .3s;
-}
-
-.fa-user:before {
-    content: "\f007";
-    color: #aa9166;
-
-}
-
-.fa-tags:before {
-    content: "\f02c";
-    color: #aa9166;
-}
-.fa-calendar:before {
-    content: "\f133";
-    color: #aa9166;
-}
-
-.title {
-
-    margin-top: 50px;
-    margin-left: 100px;
-    font-style: normal;
-}
-
- .wapp {
-
-    margin-top: 50px;
-    text-align: justify;
-}
+    .body {
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 50px;
+        margin-left: 100px;
+    }
 
     .comment {
-
+        font-family: 'Times New Roman', Times, serif;
         font-style: normal;
         margin-right: 100px;
+        /* margin-left: 100px; */
         margin-left: -39px;
+        /* margin-top: 350px; */
     }
+
 
     .vcenter {
         vertical-align: central;
@@ -177,7 +140,7 @@
     }
 
     .facebook-icon,
-    .instagram-icon,
+    .google-plus-icon,
     .twitter-icon,
     .linkedin-icon {
         color: #FFFFFF;
@@ -193,87 +156,18 @@
         font-family: Cursive;
     } */
 
-    .widget_search form > input {
-    font-size: inherit;
-    position: absolute;
-    background: transparent;
-    top: 0;
-    left: 0;
-    cursor: pointer;
-    padding: 17px 0;
-    color: transparent;
-    }
-
-    .widget_search label input {
-    font-size: 17px;
-    width: 100%;
-    padding: 21px 20px;
-    padding-left: 55px;
-    }
-
-    .screen-reader-text {
-    clip: rect(1px, 1px, 1px, 1px);
-    position: absolute !important;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
-    }
-
- .widget:first-child {
-    margin-top: 20px;
-}
-.widget {
-    border: 1px solid #e5e5e5;
-    border-radius: 3px;
-    margin-top: 30px;
-    overflow: hidden;
-    word-wrap: break-word;
-}
-.widget h2, .widget {
-    word-wrap: break-word;
-}
-
-.widget {
-    border: 1px solid #e5e5e5;
-    border-radius: 3px;
-    margin-top: 30px;
-    overflow: hidden;
-    word-wrap: break-word;
-}
-.widget ul li {
-    border-top: 1px solid #e5e5e5;
-    padding: 17px 20px 16px;
-    color: #9b9b9b;
-}
-
-.widget--title {
-    max-width: 100%;
-    word-wrap: break-word;
-    word-break: break-all;
-    background: #fafafa;
-    position: relative;
-    font-size: 18px;
-    padding: 20px 10px 20px 20px;
-}
-
-.widget ul {
-    margin-top: -1px;
-}
-.widget ul {
-    font-size: 16px;
-    line-height: 24px;
-}
 </style>
 
 <body>
     @include('header')
+    {{-- <div class="wrapper"> --}}
 
     <h1 class="title">{{ $post->title }}</h1>
 
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <div class="service-item text-center">
+                <div class="service-item">
                     <div class="service-icon">
                         <i class="fa fa-calendar"> <?= $post->created_at ?> </i>
 
@@ -285,7 +179,7 @@
             </div>
 
             <div class="col-md-4">
-                <div class="service-item text-center">
+                <div class="service-item">
                     <div class="service-icon">
                         <i class="fa fa-user"> Admin</i>
                     </div>
@@ -293,7 +187,7 @@
             </div>
 
             <div class="col-md-4">
-                <div class="service-item text-center">
+                <div class="service-item">
                     <div class="service-icon">
                         <i class="fa fa-tags"> Blogs</i>
                     </div>
@@ -301,83 +195,33 @@
             </div>
         </div>
     </div>
-   <div class="container">
-     <div class="row">
-         <div class="col-md-9">
-      <p class="wapp"><?= $post->body ?></a></p>
-     </div>
 
-     <div class="col-md-3">
-         <div class="blog_sidebar">
-				<div class="widget widget_search">
-                    <form role="search" method="get" class="search-form" action="#">
-                        <label>
-                            <span class="screen-reader-text">Search for:</span>
-                            <input type="search" class="search-field" placeholder="Search …" value="" name="s">
-                        </label>
-
-				 <!-- <input type="submit" class="search-submit" value="Search">  -->
-			   </form>
-        </div>
-
-		<div class="widget widget_recent_entries">
-		<h3 style="color: #aa9166; text-align: center;">Leave a comment</h3>
-                <ul>
-                    <li><a href="#">Lockdown measures taken by the Government of India to prevent the spread of COVID-19 pandemic</a></li>
-                    <li><a href="#">NRI MARRIAGES IN INDIA</a></li>
-                    <li><a href="#">LANDMARK JUDGEMENTS OF 2018</a></li>
-                    <li><a href="#" aria-current="page">THE CONTRIBUTIONS OF HON’BLE JUSTICE DIPAK MISRA</a></li>
-                    <li><a href="#">RECENT JUDGEMENT ON ADULTERY</a></li>
-                </ul>
-
-		</div>
-        <div class="widget widget_recent_comments">
-            <h3 class="widget--title" style="color: #aa9166; text-align: center;">Recent Comments</h3>
-            <ul id="recentcomments"></ul>
-        </div>
-        <div class="widget widget_categories">
-            <h3 class="widget--title" style="color: #aa9166; text-align: center;">Categories</h3>
-			<ul>
-					<li class="cat-item cat-item-2"><a href="#">Blog</a>
-</li>
-	<li class="cat-item cat-item-21"><a href="#">Media</a>
-</li>
-			</ul>
-
-			</div>						</div>
-    </div>
-    </div>
-  </div>
-</div>
+    {{-- <p class="body">{{ $post->body }}</p> --}}
+    <p class="body"><?= $post->body ?></a></p>
 
     <div class="container">
         <div class="row">
+            <h5>Add Comment</h5>
 
-            <div class="col-sm-8">
-
-               <div class="main">
-               <h3 style="color: #aa9166; text-align: center;">Leave a comment</h3>
+            <div class="col-sm-12">
                 <form method="post" validate>
-                <div class="form-row">
-                    <div class="form-group col-md-12">
+                    <div class="form-group">
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"
-                        required placeholder="Put Your Comments Here.."></textarea>
+                            placeholder="Put Your Comments Here.."></textarea>
                     </div>
-                  </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <input type="text" class="form-control" id="inputPassword4" required placeholder="Enter Name..">
+                            <input type="text" class="form-control" id="inputPassword4" placeholder="Enter Name..">
+
                         </div>
                         <div class="form-group col-md-6">
-                            <input type="email" class="form-control" id="inputEmail4" required placeholder="Enter Email..">
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Enter Email..">
                         </div>
-
                     </div>
-                           <button type="submit" class="btn11 float-right">Post Comment</button>
+                    <button type="submit" class="btn btn-primary float-right">Post Comment</button>
                 </form>
 
             </div>
-         </div>
         </div>
     </div>
 
@@ -408,7 +252,7 @@
                         <p>
                             Feel free to call us on <br>
 
-                            ‎011-4587-4391 <br>
+                            011-4587-4391 <br>
                             9999221769<br>
                         </p>
                     </div>
@@ -431,6 +275,7 @@
 
         </div>
     </div>
+    {{-- </div> --}}
 
     <!-- Footer Start -->
     @include('layouts.footer')
@@ -463,10 +308,10 @@
                         );
                     }),
                     $(
-                        '<div class="sharing-item sharing-gp"><div class="sharing-img"><i class="fab fa-instagram-plus instagram-plus-icon"></i></div></div>')
+                        '<div class="sharing-item sharing-gp"><div class="sharing-img"><i class="fab fa-google-plus google-plus-icon"></i></div></div>')
                     .click(function() {
                         open_popup(
-                            "https://instagram.com/share?url=" + encodeURIComponent(document.location
+                            "https://plus.google.com/share?url=" + encodeURIComponent(document.location
                                 .href),
                             500,
                             500

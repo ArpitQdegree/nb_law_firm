@@ -158,8 +158,14 @@
                             </div>
                         </div>
                         <div class="timeline-container left">
+                            {{-- <div class="timeline-content" style="width:555px;"> --}}
                             <div class="timeline-content">
-                                <h2>Commercial Litigation</h2>
+                                <h2>Commercial Litigation Attorney</h2>
+                            </div>
+                        </div>
+                        <div class="timeline-container right">
+                            <div class="timeline-content">
+                                <h2>Transfer Petitions</h2>
                             </div>
                         </div>
                     </div>
@@ -235,7 +241,7 @@
                                     <p>
                                        Feel free to call us on <br>
 
-                                        ‎011-4587-4391 <br>
+                                        011-4587-4391 <br>
                                         9999221769<br>
                                     </p>
                                 </div>

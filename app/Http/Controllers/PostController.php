@@ -157,6 +157,30 @@ class PostController extends Controller
 
     }
 
+    public function formValidation()
+    {
+    	return view('form-validation');
+    }
+
+
+    // public function formValidationPost(Request $request)
+    // {
+    // 	$this->validate($request,[
+    // 			'name' => 'required',
+    // 			'email' => 'required',
+    // 			'subject' => 'required',
+    //             'message' => 'required',
+    // 		],[
+    // 			'name.required' => ' The name field is required.',
+    // 			'email' => ' The email field is required.',
+    // 			'subject' => ' The subject field is required.',
+    // 			'message' => ' The messagefield is required.',
+    // 		]);
+
+
+    // 	dd('You are successfully added all fields.');
+    // }
+
     // public function admninLoginForm(){
 
     //     return view('admin.views.login');

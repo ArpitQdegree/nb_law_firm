@@ -971,6 +971,10 @@
                 </form>
             </div>
 
+            {{-- <div class="col-md-3 live-chat" style="position: fixed; bottom: 0; right: 0; z-index: 99999; padding: 0;">
+                <iframe src="https://tawk.to/chat/5fca21a9920fc91564cd6e99/default" style="border: 0px; height: 0px;"></iframe>
+                <button class="chat-button-on">Chat With Us</button>
+            </div> --}}
 
             <!-- Footer Start -->
             @include('layouts.footer')
@@ -1035,7 +1039,7 @@
     </script>
 
 
-    <script type="text/javascript">
+    {{-- <script type="text/javascript">
         $('.count').each(function () {
             $(this).prop('Counter',0).animate({
                 Counter: $(this).text()
@@ -1047,7 +1051,7 @@
                 }
             });
     });
-    </script>
+    </script> --}}
 
     {{-- <script>
             var closebtns = document.getElementsByClassName("close");

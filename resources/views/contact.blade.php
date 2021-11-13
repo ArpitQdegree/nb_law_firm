@@ -30,6 +30,10 @@
     </head>
 
     <style>
+        .newsletter .btn:hover{
+            border: 2px solid #121518;
+            color: #ffffff;
+        }
         /* .top-bar .logo h1 {
             margin: 0;
             color: #aa9166;
@@ -142,8 +146,8 @@
                                 </form>
                                  <div class="form-group">
                                         <button class="btn" type="submit" href="">Send Message</button>
-                                    </div> 
-                               
+                                    </div>
+
                             </div>
                         </div>
                     </div>
@@ -152,12 +156,12 @@
                 </div>
 
             </div>
-        {{-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14008.506893501417!2d77.07823082983427!3d28.625963853624455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d05e3082918c5%3A0xbfeb4720745c2652!2sProntoLife!5e0!3m2!1sen!2sin!4v1605941940255!5m2!1sen!2sin" 
-            width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" 
+        {{-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14008.506893501417!2d77.07823082983427!3d28.625963853624455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d05e3082918c5%3A0xbfeb4720745c2652!2sProntoLife!5e0!3m2!1sen!2sin!4v1605941940255!5m2!1sen!2sin"
+            width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""
             aria-hidden="false" tabindex="0">
         </iframe>             --}}
 
-        
+
 
 
             <!-- Footer Start -->
@@ -165,7 +169,7 @@
 
             <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
-             
+
 
         </div>
 
