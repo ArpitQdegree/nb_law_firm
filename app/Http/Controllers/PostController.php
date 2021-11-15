@@ -181,41 +181,13 @@ class PostController extends Controller
     // 	dd('You are successfully added all fields.');
     // }
 
-    // public function admninLoginForm(){
 
-    //     return view('admin.views.login');
-    // }
+    // public function getpost(Request $request){
+    //     $latest_post = DB::table('posts')
+    //                         ->select('title')
+    //                         ->latest()
+    //                         ->get();
 
-    // public function checklogin(Request $request){
-
-
-    //     $validator = Validator::make(array(
-    //         "email" => $request->email,
-    //         "password" => $request->password
-    //     ), array(
-    //         "email" => "required",
-    //         "password" =>"required"
-    //     ));
-
-    //     if($validator->fails()){
-    //         return redirect("login")->withErrors($validator)->withInput();
-    //     }else{
-    //         $user_info = array(
-    //             "email" => $request->email,
-    //             "password" => $request->password
-    //         );
-
-    //         if(auth()->guard()->attempt($user_info)){
-    //             $logged_user_details = auth()->guard("admin")->user();
-
-    //             session(["is_active" => 1]);
-    //             session(["user_details" => $logged_user_details]);
-
-    //         }else{
-    //             $error_message = "Invalid credential";
-
-    //             return redirect()->back()->withErrors($error_message);
-    //         }
-    //     }
+    //   return view('blog_detailed')->with('latestpost', $latest_post);
     // }
 }

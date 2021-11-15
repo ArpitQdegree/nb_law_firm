@@ -31,27 +31,33 @@
 <style>
     .main{
     background-color: #121518;
-    margin: 20px;
+    /* margin: 20px; */
     padding: 20px;
     margin: auto;
-    min-height: 350px;
+    /* min-height: 350px; */
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     }
 
 .btn11{
     position: relative;
-    margin-bottom: 30px;
+    /* margin-bottom: 10px; */
     padding: 10px 20px;
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #aa9166;
+    color: white;
     border: 2px solid #aa9166;
     border-radius: 0;
     background: #121518;
     transition: .3s;
+    float: right;
+}
+
+.btn11:hover{
+    color: white;
+    background-color: #aa9166;
 }
 
 .fa-user:before {
@@ -74,6 +80,7 @@
     margin-top: 50px;
     margin-left: 100px;
     font-style: normal;
+    /* font-family: 'Times New Roman', Times, serif; */
 }
 
  .wapp {
@@ -308,43 +315,43 @@
      </div>
 
      <div class="col-md-3">
-         <div class="blog_sidebar">
-				<div class="widget widget_search">
-                    <form role="search" method="get" class="search-form" action="#">
-                        <label>
-                            <span class="screen-reader-text">Search for:</span>
-                            <input type="search" class="search-field" placeholder="Search …" value="" name="s">
-                        </label>
+        {{-- <div class="blog_sidebar">
+			<div class="widget widget_search">
+                <form role="search" method="get" class="search-form" action="#">
+                    <label>
+                        <span class="screen-reader-text">Search for:</span>
+                        <input type="search" class="search-field" placeholder="Search …" value="" name="s">
+                    </label>
+			    </form>
+            </div>
+        </div> --}}
 
-				 <!-- <input type="submit" class="search-submit" value="Search">  -->
-			   </form>
-        </div>
+		{{-- <div class="widget widget_recent_entries">
+		    <h3 style="color: #aa9166; text-align: center;">Recent Posts</h3>
+            <ul>
+                <li>
+                    <?php foreach ($latest_post as $key => $value) { ?>
+                        <tr>
+                            <a href=""><td>{{ $post->title}}</td></a><hr>
+                        </tr>
+                   <?php }?>
+                        
 
-		<div class="widget widget_recent_entries">
-		<h3 style="color: #aa9166; text-align: center;">Leave a comment</h3>
-                <ul>
-                    <li><a href="#">Lockdown measures taken by the Government of India to prevent the spread of COVID-19 pandemic</a></li>
-                    <li><a href="#">NRI MARRIAGES IN INDIA</a></li>
-                    <li><a href="#">LANDMARK JUDGEMENTS OF 2018</a></li>
-                    <li><a href="#" aria-current="page">THE CONTRIBUTIONS OF HON’BLE JUSTICE DIPAK MISRA</a></li>
-                    <li><a href="#">RECENT JUDGEMENT ON ADULTERY</a></li>
-                </ul>
-
-		</div>
-        <div class="widget widget_recent_comments">
+                </li>
+            </ul>
+		</div> --}}
+        {{-- <div class="widget widget_recent_comments">
             <h3 class="widget--title" style="color: #aa9166; text-align: center;">Recent Comments</h3>
             <ul id="recentcomments"></ul>
-        </div>
+        </div> --}}
         <div class="widget widget_categories">
-            <h3 class="widget--title" style="color: #aa9166; text-align: center;">Categories</h3>
+            <h3 class="widget--title" style="color: #aa9166; text-align: center; margin-top:20px;">Categories</h3>
 			<ul>
-					<li class="cat-item cat-item-2"><a href="#">Blog</a>
-</li>
-	<li class="cat-item cat-item-21"><a href="#">Media</a>
-</li>
+				<li class="cat-item cat-item-2" style="text-align:center"><a href="/blog">Blog</a></li>
+	            {{-- <li class="cat-item cat-item-21"><a href="#">Media</a></li> --}}
 			</ul>
-
-			</div>						</div>
+		</div>
+    </div>
     </div>
     </div>
   </div>
@@ -363,7 +370,7 @@
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"
                         required placeholder="Put Your Comments Here.."></textarea>
                     </div>
-                  </div>
+                </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <input type="text" class="form-control" id="inputPassword4" required placeholder="Enter Name..">
@@ -371,9 +378,11 @@
                         <div class="form-group col-md-6">
                             <input type="email" class="form-control" id="inputEmail4" required placeholder="Enter Email..">
                         </div>
-
+                          <div class="form-group col-md-12">
+                            <button type="submit" class="btn11 float-right">Post Comment</button>
+                          </div>
                     </div>
-                           <button type="submit" class="btn11 float-right">Post Comment</button>
+                       
                 </form>
 
             </div>
@@ -449,6 +458,7 @@
             }
 
             // add the sharing container on the page
+            // <span>Share With</span>
             $('<div class="prepbootstrap-sharing-container"></div>')
                 .appendTo(document.body)
                 .append(
@@ -463,7 +473,8 @@
                         );
                     }),
                     $(
-                        '<div class="sharing-item sharing-gp"><div class="sharing-img"><i class="fab fa-instagram-plus instagram-plus-icon"></i></div></div>')
+                        // '<div class="sharing-item sharing-gp"><div class="sharing-img"><i class="fab fa-instagram-plus instagram-plus-icon"></i></div></div>')
+                        '<div class="sharing-item sharing-gp"><div class="sharing-img"><i class="fab fa-instagram instagram-icon"></i></div></div>')
                     .click(function() {
                         open_popup(
                             "https://instagram.com/share?url=" + encodeURIComponent(document.location

@@ -322,7 +322,12 @@ background: linear-gradient(to bottom, #ef473a, #cb2d3e);
                                     <div class="card-body">
 
                                         <a href="{{ route('blog.show', $post->slug) }}"><h5 class="card-title">{{ $post->title }}</h5></a>
-                                        <p class="card-text">{{ $post->body }}</a></p>
+                                        
+                                        <p class="card-text"><?php substr($post->body,0); ?></a></p>
+
+
+                                        {{-- <p class="card-text">{!! substr(strip_tags($post->body),0, 50) !!}......</a></p>  --}}
+
                                         {{-- <p class="card-text"><?= $post->body; ?></a></p> --}}
                                 </div>
 

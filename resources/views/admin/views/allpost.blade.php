@@ -93,8 +93,8 @@
                                         <tr>
                                             <td style="font-family: 'Times New Roman', Times, serif;">{{ $data->id}}</td>
                                             <td style="font-family: 'Times New Roman', Times, serif;">{{ $data->title }}</td>
-                                            <td style="font-family: 'Times New Roman', Times, serif;">{{ substr($data->body,0, 20) }}...</td>
-                                            {{-- <td style="font-family: 'Times New Roman', Times, serif;">{{ $data->body }}</td> --}}
+                                            {{-- <td style="font-family: 'Times New Roman', Times, serif;">{{ substr($data->body,0, 20) }}...</td> --}}
+                                            <td style="font-family: 'Times New Roman', Times, serif;">{!! substr(strip_tags($data->body),0, 50) !!}...</td>
 
                                             <td><img src ="{{ URL::to($data->image) }}" width="50"></td>
 
