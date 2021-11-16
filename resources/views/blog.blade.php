@@ -21,7 +21,6 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
         <link href="{{ asset('lib/animate/animate.min.css')}}" rel="stylesheet">
         <link href="{{ asset('lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
-
         <!-- Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
     </head>
@@ -315,14 +314,14 @@ background: linear-gradient(to bottom, #ef473a, #cb2d3e);
                             @foreach ($chunk as $post)
                                 <div class="card">
                                 <div class="post-img">
-                                  <a href="{{ route('blog.show', $post->slug) }}">
+                                    <a href="{{ route('blog.show', $post->slug) }}">
                                       <img src="{{$post->image}}" class="card-img-top" alt="..." >
                                     </a>
 
                                     <div class="card-body">
 
                                         <a href="{{ route('blog.show', $post->slug) }}"><h5 class="card-title">{{ $post->title }}</h5></a>
-                                        
+
                                         <p class="card-text"><?php substr($post->body,0); ?></a></p>
 
 

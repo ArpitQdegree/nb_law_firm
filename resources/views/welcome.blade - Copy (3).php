@@ -27,7 +27,7 @@
 
     <style>
 
-.card-body{
+    .card-body{
             overflow: hidden;
             height: 100px;
             overflow-y: auto;
@@ -63,57 +63,65 @@
             transition: bottom .2s;
         }
 
+        /* #search-field {
+             display: none;
+        }
 
+        #btn:hover + #search-field {
+            display: inline-block;
+        } */
+
+        /* below style is for contact us */
         * {
-        box-sizing: border-box;
-        border-top-right-radius: 3px;
-        border-bottom-right-radius: 3px;
+            box-sizing: border-box;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
         }
 
         .sidebar-contact {
-        position: fixed;
-        transform: translateY(-50%);
-        top: 50%;
-        left: -350px;
-        width: 350px;
-        height: auto;
-        padding: 40px;
-        background: #fff;
-        box-shadow: 0 20px 50px rgba(0,0,0, .5);
-        transition: 0.5s ease-in-out;
+            position: fixed;
+            transform: translateY(-50%);
+            top: 50%;
+            left: -350px;
+            width: 350px;
+            height: auto;
+            padding: 40px;
+            background: #fff;
+            box-shadow: 0 20px 50px rgba(0,0,0, .5);
+            transition: 0.5s ease-in-out;
         }
 
         .sidebar-contact.active {
-        left: 0;
-        z-index: 1000;
+            left: 0;
+            z-index: 1000;
         }
 
         .sidebar-contact input,
         .sidebar-contact textarea{
-        width: 100%;
-        height: 36px;
-        padding: 5px;
-        margin-bottom: 10px;
-        border: 1px solid rgba(0,0,0, .5);
-        outline: none;
+            width: 100%;
+            height: 36px;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid rgba(0,0,0, .5);
+            outline: none;
         }
 
         .sidebar-contact textarea {
-        height: 60px;
-        resize: none;
+            height: 60px;
+            resize: none;
         }
 
         .sidebar-contact input[type="submit"] {
-        background: #00bcd4;
-        color: #fff;
-        cursor: pointer;
-        border: none;
-        font-size: 18px;
+            background: #00bcd4;
+            color: #fff;
+            cursor: pointer;
+            border: none;
+            font-size: 18px;
 
         }
         .sidebar-contact h2 {
-        margin: 0 0  20px;
-        padding: 0;
+            margin: 0 0  20px;
+            padding: 0;
         }
 
         .toggle {
@@ -131,24 +139,24 @@
         }
         /* till here is for contact us */
 
-.close1 {
-  top: 0px;
-  right: 51px;
-  height: 50px;
-  cursor: pointer;
-  position: absolute;
-  /* top: 50%;
-  right: 0%; */
-  padding: 12px 16px;
-  transform: translate(0%, -50%);
-}
+        .close1 {
+            top: 0px;
+            right: 51px;
+            height: 50px;
+            cursor: pointer;
+            position: absolute;
+            /* top: 50%;
+            right: 0%; */
+            padding: 12px 16px;
+            transform: translate(0%, -50%);
+        }
 
-@media only screen and (max-width: 600px) {
- #carousel{
-    width: auto;
-   max-height: 200px;
-  }
-}
+        @media only screen and (max-width: 600px) {
+        #carousel{
+            width: auto;
+            max-height: 200px;
+        }
+    }
 
     </style>
 
@@ -277,7 +285,6 @@
                 <div class="container">
                     <div class="section-header">
                         <h2>Our Services</h2>
-
                     </div>
                     <div class="row">
                             <div class="col-lg-4 col-md-6">
@@ -322,7 +329,7 @@
                                 <div class="service-icon">
                                     <i class="fa fa-graduation-cap"></i>
                                 </div>
-                                <h3>NRI Divorce Legal Support</h3>
+                                <h3>NRI Divorce Legal <br> Support</h3>
                                 <p>
                                 The subject of foreign divorce in India sounds quite complicated and people are hardly ….
                                 </p>
@@ -344,7 +351,8 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="service-item">
                                 <div class="service-icon">
-                                    <i class="fa fa-globe"></i>
+                                    {{-- <i class="fa fa-globe"></i> --}}
+                                    <i class="fa fa-user"></i>
                                 </div>
                                 <h3>498a and Allied Criminal Proceedings</h3>
                                 <p>
@@ -579,15 +587,15 @@
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
                                         </div>
                                     </div>
                                 </div>
@@ -600,7 +608,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium m
                                     <div id="collapseTwo" class="collapse" data-parent="#accordion">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
                                         </div>
                                     </div>
                                 </div>
@@ -640,6 +647,56 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium m
                                         </div>
                                     </div>
                                 </div>
+
+
+                                {{-- <div class="card">
+                                    <div class="card-header">
+                                        <a class="card-link" data-toggle="collapse" href="#collapseFive">
+                                            <span>5</span> Lorem ipsum dolor sit amet?
+                                        </a>
+                                    </div>
+                                    <div id="collapseSix" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <a class="card-link" data-toggle="collapse" href="#collapseFive">
+                                            <span>5</span> Lorem ipsum dolor sit amet?
+                                        </a>
+                                    </div>
+                                    <div id="collapseSeven" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <a class="card-link" data-toggle="collapse" href="#collapseFive">
+                                            <span>5</span> Lorem ipsum dolor sit amet?
+                                        </a>
+                                    </div>
+                                    <div id="collapseEight" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <a class="card-link" data-toggle="collapse" href="#collapseFive">
+                                            <span>5</span> Lorem ipsum dolor sit amet?
+                                        </a>
+                                    </div>
+                                    <div id="collapseNine" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        </div>
+                                    </div>
+                                </div> --}}
                             </div>
                             <a class="btn" href="/contact-us">Ask more</a>
                         </div>
@@ -663,7 +720,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium m
                                     <img src="img/testimonial-1.jpg" alt="my-img">
                                 </div> -->
                                 <div class="col-9">
-                                    <h2>Client Name1</h2>
+                                    <h2>Client Name</h2>
                                     <p>Profession</p>
                                 </div>
                                 <div class="col-12">
@@ -677,7 +734,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium m
                             <i class="fa fa-quote-right"></i>
                             <div class="row align-items-center">
                                 <div class="col-9">
-                                    <h2>Client Name2</h2>
+                                    <h2>Client Name</h2>
                                     <p>Profession</p>
                                 </div>
                                 <div class="col-12">
@@ -691,7 +748,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium m
                             <i class="fa fa-quote-right"></i>
                             <div class="row align-items-center">
                                 <div class="col-9">
-                                    <h2>Client Name3</h2>
+                                    <h2>Client Name</h2>
                                     <p>Profession</p>
                                 </div>
                                 <div class="col-12">
@@ -705,7 +762,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium m
                             <i class="fa fa-quote-right"></i>
                             <div class="row align-items-center">
                                 <div class="col-9">
-                                    <h2>Client Name4</h2>
+                                    <h2>Client Name</h2>
                                     <p>Profession</p>
                                 </div>
                                 <div class="col-12">
@@ -719,7 +776,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium m
                             <i class="fa fa-quote-right"></i>
                             <div class="row align-items-center">
                                 <div class="col-9">
-                                    <h2>Client Name5</h2>
+                                    <h2>Client Name</h2>
                                     <p>Profession</p>
                                 </div>
                                 <div class="col-12">
@@ -733,7 +790,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium m
                             <i class="fa fa-quote-right"></i>
                             <div class="row align-items-center">
                                 <div class="col-9">
-                                    <h2>Client Name6</h2>
+                                    <h2>Client Name</h2>
                                     <p>Profession</p>
                                 </div>
                                 <div class="col-12">
@@ -747,7 +804,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium m
                             <i class="fa fa-quote-right"></i>
                             <div class="row align-items-center">
                                 <div class="col-9">
-                                    <h2>Client Name7</h2>
+                                    <h2>Client Name</h2>
                                     <p>Profession</p>
                                 </div>
                                 <div class="col-12">
@@ -914,6 +971,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium m
                 </form>
             </div>
 
+            {{-- <div class="col-md-3 live-chat" style="position: fixed; bottom: 0; right: 0; z-index: 99999; padding: 0;">
+                <iframe src="https://tawk.to/chat/5fca21a9920fc91564cd6e99/default" style="border: 0px; height: 0px;"></iframe>
+                <button class="chat-button-on">Chat With Us</button>
+            </div> --}}
 
             <!-- Footer Start -->
             @include('layouts.footer')
@@ -978,7 +1039,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium m
     </script>
 
 
-    <script type="text/javascript">
+    {{-- <script type="text/javascript">
         $('.count').each(function () {
             $(this).prop('Counter',0).animate({
                 Counter: $(this).text()
@@ -990,7 +1051,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium m
                 }
             });
     });
-    </script>
+    </script> --}}
 
     {{-- <script>
             var closebtns = document.getElementsByClassName("close");

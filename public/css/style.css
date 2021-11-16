@@ -272,6 +272,12 @@ a:focus {
     background: #aa9166;
 }
 
+
+/* @media (max-width: 720px) {
+    .nav-sticky {
+        top: 100px;
+    } */
+
 @media (min-width: 992px) {
     .nav-bar {
         padding: 20px 60px;
@@ -298,6 +304,9 @@ a:focus {
     .nav-bar .navbar {
         padding: -1px 0;
         background: #121518 !important;
+    }
+    .navbar-nav {
+        margin-top: 88px;
     }
     .nav-bar a.nav-link {
         padding: 5px;
@@ -360,7 +369,7 @@ a:focus {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: calc(100vh - 170px);
+    /* height: calc(100vh - 170px); */
 }
 
 .carousel .carousel-caption h1 {
@@ -412,7 +421,7 @@ a:focus {
 
 @media (max-width: 575.98px) {
     .carousel .carousel-caption h1 {
-        font-size: 30px;
+        font-size: 15px;
         font-weight: 500;
     }
     .carousel .carousel-caption p {
@@ -766,7 +775,7 @@ a:focus {
     color: #999999;
     padding: 0 25px 25px 25px;
     font-size: 14px;
-    /* text-align: justify; */
+    text-align: justify;
 }
 
 .service .service-item a.btn {

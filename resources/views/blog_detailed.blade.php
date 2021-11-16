@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     @section('title', 'Blog')
-    <title>NB Law Firm - @yield('title')</title>
+    <title>{{ $post->title }} - NB Law Firm</title>
+    {{-- <title>{{ $post->title }}</title> --}}
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Law Firm Website Template" name="keywords">
     <meta content="Law Firm Website Template" name="description">
@@ -335,7 +336,7 @@
                             <a href=""><td>{{ $post->title}}</td></a><hr>
                         </tr>
                    <?php }?>
-                        
+
 
                 </li>
             </ul>
@@ -382,7 +383,7 @@
                             <button type="submit" class="btn11 float-right">Post Comment</button>
                           </div>
                     </div>
-                       
+
                 </form>
 
             </div>
