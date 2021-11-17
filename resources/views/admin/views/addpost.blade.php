@@ -107,8 +107,8 @@
                 @method('post')
                 <div class="mb-3" style="margin-left:10px; margin-top:10px; margin-right:7px;">
                     <label for="title" class="form-label">Title</label>
-                    {{-- <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Place Title Here"> --}}
-                    <input type="text" class="form-control" id="title" name="title" placeholder="Place Title Here">
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Place Title Here">
+                    {{-- <input type="text" class="form-control" id="title" onchange="return localstorage.setItem('title')" name="title" placeholder="Place Title Here"> --}}
                 </div>
                 <br>
                 <div class="mb-3" style="margin-left:10px; margin-top:10px; margin-right:7px;">
@@ -184,6 +184,21 @@
     });
   });
 </script>
+
+
+{{-- local storage code added from here --}}
+{{-- <script type="text/javascript">
+    $(document).ready(function(){
+        localstorage.clear();
+
+        $("form").on("submit", function(){
+            if(window.localstorage!==undefined){
+
+            }
+        })
+    })
+</script> --}}
+
 
 
 

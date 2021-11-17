@@ -27,7 +27,7 @@
 
     <style>
 
-.card-body{
+        .card-body{
             overflow: hidden;
             height: 100px;
             overflow-y: auto;
@@ -1020,6 +1020,16 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium m
                 });
             });
         });
+    </script> --}}
+
+
+    {{-- <script type="text/javascript">
+        var vsid = "si228578b4d0b8f";
+        (function() {
+        var vsjs = document.createElement('script'); vsjs.type = 'text/javascript'; vsjs.async = true; vsjs.setAttribute('defer', 'defer');
+        vsjs.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'www.virtualspirits.com/vsa/chat.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(vsjs, s);
+        })();
     </script> --}}
 
 

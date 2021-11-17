@@ -151,8 +151,14 @@ class PostController extends Controller
         }
         else{
             // return redirect::back()->withErrors(['msg' => 'No post found']);
-            return back()->withInput()->withErrors(['msg' => 'No post found']);
-            // Alert::error("Error Title");
+
+            // return back()->withInput();
+            // return back()->withInput()->withErrors(['msg' => 'No post found']);
+
+            return redirect('/blog')->with('danger','No post found');
+
+            // echo "hello";
+            // die;
         }
 
     }

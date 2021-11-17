@@ -31,7 +31,7 @@
 
     <p>Many states have laws in place that make online stalking or harassment illegal. This is especially true if the messages cause the victim to fear for the safety of themselves and as well as their family.</p>
 
-    <p>In some cases, cyber stalking is handled on the civil level, but sometimes it can be a felony. For example, if the offender makes threats i.e. particular threats to kidnap or harm the person, then the offender could be criminally charged and if you reach out to us, our professionals can help you get adequate services. The offender could also be charged with improper use of computers.</p>
+    <p>In some cases, cyber stalking is handled on the civil level, but sometimes it can be a felony. For example, if the offender makes threats i.e. particular threats to kidnap or harm the person, then the offender could be criminally charged and if you reach out to us, our professionals can help you get adequate services. The offender could also be charged with improper use of computers.</p><br><br><br>
 </div>
 
 

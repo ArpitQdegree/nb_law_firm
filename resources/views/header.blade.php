@@ -56,6 +56,9 @@
     </style> -->
 
     <body>
+        {{-- @if (Session::has('message'))
+            <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
+        @endif --}}
         <div class="wrapper">
             <div class="top-bar">
                 <div class="container-fluid">

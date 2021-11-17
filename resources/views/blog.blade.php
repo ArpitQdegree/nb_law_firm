@@ -293,6 +293,12 @@ background: linear-gradient(to bottom, #ef473a, #cb2d3e);
                     </div>
 
                 </form> -->
+
+            @if(session('danger'))
+                <div class="alert alert-danger">
+                    {{session('danger')}}
+                </div>
+            @endif
             <div id="myOverlay" class="overlay">
                 <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
                <div class="overlay-content">
@@ -303,6 +309,22 @@ background: linear-gradient(to bottom, #ef473a, #cb2d3e);
                     </form>
                  </div>
             </div>
+
+
+            {{-- backup of code before the error message --}}
+
+            {{-- <div id="myOverlay" class="overlay">
+                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+               <div class="overlay-content">
+                    <form action="{{ route('search') }}" method="post" role="search">
+                        {{ csrf_field() }}
+                            <input type="text" placeholder="Search.." name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                 </div>
+            </div> --}}
+
+
 
 
                  @foreach ($posts->chunk(3) as $chunk)
