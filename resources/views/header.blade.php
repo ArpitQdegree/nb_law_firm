@@ -26,8 +26,8 @@
 
     </head>
 
-    <!-- <style>
-        .top-bar .logo h1 {
+     <style>
+        /* .top-bar .logo h1 {
             margin: 0;
             color: #aa9166;
             font-size: 32px;
@@ -50,15 +50,17 @@
             padding: 10px 60px;
             margin-left: -45px;
 
+        } */
+
+        .color-fa{
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500 !important;
         }
 
-
-    </style> -->
+    </style>
 
     <body>
-        {{-- @if (Session::has('message'))
-            <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
-        @endif --}}
         <div class="wrapper">
             <div class="top-bar">
                 <div class="container-fluid">
@@ -67,7 +69,7 @@
                                 <div class="logo">
                                     <a href="/">
                                         <span><img src="{{asset('image/Logo1.png')}}" alt="NB Law Firm Logo" style="color: white">
-                                        <span style="color: white; font-size:16px;">NB Law Firm</span></span>
+                                        <span style="color: white; font-size:18px;">NB Law Firm</span></span>
                                     </a>
 
                                 </div>
@@ -121,13 +123,19 @@
                         <div class="col-md-12 px-0">
                             <div class="nav-bar">
                                 <div class="nav-font">
+                                <!-- <i class="fas fa-tty"></i> -->
 
-                                <span><i class="fa fa-calendar" aria-hidden="true" style="color: white;">&nbsp;&nbsp;Mon - Fri&nbsp;&nbsp;10:00 AM - 8:00 PM</i></span>&nbsp;&nbsp;
+                                <i class="fa fa-calendar" style="color: #aa9166"; aria-hidden="true">&nbsp;&nbsp;<span class="color-fa">Mon - Fri  10:00 AM - 8:00 PM</span></i>&nbsp;&nbsp;
+                                <i class="fas fa-tty" style="color: #aa9166"; aria-hidden="true">&nbsp;&nbsp;<span class="color-fa"><a href="tel:+01145874391" style="color:white;">+011-4587-4391</a></span></i>&nbsp;&nbsp;
+                                <i class="fa fa-phone-alt" style="color: #aa9166"; aria-hidden="true">&nbsp;&nbsp;<span class="color-fa"><a href="tel:+01145874391" style="color:white;">+91-9999221769</a></span></i>&nbsp;&nbsp;
+                                <i class="fa fa-envelope" style="color: #aa9166"; aria-hidden="true">&nbsp;&nbsp;<span class="color-fa"><a href="mailto:nblawfirm@yahoo.com" style="color:white;">nblawfirm@yahoo.com</a></span></i>
+                                <a class="btn right" style="float: right" href="contact-us">Get in Touch</a>
+                                <!-- <span><i class="fa fa-calendar" aria-hidden="true" style="color: white;">&nbsp;&nbsp;Mon - Fri&nbsp;&nbsp;10:00 AM - 8:00 PM</i></span>&nbsp;&nbsp;
                                 <span><i class="fa fa-phone-alt" aria-hidden="true" style="color: white; cursor: pointer;">&nbsp;&nbsp;<a href="tel:+01145874391" style="color:white;">+011-4587-4391</a></i></span>&nbsp;&nbsp;
 
                                 <span><i class="fa fa-phone-alt" aria-hidden="true" style="color: white; cursor: pointer;">&nbsp;&nbsp;<a href="tel:+91-9999221769" style="color:white;">+91-9999221769</a></i></span>&nbsp;&nbsp;
 
-                                <span><i class="fa fa-envelope" aria-hidden="true" style="color: white; cursor: pointer;">&nbsp;&nbsp;<a href="mailto:nblawfirm@yahoo.com" style="color:white;">nblawfirm@yahoo.com</a></i></span>
+                                <span><i class="fa fa-envelope" aria-hidden="true" style="color: white; cursor: pointer;">&nbsp;&nbsp;<a href="mailto:nblawfirm@yahoo.com" style="color:white;">nblawfirm@yahoo.com</a></i></span> -->
 
                                 <nav class="navbar navbar-expand-lg bg-dark navbar-dark float-right">
 
@@ -136,7 +144,7 @@
                                             </button>
                                 </nav>
 
-                                <a class="btn right" style="float: right" href="contact-us">Get in Touch</a>
+                                <!-- <a class="btn right" style="float: right" href="contact-us">Get in Touch</a> -->
 
                                 </div>
                             </div>

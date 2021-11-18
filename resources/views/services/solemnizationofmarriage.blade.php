@@ -14,7 +14,7 @@
     }
 
     .align-content{
-       margin-left: 96px;
+        margin-left: 96px;
         margin-right: 81px;
         text-align: justify;
         margin-top: 59px;

@@ -89,39 +89,50 @@
                         </thead>
                         <tbody>
 
-                                    @foreach ($posts as $k => $data)
-                                        <tr>
-                                            <td style="font-family: 'Times New Roman', Times, serif;">{{ $data->id}}</td>
-                                            <td style="font-family: 'Times New Roman', Times, serif;">{{ $data->title }}</td>
-                                            {{-- <td style="font-family: 'Times New Roman', Times, serif;">{{ substr($data->body,0, 20) }}...</td> --}}
-                                            <td style="font-family: 'Times New Roman', Times, serif;">{!! substr(strip_tags($data->body),0, 50) !!}...</td>
+                                @foreach ($posts as $k => $data)
+                                    <tr>
+                                        <td style="font-family: 'Times New Roman', Times, serif;">{{ $data->id}}</td>
+                                        <td style="font-family: 'Times New Roman', Times, serif;">{{ $data->title }}</td>
 
-                                            <td><img src ="{{ URL::to($data->image) }}" width="50"></td>
+                                        <td style="font-family: 'Times New Roman', Times, serif;">{!! substr(strip_tags($data->body),0, 50) !!}...</td>
 
+                                        <td><img src ="{{ URL::to($data->image) }}" width="50"></td>
 
-                                            <td class="project-actions text-right">
-                                                <a class="btn btn-primary btn-sm" href="#" style="font-family: 'Times New Roman', Times, serif;">
-                                                    <i class="fas fa-folder">
-                                                    </i>
-                                                    View
+                                        <td class="project-actions text-right">
+                                            <a class="btn btn-primary btn-sm" target="_new" href="<?= Url('/'); ?>/blog/{{ $data->slug }}"
+                                                style="font-family: 'Times New Roman', Times, serif;" data-toggle="tooltip" title="view">
+
+                                                    {{-- <i class="fas fa-folder"></i> --}}
+                                                    <i class="fa fa-eye"></i>
+                                                    {{-- View --}}
                                                 </a>
 
-                                                <a class="btn btn-info btn-sm" href="/post-edit/{{ $data->id}}" style="font-family: 'Times New Roman', Times, serif;">
+                                                <a class="btn btn-info btn-sm" href="/post-edit/{{ $data->id}}" style="font-family: 'Times New Roman', Times, serif;"
+                                                    data-toggle="tooltip" title="edit">
                                                     <i class="fas fa-pencil-alt">
                                                     </i>
-                                                    Edit
+                                                    {{-- Edit --}}
                                                 </a>
-                                                <form method="POST" action="{{ route('postdelete', $data->id) }}" style="font-family: 'Times New Roman', Times, serif;">
+
+                                                <form id="delete-post{{ $data->id }}" method="POST" action="{{ route('postdelete', $data->id) }}" style="font-family: 'Times New Roman', Times, serif;">
                                                     {{ csrf_field() }}
                                                     {{ method_field('DELETE') }}
 
-                                                    <div class="form-group">
+                                                    {{-- <div class="form-group">
                                                         <i class="fa fa-trash">
                                                         <input type="submit" class="btn btn-danger delete-user" value="Delete"></i>
-                                                        {{-- <i class="fa-solid fa-trash-can"></i> --}}
 
-                                                    </div>
+                                                    </div> --}}
+
+                                                     <a class="btn btn-danger btn-sm" onclick="document.getElementById('delete-post{{ $data->id }}').submit();" data-toggle="tooltip" title="delete">
+                                                    <i class="fa fa-trash"></i>
+                                                    <!-- Edit -->
+                                                </a>
                                                 </form>
+
+
+
+
 
                                             </td>
                                         </tr>
@@ -179,5 +190,11 @@
                 });
         });
     </script>
+
+    <script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
 </body>
 </html>

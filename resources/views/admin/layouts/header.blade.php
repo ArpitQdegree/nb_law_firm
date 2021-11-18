@@ -12,8 +12,8 @@
   <!-- summernote -->
   <link rel="stylesheet" href="{{ asset('plugins/summernote/summernote-bs4.min.css')}}">
   <!-- CodeMirror -->
-  <link rel="stylesheet" href="{{ asset('plugins/codemirror/codemirror.css')}}">
-  <link rel="stylesheet" href="{{ asset('plugins/codemirror/theme/monokai.css')}}">
+  {{-- <link rel="stylesheet" href="{{ asset('plugins/codemirror/codemirror.css')}}">
+  <link rel="stylesheet" href="{{ asset('plugins/codemirror/theme/monokai.css')}}"> --}}
   <style>
 
 .logout:hover{
@@ -94,4 +94,4 @@
 <script src="{{ asset('plugins/codemirror/mode/xml/xml.js')}}"></script>
 <script src="{{ asset('plugins/codemirror/mode/htmlmixed/htmlmixed.js')}}"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="{{ asset('dist/js/demo.js')}}"></script>
+{{-- <script src="{{ asset('dist/js/demo.js')}}"></script> --}}

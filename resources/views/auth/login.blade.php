@@ -73,7 +73,7 @@
         </div>
     </div>
 </div>
-
+<br>
 {{-- @endsection --}}
 
 @include('layouts.footer')

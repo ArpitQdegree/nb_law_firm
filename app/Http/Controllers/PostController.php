@@ -21,9 +21,7 @@ class PostController extends Controller
 
     public function allpost(){
 
-        $posts = DB::table('posts')
-                    ->select('id','title','body', 'status', 'image')
-                    ->get();
+        $posts = DB::table('posts') ->get();
 
         //return json_encode($posts);
         return view('admin.views.allpost',compact('posts'));
@@ -37,7 +35,8 @@ class PostController extends Controller
     public function addpostData(Request $request) {
 
         $validator = Validator::make($request->all(), [
-            'title' => 'required|unique:posts|max:60',
+            // 'title' => 'required|unique:posts|max:60',
+            'title' => 'required|unique:posts',
 
             'content' => 'required'
         ]);

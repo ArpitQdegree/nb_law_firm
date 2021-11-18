@@ -131,13 +131,15 @@
             <div>
                 <label for="image" class="ml-2" id="feature-image">Featured Image</label>
                 <div class="input-group">
+                    {{-- <input type="file" name="image" class="form-control" id="featured-image" aria-describedby="inputGroupFileAddon04" aria-label="Upload"> --}}
+
                     <input type="file" name="image" class="form-control" id="featured-image" aria-describedby="inputGroupFileAddon04" aria-label="Upload"
                     style="margin-left:10px; margin-right:16px; margin-bottom:17px;padding-bottom: 38px;">
                 </div>
             </div>
 
             <div>
-                <div class="ml-2 mb-2 mr-4">
+                <div class="ml-2 mb-2 mr-4 mt-4">
                     <button type="submit" class="btn btn-primary">Post</button>
 
                     {{-- <a href="update"> --}}

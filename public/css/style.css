@@ -22,20 +22,19 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.fa-calendar:before {
-    content: "\f133";
-    color: #aa9166;
-}
 
-.fa-phone-alt:before {
-    content: "\f879";
-    color: #aa9166;
-}
-
-.fa-envelope:before {
-    content: "\f0e0";
-    color: #aa9166;
-}
+/* .fa-calendar:before {
+        content: "\f133";
+        color: #aa9166;
+    }
+    .fa-phone-alt:before {
+        content: "\f879";
+        color: #aa9166;
+    }
+    .fa-envelope:before {
+        content: "\f0e0";
+        color: #aa9166;
+    } */
 
 h1,
 h2,
@@ -283,7 +282,7 @@ a:focus {
         padding: 20px 60px;
     }
     .nav-bar.nav-sticky {
-        padding: 10px 60px;
+        padding: 10px 25px;
     }
     .nav-bar,
     .nav-bar .navbar {
