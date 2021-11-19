@@ -88,20 +88,20 @@
 
 
 
-            @if(session()->has("message"))
+            {{-- @if(session()->has("message"))
                 <div class="alert alert-success">
                     <p>{{ session('message') }}</p>
                 </div>
-            @endif
+            @endif --}}
 
             {{-- uncomment this one --}}
-            {{-- @if(count($errors) > 0)
+            @if(count($errors) > 0)
                 <div class="alert alert-danger">
                     @foreach($errors->all() as $error)
                         <p>{{ $error }}</p>
                     @endforeach
                 </div>
-            @endif --}}
+            @endif
             <form method="post" id="camp" action="{{ url('add-post-data') }}" autocomplete="off" enctype="multipart/form-data">
                 @csrf
                 @method('post')
@@ -127,8 +127,14 @@
                 </textarea>
                 </div>
 
+                {{-- @if(session()->has("message"))
+                    <div class="alert alert-danger">
+                        <p>{{ session('message') }}</p>
+                    </div>
+                @endif --}}
                 <div>
-                    <label for="image" class="ml-2" id="feature-image">Featured Image</label>
+                    <label for="image" class="ml-2" id="feature-image">Featured Image (Max Size:20KB)</label>
+
                     <div class="input-group">
                         <input type="file" name="image" class="form-control" id="featured-image" aria-describedby="inputGroupFileAddon04"
                         aria-label="Upload" style="margin-left:10px; margin-right:16px; margin-bottom:17px;padding-bottom: 38px;">

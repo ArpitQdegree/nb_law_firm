@@ -233,7 +233,8 @@
                         <div class="col-lg-4 col-md-6">
                                 <div class="service-item">
                                     <div class="service-icon">
-                                        <i class="fa fa-globe"></i>
+                                        {{-- <i class="fa fa-globe"></i> --}}
+                                        <i class="fa fa-phone"></i>
                                     </div>
                                     <h3>Contact Us</h3>
                                     <p>

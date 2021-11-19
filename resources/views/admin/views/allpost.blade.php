@@ -118,16 +118,12 @@
                                                     {{ csrf_field() }}
                                                     {{ method_field('DELETE') }}
 
-                                                    {{-- <div class="form-group">
-                                                        <i class="fa fa-trash">
-                                                        <input type="submit" class="btn btn-danger delete-user" value="Delete"></i>
 
-                                                    </div> --}}
 
-                                                     <a class="btn btn-danger btn-sm" onclick="document.getElementById('delete-post{{ $data->id }}').submit();" data-toggle="tooltip" title="delete">
-                                                    <i class="fa fa-trash"></i>
-                                                    <!-- Edit -->
-                                                </a>
+                                                    <a class="btn btn-danger btn-sm" onclick="document.getElementById('delete-post{{ $data->id }}').submit();" data-toggle="tooltip" title="delete">
+                                                            <i class="fa fa-trash"></i>
+                                                            <!-- Edit -->
+                                                    </a>
                                                 </form>
 
 

@@ -61,23 +61,26 @@
 
         .card-img-top{
 
-     background: #f4f4f4;
-    border-radius: 16px;
-    box-shadow: 1px 1px 1px rgb(0 0 0 / 20%);
-    overflow: hidden;
-    min-height: 450px;
-    font-size: 13px;
-    margin-bottom: 30px;
-    transform: scale(1);
-    transition: .5s;
-    display: block;
-    text-decoration: none;
-    height: 470px;
+            background: #f4f4f4;
+            border-radius: 16px;
+            box-shadow: 1px 1px 1px rgb(0 0 0 / 20%);
+            overflow: hidden;
+            min-height: 450px;
+            font-size: 13px;
+            margin-bottom: 30px;
+            transform: scale(1);
+            transition: .5s;
+            display: block;
+            text-decoration: none;
+            height: 470px;
         }
 
-        .card-img-top:hover{
+        /* .card-img-top{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        } */
 
-        }
 
  /* .openBtn {
   background: #f1f1f1;
@@ -258,6 +261,20 @@ background: linear-gradient(to bottom, #ef473a, #cb2d3e);
 .user__info > small {
   color: #666;
 }
+
+.page-item.active .page-link {
+    z-index: 0 !important;
+}
+
+.back-to-top {
+    z-index: 0 !important;
+}
+
+ /* {margin: 0; height: 100%; overflow: hidden} */
+
+
+
+
     </style>
 
     <body>
@@ -337,7 +354,7 @@ background: linear-gradient(to bottom, #ef473a, #cb2d3e);
                                 <div class="card">
                                 <div class="post-img">
                                     <a href="{{ route('blog.show', $post->slug) }}">
-                                      <img src="{{$post->image}}" class="card-img-top" alt="..." >
+                                      <img src="{{$post->image}}" class="card-img-top" alt="...">
                                     </a>
 
                                     <div class="card-body">

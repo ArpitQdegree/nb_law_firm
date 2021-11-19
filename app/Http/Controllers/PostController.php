@@ -37,7 +37,8 @@ class PostController extends Controller
         $validator = Validator::make($request->all(), [
             // 'title' => 'required|unique:posts|max:60',
             'title' => 'required|unique:posts',
-
+            // 'image' => 'required | image | max:100',  //size 100 means 100kb
+            'image' => 'required | image | max:20',
             'content' => 'required'
         ]);
 

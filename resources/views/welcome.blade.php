@@ -320,7 +320,8 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="service-item">
                                 <div class="service-icon">
-                                    <i class="fa fa-graduation-cap"></i>
+                                    {{-- <i class="fa fa-graduation-cap"></i> --}}
+                                    <i class="fa fa-user"></i>
                                 </div>
                                 <h3>NRI Divorce Legal Support</h3>
                                 <p>
@@ -344,7 +345,8 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="service-item">
                                 <div class="service-icon">
-                                    <i class="fa fa-globe"></i>
+                                    {{-- <i class="fa fa-globe"></i> --}}
+                                    <i class="fa fa-balance-scale"></i>
                                 </div>
                                 <h3>498a and Allied Criminal Proceedings</h3>
                                 <p>
@@ -369,7 +371,8 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="service-item">
                                 <div class="service-icon">
-                                    <i class="fa fa-gavel"></i>
+                                    {{-- <i class="fa fa-gavel"></i> --}}
+                                    <i class="fas fa-link"></i>
                                 </div>
                                 <h3>Will probation cases</h3>
                                 <p>
@@ -408,7 +411,8 @@
                         <div class="col-lg-4 col-md-6">
                                 <div class="service-item1">
                                     <div class="service-icon">
-                                        <i class="fa fa-globe"></i>
+                                        {{-- <i class="fa fa-globe"></i> --}}
+                                        <i class="fa fa-balance-scale"></i>
                                     </div>
                                     <h3>Anti — Trust / Competition</h3>
                                     <p>
@@ -420,7 +424,7 @@
                         <div class="col-lg-4 col-md-6">
                                 <div class="service-item1">
                                     <div class="service-icon">
-                                        <i class="fa fa-globe"></i>
+                                        <i class="fa fa-balance-scale"></i>
                                     </div>
                                     <h3>Dishonour of Cheque (Negotiable Instruments Act)</h3>
                                     <p>
@@ -434,7 +438,7 @@
                         <div class="col-lg-4 col-md-6">
                                 <div class="service-item1">
                                     <div class="service-icon">
-                                        <i class="fa fa-globe"></i>
+                                        <i class="fa fa-balance-scale"></i>
                                     </div>
                                     <h3>Mergers & Acquisitions</h3>
                                     <p>
@@ -450,7 +454,7 @@
                         <div class="col-lg-4 col-md-6">
                                 <div class="service-item1">
                                     <div class="service-icon">
-                                        <i class="fa fa-globe"></i>
+                                        <i class="fa fa-balance-scale"></i>
                                     </div>
                                     <h3>White Collar Crime and Money Laundering</h3>
                                     <p>
@@ -463,7 +467,7 @@
                         <div class="col-lg-4 col-md-6">
                                 <div class="service-item1">
                                     <div class="service-icon">
-                                        <i class="fa fa-globe"></i>
+                                        <i class="fa fa-balance-scale"></i>
                                     </div>
                                     <h3>SARFAESI Act, 2002</h3>
                                     <p>
@@ -476,7 +480,7 @@
                         <div class="col-lg-4 col-md-6">
                                 <div class="service-item1">
                                     <div class="service-icon">
-                                        <i class="fa fa-globe"></i>
+                                        <i class="fa fa-balance-scale"></i>
                                     </div>
                                     <h3>Insolvency and Bankruptcy Code</h3>
                                     <p>

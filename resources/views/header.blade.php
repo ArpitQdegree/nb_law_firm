@@ -129,7 +129,8 @@
                                 <i class="fas fa-tty" style="color: #aa9166"; aria-hidden="true">&nbsp;&nbsp;<span class="color-fa"><a href="tel:+01145874391" style="color:white;">+011-4587-4391</a></span></i>&nbsp;&nbsp;
                                 <i class="fa fa-phone-alt" style="color: #aa9166"; aria-hidden="true">&nbsp;&nbsp;<span class="color-fa"><a href="tel:+01145874391" style="color:white;">+91-9999221769</a></span></i>&nbsp;&nbsp;
                                 <i class="fa fa-envelope" style="color: #aa9166"; aria-hidden="true">&nbsp;&nbsp;<span class="color-fa"><a href="mailto:nblawfirm@yahoo.com" style="color:white;">nblawfirm@yahoo.com</a></span></i>
-                                <a class="btn right" style="float: right" href="contact-us">Get in Touch</a>
+                                <a class="btn right" style="float: right" href="<?=route('contact-us')?>">Get in Touch</a>
+                                {{-- <a class="btn right" style="float: right" href="contact-us">Get in Touch</a> --}}
                                 <!-- <span><i class="fa fa-calendar" aria-hidden="true" style="color: white;">&nbsp;&nbsp;Mon - Fri&nbsp;&nbsp;10:00 AM - 8:00 PM</i></span>&nbsp;&nbsp;
                                 <span><i class="fa fa-phone-alt" aria-hidden="true" style="color: white; cursor: pointer;">&nbsp;&nbsp;<a href="tel:+01145874391" style="color:white;">+011-4587-4391</a></i></span>&nbsp;&nbsp;
 
