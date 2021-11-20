@@ -6,6 +6,8 @@
   <title>@yield("title")</title>
 
 </head>
+
+
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
     @include('admin.layouts.header')

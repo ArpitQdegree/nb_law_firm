@@ -16,6 +16,8 @@ body {
     background: #ffffff;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    /* padding-top: 10px; */
+    /* top: 10px; */
 }
 
 .nav-font {
@@ -199,6 +201,8 @@ a:focus {
 @media (min-width: 992px) {
     .top-bar {
         padding: 0 60px;
+        /* below height is added by arpit */
+        height: 100px;
     }
 }
 
@@ -1985,6 +1989,11 @@ a:focus {
 
 .footer .copyright p a:hover {
     color: #ffffff;
+}
+
+#accordion {
+    height: 500px;
+    overflow: auto;
 }
 
 @media (max-width: 768px) {

@@ -270,6 +270,14 @@ background: linear-gradient(to bottom, #ef473a, #cb2d3e);
     z-index: 0 !important;
 }
 
+
+
+/* @media only screen and (max-width: 600px) {
+ .card-img-top{
+    width: auto;
+   max-height: 200px;
+  }
+} */
  /* {margin: 0; height: 100%; overflow: hidden} */
 
 

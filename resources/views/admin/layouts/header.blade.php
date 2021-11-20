@@ -22,6 +22,10 @@
 
 }
 
+    .content-wrapper{
+        height: calc(100vh  - 140px);
+        overflow: auto;
+    }
 
     </style>
 

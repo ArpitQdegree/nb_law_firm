@@ -5,6 +5,13 @@
 
 @section("content")
 
+{{-- <style>
+    .content-wrapper{
+    height: calc(100vh  - 140px);
+    overflow: auto;
+    }
+</style> --}}
+
   <div class="content-wrapper">
     <div class="preloader flex-column justify-content-center align-items-center">
         <img class="animation__shake" src="{{ asset('dist/img/Logo1.png') }}" alt="NBLawFirm" height="60" width="60">
