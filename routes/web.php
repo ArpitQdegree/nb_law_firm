@@ -120,6 +120,10 @@ Route::any('search', [PostController::class, 'search'])->name('search');
 Route::get('blog/{slug}', [PostController::class, 'detailblog'])->name('blog.show');
 
 
+
+
+Route::any('formsubmit', [PostController::class, 'formsubmit'])->name('formsubmit');
+
 // Route::get('getpost', [PostController::class, 'getpost']);
 
 // Route::get('form-validation', [PostController::class, 'formvalidation']);

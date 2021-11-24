@@ -295,7 +295,8 @@ background: linear-gradient(to bottom, #ef473a, #cb2d3e);
                             <h2>Blogs</h2>
                         </div>
                         <div class="col-12">
-                        <button class="btn" onclick="openSearch()"><i class="fa fa-search bg-transparent" style="--fa-flash-opacity: 0.1; --fa-flash-scale: 1.25; font-size: 30px" ></i></button>
+                        <button class="btn" onclick="openSearch()"><i class="fa fa-search bg-transparent" style="--fa-flash-opacity: 0.1; --fa-flash-scale: 1.25; font-size: 30px" ></i>
+                        </button>
                             <!-- <a href="/">Home</a> -->
                             <a href="">Blog</a>
 

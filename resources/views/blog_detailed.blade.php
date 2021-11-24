@@ -365,25 +365,31 @@
 
                <div class="main">
                <h3 style="color: #aa9166; text-align: center;">Leave a comment</h3>
-                <form method="post" validate>
-                <div class="form-row">
-                    <div class="form-group col-md-12">
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"
-                        required placeholder="Put Your Comments Here.."></textarea>
-                    </div>
-                </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <input type="text" class="form-control" id="inputPassword4" required placeholder="Enter Name..">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <input type="email" class="form-control" id="inputEmail4" required placeholder="Enter Email..">
-                        </div>
-                          <div class="form-group col-md-12">
-                            <button type="submit" class="btn11 float-right">Post Comment</button>
-                          </div>
-                    </div>
 
+                @if (session()->has('success'))
+                    <div class="alert alert-success">
+                       {!! session()->get('success') !!}
+                    </div>
+                @endif
+                <form method="post" validate action="<?= route('formsubmit')?>">
+                    {{ csrf_field() }}
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <textarea class="form-control" name="textarea" id="exampleFormControlTextarea1" rows="6"
+                            required placeholder="Put Your Comments Here.."></textarea>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" name="name" id="inputPassword4" required placeholder="Enter Name..">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="email" class="form-control" name="email" id="inputEmail4" required placeholder="Enter Email..">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <button type="submit" class="btn11 float-right">Post Comment</button>
+                            </div>
+                    </div>
                 </form>
 
             </div>

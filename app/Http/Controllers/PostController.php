@@ -169,6 +169,14 @@ class PostController extends Controller
     }
 
 
+    public function formsubmit(Request $request){
+        // dd($request->all());
+        if($request->all() != ''){
+            return redirect()->back()->with('success','Your Comment has gone to the admin for approval');
+        }
+
+    }
+
     // public function formValidationPost(Request $request)
     // {
     // 	$this->validate($request,[

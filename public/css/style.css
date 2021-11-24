@@ -93,7 +93,7 @@ a:focus {
     right: 15px;
     bottom: 15px;
     transition: background 0.5s;
-    z-index: 9;
+    z-index: 999;
 }
 
 .back-to-top:hover {

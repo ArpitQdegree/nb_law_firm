@@ -144,6 +144,39 @@
   transform: translate(0%, -50%);
 }
 
+.WAButton{
+    position: fixed;
+    bottom: 10px;
+}
+.floating-wpp-button{
+    position: fixed;
+    bottom:  70px;
+}
+.floating-wpp .floating-wpp-popup {
+    border-radius: 6px;
+    background-color: #E5DDD5;
+    position: absolute;
+    overflow: hidden;
+    padding: 0;
+    box-shadow: 1px 2px 8px rgb(60 60 60 / 25%);
+    width: 0;
+    height: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: bottom .1s ease-out,opacity .2s ease-out;
+    transform-origin: bottom;
+}
+.floating-wpp .floating-wpp-popup.active {
+    padding: 0 12px 12px;
+    width: 260px;
+    height: auto;
+    /* bottom: 82px; */
+    opacity: 1;
+    position: absolute !important;
+    bottom: 146px !important;
+
+}
+
 @media only screen and (max-width: 600px) {
  #carousel{
     width: auto;
@@ -155,12 +188,11 @@
 
     <body>
         @include('header')
-             <div class="sidebar-contact">
+            <div class="sidebar-contact">
                 <div class="close1">
                  <span class="toggle">x</span>
                 </div>
                 <div class="toggle">
-                    {{-- <i class="fa fa-envelope" aria-hidden="true"></i> --}}
                     <img src="image/getintouch.png" alt="get-in-touch" style="background-color:black; margin-left:-1px; float:left;">
                 </div>
                 <h2>Contact Us</h2>
@@ -173,8 +205,36 @@
                     <input type="submit" value="Send">
                 </form>
             </div>
+
+            {{-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div> --}}
+
+
+
         <div class="wrapper">
-           
+
 
             <!-- Carousel Start -->
             <div id="carousel" class="carousel slide" data-ride="carousel">
@@ -1023,7 +1083,10 @@
 
             <!-- Footer End -->
             {{-- <div id="WAButton"></div> --}}
+            <div class="up-to">
+
             <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+            </div>
         </div>
 
         <!-- JavaScript Libraries -->
@@ -1062,7 +1125,10 @@
                 popupMessage: 'Hello, how can we help you?', //Popup Message
                 showPopup: true, //Enables popup display
                  buttonImage: '<img src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/whatsapp.svg" />', //Button Image
-                position: "left"
+                // position: "left"
+                position:"right",
+
+
             });
         });
     </script>
@@ -1094,6 +1160,8 @@
             });
     });
     </script>
+
+    <script>var BotStar={appId:"s6d31a353-404c-4222-bb2c-465e99cffea2",mode:"livechat"};!function(t,a){var e=function(){(e.q=e.q||[]).push(arguments)};e.q=e.q||[],t.BotStarApi=e;!function(){var t=a.createElement("script");t.type="text/javascript",t.async=1,t.src="https://widget.botstar.com/static/js/widget.js";var e=a.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)}();}(window,document)</script>
 
     {{-- <script>
             var closebtns = document.getElementsByClassName("close");
